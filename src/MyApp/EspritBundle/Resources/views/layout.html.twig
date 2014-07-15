@@ -1,0 +1,498 @@
+{# empty Twig template #}
+
+
+<!DOCTYPE html>
+<html lang="fr">
+{% block head %}
+    <title>Home</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/stylesheet.css') }}"/> 
+      <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/reset.css') }}"/> 
+        <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/animate.css') }}"/> 
+       <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/styles.css') }}"/>  
+  
+       <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/login-box.css') }}"/> 
+
+{% endblock %}
+    <body>
+        <!--==============================header=================================-->
+            {% block content %}{% endblock %}
+        <table cellpadding="0" cellspacing="0" border="0" class="main">
+            <tr>
+                <td align="center">	
+                    <table cellpadding="0" cellspacing="0" border="0" style="width:718px">
+                        <tr>
+                            <td style="height:102px">
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td style="width:345px; padding:16px 0px 0px 0px;">
+                                            <a href="#">
+                                              <!--  <img src="{{ asset('bundles/myappesprit/images/logo.jpg') }}" alt="" />    -->       
+
+                                            </a>
+                                        </td>
+                                        <td style="width:220px; padding:45px 0px 0px 0px;">
+                                            <a href="#"> <img src="{{ asset('bundles/myappesprit/images/flags.jpg') }}" alt=""  class="middle"  /></a><select class="jump"><option>US Dollar</option></select>
+                                        </td>
+                                        <td style="padding:37px 0px 0px 0px;">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                    <td>  <img src="{{ asset('bundles/myappesprit/images/hp.jpg') }}" alt="" />   </td>
+                                                    <td style="width:100%; padding:4px 0px 0px 0px;"><h1>Shopping cart: <br /><a href="#">0 items</a></h1></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                      <!--  <tr>
+                            <td style="height:184px">
+                                <a href="#">
+                                    <img src="{{ asset('bundles/myappesprit/images/banner1.jpg') }}" alt="" /> 
+                                </a>
+                                <a href="#">
+                                    <img src="{{ asset('bundles/myappesprit/images/banner2.jpg') }}" alt="" />
+                                </a>
+                            </td>
+                        </tr> -->
+                        <tr>
+                            <td style="height:73px">
+                                <a href="index.html"><img src="{{ asset('bundles/myappesprit/images/m1.jpg') }}" style="margin:0px 0px 0px 22px;" alt="" /></a><a href="index-1.html"><img src="{{ asset('bundles/myappesprit/images/m2.jpg') }}"  alt="" /></a><a href="index-2.html"><img src="{{ asset('bundles/myappesprit/images/m3.jpg') }}"  alt="" /></a><a href="index-3.html"><img src="{{ asset('bundles/myappesprit/images/m4.jpg') }}"  alt="" /></a><a href="index-4.html"><img src="{{ asset('bundles/myappesprit/images/m5.jpg') }}"  alt="" /></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0px 3px 25px 5px;">
+
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td style="width:177px">
+                                            <table cellpadding="0" cellspacing="0" border="0" class="box_header_txt">
+                                                <tr>
+                                                    <td> <img src="{{ asset('bundles/myappesprit/images/title1_left.jpg') }}"  alt="" />  </td>
+                                                    <td style="width:100%">Categories:</td>
+                                                    <td> <img src="{{ asset('bundles/myappesprit/images/title1_right.jpg') }}"  alt="" />  </td>
+                                                </tr>
+                                            </table>
+                                            <br style="line-height:2px" />
+                                            <table cellpadding="0" cellspacing="0" border="0" class="box_body c1">
+                                                <tr>
+                                                    <td> <img src="{{ asset('bundles/myappesprit/images/c1_tl.jpg') }}"  alt="" />  </td>
+                                                    <td class="c1_top"><img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}" width="9" height="9"   alt="" /></td>
+                                                    <td><img src="{{ asset('bundles/myappesprit/images/c1_tl.jpg') }}"  alt="" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="c1_left"><img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}" width="9" height="1" alt="" /></td>
+                                                    <td>
+                                                        <br style="line-height:5px" />
+                                                        <ul>
+                                                            <li class="bg_list"><a href="#">Advantage Flea</a></li>
+                                                            <li class="bg_list"><a href="#">Advantix K9</a></li>
+                                                            <li class="bg_list"><a href="#">Dog House</a></li>
+                                                            <li class="bg_list"><a href="#">Airline Carriers</a></li>
+                                                            <li class="bg_list"><a href="#">Allergies: Human</a></li>
+                                                            <li class="bg_list"><a href="#">Andis Clippers</a></li>
+                                                            <li class="bg_list"><a href="#">Anti-bark Devices</a></li>
+                                                            <li class="bg_list"><a href="#">Jingle Collars</a></li>
+                                                            <li class="bg_list"><a href="#">Backpacks</a></li>
+                                                            <li class="bg_list"><a href="#">Bad Breath</a></li>
+                                                            <li class="bg_list"><a href="#">Balls</a></li>
+                                                            <li class="bg_list"><a href="#">Bandannas</a></li>
+                                                            <li class="bg_list"><a href="#">Bark Collars</a></li>
+                                                            <li class="bg_list"><a href="#">Bath Supplies</a></li>
+                                                            <li class="bg_list"><a href="#">Boomboxes</a></li>
+                                                        </ul>
+                                                        <br style="line-height:10px" />
+                                                    </td>
+                                                    <td class="c1_right">
+
+                                                        <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}" width="9" height="1" alt="" />                                     
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="{{ asset('bundles/myappesprit/images/c1_bl.jpg') }}" alt="" />                                     
+
+                                                    </td>
+                                                    <td class="c1_bottom">
+                                                        <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}" alt="" width="1" height="9" />                                       
+
+                                                    </td>
+                                                    <td>
+                                                       <img src="{{ asset('bundles/myappesprit/images/c1_br.jpg') }}" alt="" />                                                  
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td>
+                                            <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}" width="3" height="1" alt="" />                               
+
+                                        </td>
+                                        <td style="width:350px">
+                                            <table cellpadding="0" cellspacing="0" border="0" class="cont_header_txt">
+                                                <tr>
+                                                    <td>
+                                                      <img src="{{ asset('bundles/myappesprit/images/title2_left.jpg') }}" alt="" />                                                             
+
+                                                    </td>
+                                                    <td style="width:100%">featured products:</td>
+                                                    <td>
+                                                       <img src="{{ asset('bundles/myappesprit/images/title2_right.jpg') }}" alt="" />                                                         
+
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table cellpadding="0" cellspacing="0" border="0" class="product">
+                                                <tr>
+                                                    <td style="padding:0px 2px 3px 2px;">
+                                                        <table cellpadding="0" cellspacing="0" border="0">
+                                                            <tr>
+                                                                <td style="width:172px">
+                                                                    <table cellpadding="0" cellspacing="0" border="0" class="c2">
+                                                                        <tr>
+                                                                            <td>
+                                                                              <img src="{{ asset('bundles/myappesprit/images/c2_tl.jpg') }}" alt="" />                                                        
+
+
+                                                                            </td>
+                                                                            <td class="c2_top">
+
+                                                                                <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}" alt="" width="9" height="9" />                 
+                                                                            </td>
+                                                                            <td>
+
+                                                                               <img src="{{ asset('bundles/myappesprit/images/c2_tr.jpg') }}" alt="" />                  
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="c2_left">
+
+                                                                                <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}" alt="" width="9" height="1"  />                
+                                                                            </td>
+                                                                            <td style="padding:7px 5px 4px 10px;">
+                                                                                <table cellpadding="0" cellspacing="0" border="0">
+                                                                                    <tr>
+                                                                                        <td style="height:40px">
+                                                                                            <a href="#">Cat Print Tapestry Kitty Cave</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+
+                                                                                            <img src="{{ asset('bundles/myappesprit/images/0p1.jpg') }}" alt="" />                                  
+
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="middle" style="height:26px">
+                                                                                            <span class="productSpecialPrice">$39.99</span>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="middle" style="height:54px">
+                                                                                            <a href="#">
+
+                                                                                                <img src="{{ asset('bundles/myappesprit/images/button_details.jpg') }}" alt="" />                          
+                                                                                            </a><br /><br style="line-height:2px" />
+                                                                                            <a href="#">
+
+
+                                                                                                <img src="{{ asset('bundles/myappesprit/images/button_add_to_cart1.jpg') }}" alt="" />                              
+                                                                                            </a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                            <td class="c2_right">
+
+                                                                                <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}" alt="" width="9" height="1"  />                
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+
+
+                                                                                <img src="{{ asset('bundles/myappesprit/images/c2_bl.jpg') }}" alt=""  />                  
+                                                                            </td>
+                                                                            <td class="c2_bottom">
+
+                                                                                <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}" alt="" width="1" height="9"  />                 
+                                                                            </td>
+                                                                            <td>
+
+
+                                                                               <img src="{{ asset('bundles/myappesprit/images/c2_br.jpg') }}" alt=""  />                 
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <td> <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}"alt="" width="2" height="1" /></td>
+                                                                <td style="width:172px">
+                                                                    <table cellpadding="0" cellspacing="0" border="0" class="c2">
+                                                                        <tr>
+                                                                            <td>
+                                                                                 <img src="{{ asset('bundles/myappesprit/images/c2_tl.jpg') }}"alt=""/>  
+                                                                                 </td>
+                                                                            <td class="c2_top">
+
+                                                                                <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}"alt="" width="9" height="9" />                      
+                                                                            </td>
+                                                                            <td>
+                                                                               <img src="{{ asset('bundles/myappesprit/images/c2_tr.jpg') }}"alt=""/>                        
+
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="c2_left">
+                                                                                <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}"alt=""  width="9" height="1" />                         
+
+                                                                            </td>
+                                                                            <td style="padding:7px 5px 4px 10px;">
+                                                                                <table cellpadding="0" cellspacing="0" border="0">
+                                                                                    <tr>
+                                                                                        <td style="height:40px">
+                                                                                            <a href="#">Lipiderm Healthy Skin and Coat Gel Capsules</a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td>
+
+                                                                                            <img src="{{ asset('bundles/myappesprit/images/0p2.jpg') }}"alt=""/>                                                 
+
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="middle" style="height:26px">
+                                                                                            <span class="productSpecialPrice">$17.99</span>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="middle" style="height:54px">
+                                                                                            <a href="#">
+                                                                                                <img src="{{ asset('bundles/myappesprit/images/button_details.jpg') }}"alt=""/>                                                            
+
+                                                                                            </a><br /><br style="line-height:2px" />
+                                                                                            <a href="#">
+
+                                                                                                <img src="{{ asset('bundles/myappesprit/images/button_add_to_cart1.jpg') }}"alt=""/>                                                   
+                                                                                            </a>
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </td>
+                                                                            <td class="c2_right">
+                                                                                <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}" width="9" height="1" alt=""/>                                   
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                               <img src="{{ asset('bundles/myappesprit/images/c2_bl.jpg') }}"alt=""/>                                     
+
+
+                                                                            </td>
+                                                                            <td class="c2_bottom">
+                                                                                <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}"  alt="" width="1" height="9"/>                                      
+
+                                                                            </td>
+                                                                            <td>
+                                                                               <img src="{{ asset('bundles/myappesprit/images/c2_br.jpg') }}"alt=""/>                                   
+
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <td>
+                                                                    <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}"  alt="" width="2" height="1"/>              
+
+
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#">
+                                                            <img src="{{ asset('bundles/myappesprit/images/banner3.jpg') }}"  alt=""/>           
+
+
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
+                                        <td style="width:177px">
+                                            <table cellpadding="0" cellspacing="0" border="0" class="box_header_txt mod">
+                                                <tr>
+                                                    <td>
+
+                                                        <img src="{{ asset('bundles/myappesprit/images/title2_left.jpg') }}"  alt=""/>                               
+                                                    </td>
+                                                    <td style="width:100%">manufacturers:</td>
+                                                    <td>
+
+
+
+                                                       <img src="{{ asset('bundles/myappesprit/images/title2_right.jpg') }}"  alt=""/>                                   
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                    <td class="sel2" style="padding:0px 17px 0px 17px;">
+                                                        <select class="jump1"><option>Please select</option></select>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <br style="line-height:5px" />
+                                            <table cellpadding="0" cellspacing="0" border="0" class="box_header_txt">
+                                                <tr>
+                                                    <td>
+                                                        <img src="{{ asset('bundles/myappesprit/images/title1_left.jpg') }}"  alt=""/>                                        
+
+                                                    </td>
+                                                    <td style="width:100%">information:</td>
+                                                    <td>
+                                                        <img src="{{ asset('bundles/myappesprit/images/title1_right.jpg') }}"  alt=""/>                                             
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <br style="line-height:2px" />
+                                            <table cellpadding="0" cellspacing="0" border="0" class="box_body c1">
+                                                <tr>
+                                                    <td>
+
+
+                                                     <img src="{{ asset('bundles/myappesprit/images/c1_tl.jpg') }}"  alt=""/>                                       
+                                                    </td>
+                                                    <td class="c1_top">
+
+
+                                                        <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}" alt="" width="9" height="9" />                       
+                                                             </td>
+                                                             <td>
+                                                          <img src="{{ asset('bundles/myappesprit/images/c1_tr.jpg') }}"  alt=""/>                      
+
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="c1_left">
+                                                        <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}" alt="" width="9" height="1" />                               
+
+
+                                                             </td>
+                                                             <td>
+                                                             <ul>
+                                                <li class="bg_list_un"><a href="#">Article 1</a></li>
+                                                <li class="bg_list_un"><a href="#">Article 2</a></li>
+                                                <li class="bg_list_un"><a href="#">Article 3</a></li>
+                                                           </ul>
+                                                <br style="line-height:10px" />
+                                                 </td>
+                                        <td class="c1_right">
+
+                                            <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}" alt="" width="9" height="1" />                              
+                                                 </td>
+                                                 </tr>
+                                                 <tr>
+                                                 <td>
+                                          <img src="{{ asset('bundles/myappesprit/images/c1_bl.jpg') }}" alt=""/>   
+                                                                          
+                                        </td>
+                                        <td class="c1_bottom">
+
+                                            <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}" alt="" width="1" height="9" />                          
+                                        </td>
+                                        <td>
+
+                                           <img src="{{ asset('bundles/myappesprit/images/c1_br.jpg') }}" alt="" />        
+                                    </tr>
+                                </table>
+                                <br style="line-height:4px" />
+                                <table cellpadding="0" cellspacing="0" border="0" class="box_header_txt">
+                                    <tr>
+                                      <td>  <img src="{{ asset('bundles/myappesprit/images/title1_left.jpg') }}" alt="" />                                   
+                                          </td>
+
+                                       
+                                        <td style="width:100%">specials:</td>
+                                        <td>
+                                           <img src="{{ asset('bundles/myappesprit/images/title1_right.jpg') }}" alt="" />                                 
+
+                                        </td>
+                                    </tr>
+                                </table>
+                                <br style="line-height:7px" />
+                                <table cellpadding="0" cellspacing="0" border="0" class="box_body">
+                                    <tr>
+
+                                        <td style="padding:0px 17px 0px 17px;">
+                                            <table cellpadding="0" cellspacing="0" border="0">
+                                                <tr>
+                                                    <td class="middle" style="height:20px">
+                                                        <span><a href="#">KMR Powder by Pet Ag </a></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <br style="line-height:5px" />
+                                                        <img src="{{ asset('bundles/myappesprit/images/0px.jpg') }}" alt="" />                           
+
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="height:30px" class="middle">
+                                                <s>$10.99</s>&nbsp; &nbsp; &nbsp; &nbsp; <span class="productSpecialPrice">$10.99</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+    <td class="footer">
+        <table cellpadding="0" cellspacing="0" border="0" style="width:718px" align="center">
+            <tr>
+                <td style="padding:11px 0px 0px 13px;">
+
+                    <img src="{{ asset('bundles/myappesprit/images/fp.jpg') }}" alt="" align="left"/>                           
+
+
+
+                    <img src="{{ asset('bundles/myappesprit/images/spacer.gif') }}" alt="" width="31" height="1"/>                                   
+                    Pets store &copy; 2008 &nbsp;|&nbsp; <a href="#">Privacy policy</a>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>
+
+{% block container %}
+{% endblock %}
+
+
+
+
+
+
+

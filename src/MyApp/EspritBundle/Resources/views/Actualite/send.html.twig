@@ -1,0 +1,82 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Forms</title>
+ 
+<link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/style.css') }}"/> 
+<link rel="stylesheet" type="text/css" media="screen" href="{{ asset('http://fonts.googleapis.com/css?family=Engagement') }}"/> 
+ 
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.uniform.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+        $("input:checkbox, input:radio, input:file, select").uniform();
+      });
+    </script>
+</head>
+<body>
+
+    <div style="padding: 20px 50px 0 10px;">
+<h1>Nouvelle Actualité</h1>
+<form role="form" method="post" action='{{path('my_app_esprit_actualite_new')}}'>
+	<ul>
+            
+        <li>
+        	<label for="name">Titre:</label>
+                  {{form_widget(form.titre)}}
+        </li>
+        <li>
+        	<label for="Position">Date Insertion:</label>
+                   {{form_widget(form.dateinsertion)}}            
+        </li>
+        <li>
+        	<label for="name">Description:</label>
+                  {{form_widget(form.description)}}
+        </li>
+        <li>
+        	<label for="Position">Image:</label>
+                   {{form_widget(form.image)}}            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>	  <input type="hidden" name="name" value="submit">
+                        {{form_widget(form._token)}}
+                      <!-- clés etrangeres -->
+                       {{form_widget(form)}}
+       </li>
+	</ul>
+     
+        <button type="submit" class="action">Submit</button>
+        <button type="reset" class="right">Reset</button>
+  
+</form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
