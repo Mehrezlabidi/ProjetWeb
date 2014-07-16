@@ -86,4 +86,21 @@ my_app_esprit_sousrubrique_delete:
 my_app_esprit_sousrubrique_edit:
     pattern:  /sousrubrique/{id}/edit
     defaults: { _controller: MyAppEspritBundle:Sousrubrique:edit}  
+                 #      routing      role           #
+my_app_esprit_role_new:
+    pattern:  /role/new
+    defaults: { _controller: MyAppEspritBundle:Role:send }
+my_app_esprit_role_show:
+    pattern:  /role/show
+    defaults: { _controller: MyAppEspritBundle:Role:show }
+    requirements:
+        _method:  GET
+        id: \d+  
+my_app_esprit_role_delete:
+    pattern:  /role/{id}/delete
+    defaults: { _controller: MyAppEspritBundle:Role:delete}
+    
+my_app_esprit_role_edit:
+    pattern:  /role/{id}/edit
+    defaults: { _controller: MyAppEspritBundle:Role:edit}  
     #               fin du routing              #

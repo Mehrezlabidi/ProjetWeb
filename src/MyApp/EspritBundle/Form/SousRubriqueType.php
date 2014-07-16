@@ -16,7 +16,7 @@ class SousRubriqueType extends AbstractType
     {
         $builder
             ->add('position')
-            ->add('state')
+            ->add('state', 'checkbox', array('required' => false)) 
             ->add('title')
             ->add('rubrique')
         ;

@@ -52,9 +52,7 @@ class RoleController extends Controller
             'role' => $role,
         ));
     }
-    
-    
-    
+
     public function deleteAction($id)
     {
         $em = $this->getDoctrine()->getEntityManager();
@@ -69,12 +67,6 @@ class RoleController extends Controller
 
         return $this->redirect($this->generateUrl('my_app_esprit_role_show'));
     }
-    
-    
-    
-    
-    
-    
     
     public function editAction($id, Request $request) {
 

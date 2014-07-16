@@ -295,6 +295,35 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
+        if (0 === strpos($pathinfo, '/role')) {
+            // my_app_esprit_role_new
+            if ($pathinfo === '/role/new') {
+                return array (  '_controller' => 'MyApp\\EspritBundle\\Controller\\RoleController::sendAction',  '_route' => 'my_app_esprit_role_new',);
+            }
+
+            // my_app_esprit_role_show
+            if ($pathinfo === '/role/show') {
+                if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                    $allow = array_merge($allow, array('GET', 'HEAD'));
+                    goto not_my_app_esprit_role_show;
+                }
+
+                return array (  '_controller' => 'MyApp\\EspritBundle\\Controller\\RoleController::showAction',  '_route' => 'my_app_esprit_role_show',);
+            }
+            not_my_app_esprit_role_show:
+
+            // my_app_esprit_role_delete
+            if (preg_match('#^/role/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'my_app_esprit_role_delete')), array (  '_controller' => 'MyApp\\EspritBundle\\Controller\\RoleController::deleteAction',));
+            }
+
+            // my_app_esprit_role_edit
+            if (preg_match('#^/role/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'my_app_esprit_role_edit')), array (  '_controller' => 'MyApp\\EspritBundle\\Controller\\RoleController::editAction',));
+            }
+
+        }
+
         if (0 === strpos($pathinfo, '/admin')) {
             // sonata_admin_redirect
             if (rtrim($pathinfo, '/') === '/admin') {
