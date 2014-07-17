@@ -147,6 +147,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'MyApp\\EspritBundle\\Controller\\DefaultController::indexAction',  '_route' => 'my_app_esprit_homepage',);
         }
 
+        // my_app_esprit_administration
+        if ($pathinfo === '/administration') {
+            return array (  '_controller' => 'MyApp\\EspritBundle\\Controller\\DefaultController::administrationAction',  '_route' => 'my_app_esprit_administration',);
+        }
+
         if (0 === strpos($pathinfo, '/menu')) {
             // my_app_esprit_menu_new
             if ($pathinfo === '/menu/new') {

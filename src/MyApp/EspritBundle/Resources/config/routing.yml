@@ -1,6 +1,9 @@
 my_app_esprit_homepage:
     pattern:  / 
     defaults: { _controller: MyAppEspritBundle:Default:index }
+my_app_esprit_administration:
+    pattern:  /administration 
+    defaults: { _controller: MyAppEspritBundle:Default:administration}    
      #      routing       menu           #
 my_app_esprit_menu_new:
     pattern:  /menu/new
