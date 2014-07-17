@@ -20,9 +20,13 @@ class __TwigTemplate_f2b1464512ed27bde67e945b187b8b9425856c174edbfe4c22031ecc9cb
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel=\"icon\" sizes=\"16x16\" href=\"";
+        // line 5
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("favicon.ico"), "html", null, true);
+        echo "\" /> 
  <title>Liste articles</title>
  <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 6
+        // line 7
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/css/show.css"), "html", null, true);
         echo "\"/> 
 </head>
@@ -48,53 +52,53 @@ class __TwigTemplate_f2b1464512ed27bde67e945b187b8b9425856c174edbfe4c22031ecc9cb
 </thead>
    
        ";
-        // line 29
+        // line 30
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")));
         foreach ($context['_seq'] as $context["_key"] => $context["article"]) {
-            // line 30
+            // line 31
             echo "     <tr>
          <th>";
-            // line 31
+            // line 32
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "id"), "html", null, true);
             echo "</th> 
          <td>";
-            // line 32
+            // line 33
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "texte"), "html", null, true);
             echo "</td>
          <td>";
-            // line 33
+            // line 34
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "nom"), "html", null, true);
             echo "</td>
       <!--  <td>article.date</td>  -->
          <td>   ";
-            // line 35
+            // line 36
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "date"), "d/m/Y"), "html", null, true);
             echo "         </td>
              
          <td>";
-            // line 37
+            // line 38
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "rubrique"), "id"), "html", null, true);
             echo "</td>
          <td>";
-            // line 38
+            // line 39
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "sousrubrique"), "id"), "html", null, true);
             echo "</td>
              
              
          <td><img src=\"";
-            // line 41
+            // line 42
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "image"), "html", null, true);
             echo "\" alt=\"\" width=\"100\" height=\"100\" class=\"img-border\"></td>
          
         <td><a href=\"";
-            // line 43
+            // line 44
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_article_delete", array("id" => $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/delete.png"), "html", null, true);
             echo "\" alt=\"\" />  </a></td>
         <td><a href=\"";
-            // line 44
+            // line 45
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_article_edit", array("id" => $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/update.png"), "html", null, true);
@@ -105,14 +109,14 @@ class __TwigTemplate_f2b1464512ed27bde67e945b187b8b9425856c174edbfe4c22031ecc9cb
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['article'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 47
+        // line 48
         echo "    </tr>        
     
  
 
 </table>
     <h2><a href=\"";
-        // line 52
+        // line 53
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_article_new");
         echo "\">ajouter article</a></h2>
 </center>
@@ -135,6 +139,6 @@ class __TwigTemplate_f2b1464512ed27bde67e945b187b8b9425856c174edbfe4c22031ecc9cb
 
     public function getDebugInfo()
     {
-        return array (  116 => 52,  109 => 47,  98 => 44,  92 => 43,  87 => 41,  81 => 38,  77 => 37,  72 => 35,  67 => 33,  63 => 32,  59 => 31,  56 => 30,  52 => 29,  26 => 6,  19 => 1,);
+        return array (  120 => 53,  113 => 48,  102 => 45,  96 => 44,  91 => 42,  85 => 39,  81 => 38,  76 => 36,  71 => 34,  67 => 33,  63 => 32,  60 => 31,  56 => 30,  30 => 7,  25 => 5,  19 => 1,);
     }
 }

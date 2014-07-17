@@ -21,9 +21,13 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel=\"icon\" sizes=\"16x16\" href=\"";
+        // line 6
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("favicon.ico"), "html", null, true);
+        echo "\" /> 
     <title>Liste Menus</title>
       <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 7
+        // line 8
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/css/show.css"), "html", null, true);
         echo "\"/> 
 
@@ -46,39 +50,39 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
     </thead>
    
        ";
-        // line 27
+        // line 28
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")));
         foreach ($context['_seq'] as $context["_key"] => $context["menu"]) {
-            // line 28
+            // line 29
             echo "     <tr>
         <th>";
-            // line 29
+            // line 30
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "id"), "html", null, true);
             echo "</th> 
         <td>";
-            // line 30
+            // line 31
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "title"), "html", null, true);
             echo "</td>
         <td>";
-            // line 31
+            // line 32
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "position"), "html", null, true);
             echo "</td>
         
            <td>";
-            // line 33
+            // line 34
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "utilisateur"), "id"), "html", null, true);
             echo "</td>
         
         
         <td><a href=\"";
-            // line 36
+            // line 37
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_menu_delete", array("id" => $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/delete.png"), "html", null, true);
             echo "\" alt=\"\" />  </a></td>
         <td><a href=\"";
-            // line 37
+            // line 38
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_menu_edit", array("id" => $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/update.png"), "html", null, true);
@@ -89,14 +93,14 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['menu'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 40
+        // line 41
         echo "    </tr>        
     
  
 
 </table></div>
     <h2><a href=\"";
-        // line 45
+        // line 46
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_new");
         echo "\">ajouter menu</a></h2>
 </center>
@@ -120,6 +124,6 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
 
     public function getDebugInfo()
     {
-        return array (  100 => 45,  93 => 40,  82 => 37,  76 => 36,  70 => 33,  65 => 31,  61 => 30,  57 => 29,  54 => 28,  50 => 27,  27 => 7,  19 => 1,);
+        return array (  104 => 46,  97 => 41,  86 => 38,  80 => 37,  74 => 34,  69 => 32,  65 => 31,  61 => 30,  58 => 29,  54 => 28,  31 => 8,  26 => 6,  19 => 1,);
     }
 }

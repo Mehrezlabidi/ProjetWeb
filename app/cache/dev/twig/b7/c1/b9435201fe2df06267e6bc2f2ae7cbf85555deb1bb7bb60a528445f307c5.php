@@ -21,9 +21,13 @@ class __TwigTemplate_b7c1b9435201fe2df06267e6bc2f2ae7cbf85555deb1bb7bb60a528445f
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel=\"icon\" sizes=\"16x16\" href=\"";
+        // line 6
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("favicon.ico"), "html", null, true);
+        echo "\" /> 
     <title>Liste Sous Rubrique</title>
       <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 7
+        // line 8
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/css/show.css"), "html", null, true);
         echo "\"/> 
 
@@ -47,43 +51,43 @@ class __TwigTemplate_b7c1b9435201fe2df06267e6bc2f2ae7cbf85555deb1bb7bb60a528445f
     </thead>
    
        ";
-        // line 28
+        // line 29
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")));
         foreach ($context['_seq'] as $context["_key"] => $context["sousrubrique"]) {
-            // line 29
+            // line 30
             echo "     <tr>
         <th>";
-            // line 30
+            // line 31
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "id"), "html", null, true);
             echo "</th> 
       
          <td>";
-            // line 32
+            // line 33
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "position"), "html", null, true);
             echo "</td>
          <td>";
-            // line 33
+            // line 34
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "state"), "html", null, true);
             echo "</td>
          <td>";
-            // line 34
+            // line 35
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "title"), "html", null, true);
             echo "</td>
          
           <td>";
-            // line 36
+            // line 37
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "rubrique"), "id"), "html", null, true);
             echo "</td>
           
         <td><a href=\"";
-            // line 38
+            // line 39
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_sousrubrique_delete", array("id" => $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/delete.png"), "html", null, true);
             echo "\" alt=\"\" />  </a></td>
         <td><a href=\"";
-            // line 39
+            // line 40
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_sousrubrique_edit", array("id" => $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/update.png"), "html", null, true);
@@ -94,14 +98,14 @@ class __TwigTemplate_b7c1b9435201fe2df06267e6bc2f2ae7cbf85555deb1bb7bb60a528445f
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['sousrubrique'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 42
+        // line 43
         echo "    </tr>        
     
  
 
 </table>
     <h2><a href=\"";
-        // line 47
+        // line 48
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_sousrubrique_new");
         echo "\">ajouter sous rubrique</a></h2>
 </center>
@@ -124,6 +128,6 @@ class __TwigTemplate_b7c1b9435201fe2df06267e6bc2f2ae7cbf85555deb1bb7bb60a528445f
 
     public function getDebugInfo()
     {
-        return array (  105 => 47,  98 => 42,  87 => 39,  81 => 38,  76 => 36,  71 => 34,  67 => 33,  63 => 32,  58 => 30,  55 => 29,  51 => 28,  27 => 7,  19 => 1,);
+        return array (  109 => 48,  102 => 43,  91 => 40,  85 => 39,  80 => 37,  75 => 35,  71 => 34,  67 => 33,  62 => 31,  59 => 30,  55 => 29,  31 => 8,  26 => 6,  19 => 1,);
     }
 }

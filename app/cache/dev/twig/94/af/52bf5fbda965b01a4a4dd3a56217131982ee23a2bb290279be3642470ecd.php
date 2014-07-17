@@ -20,10 +20,14 @@ class __TwigTemplate_94af52bf5fbda965b01a4a4dd3a56217131982ee23a2bb290279be36424
 <html xmlns=\"http://www.w3.org/1999/xhtml\">
 <head>
 <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />
+<link rel=\"icon\" sizes=\"16x16\" href=\"";
+        // line 5
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("favicon.ico"), "html", null, true);
+        echo "\" /> 
 <title>Administration</title>
  
  <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 7
+        // line 8
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/css/screen.css"), "html", null, true);
         echo "\"/> 
 <!--[if IE]>
@@ -112,7 +116,7 @@ class __TwigTemplate_94af52bf5fbda965b01a4a4dd3a56217131982ee23a2bb290279be36424
 </script> 
 
  <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 93
+        // line 94
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/css/datePicker.css"), "html", null, true);
         echo "\"/> 
 <!--  date picker script -->
@@ -206,7 +210,7 @@ updateSelects(today.getTime());
 \t<div id=\"logo\">
 \t<a href=\"\">
        <!--  <img src=\"";
-        // line 184
+        // line 185
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/logo.png"), "html", null, true);
         echo "\" width=\"156\" height=\"40\" alt=\"\" />  -->
             </a>
@@ -229,7 +233,7 @@ updateSelects(today.getTime());
 \t\t</td>
 \t\t<td>
  <input type=\"image\" src=\"";
-        // line 204
+        // line 205
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/top_search_btn.gif"), "html", null, true);
         echo "\"  />                   
 \t\t 
@@ -259,7 +263,7 @@ updateSelects(today.getTime());
 \t\t\t<div class=\"nav-divider\">&nbsp;</div>
 \t\t\t<div class=\"showhide-account\">
    <img src=\"";
-        // line 231
+        // line 232
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/nav/nav_myaccount.gif"), "html", null, true);
         echo "\" width=\"93\" height=\"14\" alt=\"\" />
                         
@@ -267,7 +271,7 @@ updateSelects(today.getTime());
 \t\t\t<div class=\"nav-divider\">&nbsp;</div>
 \t\t\t<a href=\"\" id=\"logout\">
   <img src=\"";
-        // line 236
+        // line 237
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/nav/nav_logout.gif"), "html", null, true);
         echo "\" width=\"64\" height=\"14\" alt=\"\"  />                       
                             
@@ -303,7 +307,7 @@ updateSelects(today.getTime());
 \t\t<div class=\"table\">
 \t\t
  <ul class=\"select\"><li><a href=\"";
-        // line 269
+        // line 270
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_show");
         echo "\"><b>Menu</b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
@@ -321,7 +325,7 @@ updateSelects(today.getTime());
 \t\t<div class=\"nav-divider\">&nbsp;</div>
 \t\t                    
   <ul class=\"current\"><li><a href=\"";
-        // line 284
+        // line 285
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_show");
         echo "\"><b>Rubrique</b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
@@ -339,7 +343,7 @@ updateSelects(today.getTime());
 \t\t<div class=\"nav-divider\">&nbsp;</div>
 \t\t
  <ul class=\"select\"><li><a href=\"";
-        // line 299
+        // line 300
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_sousrubrique_show");
         echo "\"><b>Sous Rubrique</b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
@@ -357,7 +361,7 @@ updateSelects(today.getTime());
 \t\t<div class=\"nav-divider\">&nbsp;</div>
 \t\t
  <ul class=\"select\"><li><a href=\"";
-        // line 314
+        // line 315
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_article_show");
         echo "\"><b>Article</b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
@@ -376,7 +380,7 @@ updateSelects(today.getTime());
 \t\t<div class=\"nav-divider\">&nbsp;</div>
 \t\t
  <ul class=\"select\"><li><a href=\"";
-        // line 330
+        // line 331
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_actualite_show");
         echo "\"><b>Actualit&eacute; </b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
@@ -421,7 +425,7 @@ updateSelects(today.getTime());
 \t\t<th rowspan=\"3\" class=\"sized\">
                    
   <img src=\"";
-        // line 372
+        // line 373
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/side_shadowleft.jpg"), "html", null, true);
         echo "\" width=\"20\" height=\"300\" alt=\"\"  />                  
                 </th>
@@ -431,7 +435,7 @@ updateSelects(today.getTime());
 \t\t<th rowspan=\"3\" class=\"sized\">
                    
         <img src=\"";
-        // line 379
+        // line 380
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/side_shadowright.jpg"), "html", null, true);
         echo "\" width=\"20\" height=\"300\" alt=\"\"  />           
                 </th>
@@ -515,6 +519,6 @@ ou d'applications multimédia.Ils partagent les fonctionnalités suivantes :
 
     public function getDebugInfo()
     {
-        return array (  435 => 379,  425 => 372,  380 => 330,  361 => 314,  343 => 299,  325 => 284,  307 => 269,  271 => 236,  263 => 231,  233 => 204,  210 => 184,  116 => 93,  27 => 7,  19 => 1,);
+        return array (  439 => 380,  429 => 373,  384 => 331,  365 => 315,  347 => 300,  329 => 285,  311 => 270,  275 => 237,  267 => 232,  237 => 205,  214 => 185,  120 => 94,  31 => 8,  25 => 5,  19 => 1,);
     }
 }
