@@ -229,11 +229,12 @@ updateSelects(today.getTime());
 \t\t\t<option value=\"\"> Sous Rubrique</option>
 \t\t\t<option value=\"\">Actualite</option>
 \t\t\t<option value=\"\">Article</option>
+                        <option value=\"\">Role</option>
 \t\t</select> 
 \t\t</td>
 \t\t<td>
  <input type=\"image\" src=\"";
-        // line 205
+        // line 206
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/top_search_btn.gif"), "html", null, true);
         echo "\"  />                   
 \t\t 
@@ -263,7 +264,7 @@ updateSelects(today.getTime());
 \t\t\t<div class=\"nav-divider\">&nbsp;</div>
 \t\t\t<div class=\"showhide-account\">
    <img src=\"";
-        // line 232
+        // line 233
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/nav/nav_myaccount.gif"), "html", null, true);
         echo "\" width=\"93\" height=\"14\" alt=\"\" />
                         
@@ -271,7 +272,7 @@ updateSelects(today.getTime());
 \t\t\t<div class=\"nav-divider\">&nbsp;</div>
 \t\t\t<a href=\"\" id=\"logout\">
   <img src=\"";
-        // line 237
+        // line 238
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/nav/nav_logout.gif"), "html", null, true);
         echo "\" width=\"64\" height=\"14\" alt=\"\"  />                       
                             
@@ -307,7 +308,7 @@ updateSelects(today.getTime());
 \t\t<div class=\"table\">
 \t\t
  <ul class=\"select\"><li><a href=\"";
-        // line 270
+        // line 271
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_show");
         echo "\"><b>Menu</b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
@@ -325,7 +326,7 @@ updateSelects(today.getTime());
 \t\t<div class=\"nav-divider\">&nbsp;</div>
 \t\t                    
   <ul class=\"current\"><li><a href=\"";
-        // line 285
+        // line 286
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_show");
         echo "\"><b>Rubrique</b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
@@ -343,7 +344,7 @@ updateSelects(today.getTime());
 \t\t<div class=\"nav-divider\">&nbsp;</div>
 \t\t
  <ul class=\"select\"><li><a href=\"";
-        // line 300
+        // line 301
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_sousrubrique_show");
         echo "\"><b>Sous Rubrique</b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
@@ -361,7 +362,7 @@ updateSelects(today.getTime());
 \t\t<div class=\"nav-divider\">&nbsp;</div>
 \t\t
  <ul class=\"select\"><li><a href=\"";
-        // line 315
+        // line 316
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_article_show");
         echo "\"><b>Article</b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
@@ -380,7 +381,7 @@ updateSelects(today.getTime());
 \t\t<div class=\"nav-divider\">&nbsp;</div>
 \t\t
  <ul class=\"select\"><li><a href=\"";
-        // line 331
+        // line 332
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_actualite_show");
         echo "\"><b>Actualit&eacute; </b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
@@ -425,7 +426,7 @@ updateSelects(today.getTime());
 \t\t<th rowspan=\"3\" class=\"sized\">
                    
   <img src=\"";
-        // line 373
+        // line 374
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/side_shadowleft.jpg"), "html", null, true);
         echo "\" width=\"20\" height=\"300\" alt=\"\"  />                  
                 </th>
@@ -435,7 +436,7 @@ updateSelects(today.getTime());
 \t\t<th rowspan=\"3\" class=\"sized\">
                    
         <img src=\"";
-        // line 380
+        // line 381
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/side_shadowright.jpg"), "html", null, true);
         echo "\" width=\"20\" height=\"300\" alt=\"\"  />           
                 </th>
@@ -451,7 +452,7 @@ updateSelects(today.getTime());
 \t\t\t <!-- <h2>Sub Heading </h2> -->
 \t\t\t<h3>Esprit</h3>
 Un système de gestion de contenu ou SGC (Content Management System ou CMS) est une famille de logiciels destinés à la conception et à la mise à jour dynamique de sites Web 
-ou d'applications multimédia.Ils partagent les fonctionnalités suivantes : 
+ou d'applications multimédia.<br/>Ils partagent les fonctionnalités suivantes : 
 \t\t\t<br />
 \t\t\t<br />
  <li>ils permettent à plusieurs individus de travailler sur un même document  </li>
@@ -519,6 +520,6 @@ ou d'applications multimédia.Ils partagent les fonctionnalités suivantes :
 
     public function getDebugInfo()
     {
-        return array (  439 => 380,  429 => 373,  384 => 331,  365 => 315,  347 => 300,  329 => 285,  311 => 270,  275 => 237,  267 => 232,  237 => 205,  214 => 185,  120 => 94,  31 => 8,  25 => 5,  19 => 1,);
+        return array (  440 => 381,  430 => 374,  385 => 332,  366 => 316,  348 => 301,  330 => 286,  312 => 271,  276 => 238,  268 => 233,  238 => 206,  214 => 185,  120 => 94,  31 => 8,  25 => 5,  19 => 1,);
     }
 }

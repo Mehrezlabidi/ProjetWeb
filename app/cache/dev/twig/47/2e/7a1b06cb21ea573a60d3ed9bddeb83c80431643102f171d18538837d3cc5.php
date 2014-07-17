@@ -21,14 +21,18 @@ class __TwigTemplate_472e7a1b06cb21ea573a60d3ed9bddeb83c80431643102f171d18538837
 <html lang=\"en\">
 <head>
 <meta charset=\"utf-8\">
+<link rel=\"icon\" sizes=\"16x16\" href=\"";
+        // line 6
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("favicon.ico"), "html", null, true);
+        echo "\" />
 <title>Forms</title>
  
 <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 8
+        // line 9
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/css/style.css"), "html", null, true);
         echo "\"/> 
 <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 9
+        // line 10
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("http://fonts.googleapis.com/css?family=Engagement"), "html", null, true);
         echo "\"/> 
  
@@ -48,7 +52,7 @@ class __TwigTemplate_472e7a1b06cb21ea573a60d3ed9bddeb83c80431643102f171d18538837
     <div style=\"padding: 80px 50px 0 10px;\">
 <h1>Nouvelle Rubrique</h1>
 <form role=\"form\" method=\"post\" action='";
-        // line 26
+        // line 27
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_new");
         echo "'>
 \t<ul>
@@ -56,14 +60,14 @@ class __TwigTemplate_472e7a1b06cb21ea573a60d3ed9bddeb83c80431643102f171d18538837
          <li>
         \t<label for=\"name\">Position:</label>
                   ";
-        // line 31
+        // line 32
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "position"), 'widget');
         echo "
         </li> 
         <li>
         \t<label for=\"name\">Title:</label>
                   ";
-        // line 35
+        // line 36
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "title"), 'widget');
         echo "
         </li>
@@ -73,12 +77,12 @@ class __TwigTemplate_472e7a1b06cb21ea573a60d3ed9bddeb83c80431643102f171d18538837
 
         <li>\t  <input type=\"hidden\" name=\"name\" value=\"submit\">
                         ";
-        // line 42
+        // line 43
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "_token"), 'widget');
         echo "
          
                        ";
-        // line 44
+        // line 45
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'widget');
         echo "
        </li>
@@ -121,6 +125,6 @@ class __TwigTemplate_472e7a1b06cb21ea573a60d3ed9bddeb83c80431643102f171d18538837
 
     public function getDebugInfo()
     {
-        return array (  82 => 44,  77 => 42,  67 => 35,  60 => 31,  52 => 26,  32 => 9,  28 => 8,  19 => 1,);
+        return array (  86 => 45,  81 => 43,  71 => 36,  64 => 32,  56 => 27,  36 => 10,  32 => 9,  26 => 6,  19 => 1,);
     }
 }

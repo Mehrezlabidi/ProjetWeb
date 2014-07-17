@@ -21,14 +21,18 @@ class __TwigTemplate_d3bffc6462955efb5a94fef5345e677a232ac6ca247f224abd38de1e41a
 <html lang=\"en\">
 <head>
 <meta charset=\"utf-8\">
+<link rel=\"icon\" sizes=\"16x16\" href=\"";
+        // line 6
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("favicon.ico"), "html", null, true);
+        echo "\" />
 <title>Forms</title>
  
 <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 8
+        // line 9
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/css/style.css"), "html", null, true);
         echo "\"/> 
 <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 9
+        // line 10
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("http://fonts.googleapis.com/css?family=Engagement"), "html", null, true);
         echo "\"/> 
  
@@ -48,13 +52,13 @@ class __TwigTemplate_d3bffc6462955efb5a94fef5345e677a232ac6ca247f224abd38de1e41a
  
 <h1>Modify Menu</h1>
 <form   action=\"\"   method=\"post\" ";
-        // line 26
+        // line 27
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'enctype');
         echo ">
 \t <ul>
                   <li>
                  ";
-        // line 29
+        // line 30
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'widget');
         echo "
                   </li>
@@ -93,21 +97,21 @@ class __TwigTemplate_d3bffc6462955efb5a94fef5345e677a232ac6ca247f224abd38de1e41a
         <li>
                 <label for=\"Position\">Position:</label>
                  ";
-        // line 65
+        // line 66
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "position"), 'widget');
         echo "
         </li>
          <li>
                 <label for=\"name\">Title:</label>
                  ";
-        // line 69
+        // line 70
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "title"), 'widget');
         echo "
         </li>
          
              <input type=\"hidden\" name=\"name\" value=\"submit\">
                  ";
-        // line 73
+        // line 74
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "_token"), 'widget');
         echo "
        
@@ -139,6 +143,6 @@ class __TwigTemplate_d3bffc6462955efb5a94fef5345e677a232ac6ca247f224abd38de1e41a
 
     public function getDebugInfo()
     {
-        return array (  111 => 73,  104 => 69,  97 => 65,  58 => 29,  52 => 26,  32 => 9,  28 => 8,  19 => 1,);
+        return array (  115 => 74,  108 => 70,  101 => 66,  62 => 30,  56 => 27,  36 => 10,  32 => 9,  26 => 6,  19 => 1,);
     }
 }

@@ -73,16 +73,20 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
             // line 34
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "utilisateur"), "id"), "html", null, true);
             echo "</td>
-        
+ 
+";
+            // line 39
+            echo " 
+ 
         
         <td><a href=\"";
-            // line 37
+            // line 42
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_menu_delete", array("id" => $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/delete.png"), "html", null, true);
             echo "\" alt=\"\" />  </a></td>
         <td><a href=\"";
-            // line 38
+            // line 43
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_menu_edit", array("id" => $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/update.png"), "html", null, true);
@@ -93,14 +97,14 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['menu'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 41
+        // line 46
         echo "    </tr>        
     
  
 
 </table></div>
     <h2><a href=\"";
-        // line 46
+        // line 51
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_new");
         echo "\">ajouter menu</a></h2>
 </center>
@@ -124,6 +128,6 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
 
     public function getDebugInfo()
     {
-        return array (  104 => 46,  97 => 41,  86 => 38,  80 => 37,  74 => 34,  69 => 32,  65 => 31,  61 => 30,  58 => 29,  54 => 28,  31 => 8,  26 => 6,  19 => 1,);
+        return array (  108 => 51,  101 => 46,  90 => 43,  84 => 42,  79 => 39,  74 => 34,  69 => 32,  65 => 31,  61 => 30,  58 => 29,  54 => 28,  31 => 8,  26 => 6,  19 => 1,);
     }
 }

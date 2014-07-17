@@ -31,7 +31,7 @@ class SousRubrique
 
           /**
      * @ORM\ManyToOne(targetEntity="Rubrique", inversedBy="sousrubriques", cascade={"remove"})
-     * @ORM\JoinColumn(name="rubrique_id", referencedColumnName="id")
+     * @ORM\JoinColumn(name="rubrique_id", referencedColumnName="id",nullable=false)
      */
  
      protected $rubrique;

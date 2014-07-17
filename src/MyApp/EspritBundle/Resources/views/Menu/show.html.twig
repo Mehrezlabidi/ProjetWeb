@@ -32,7 +32,12 @@
         <td>{{ menu.position }}</td>
         
            <td>{{ menu.utilisateur.id}}</td>
-        
+ 
+{# On vérifie qu'une image est bien associée à l'article #}
+{#% if menu.utilisateur.id  is not null %}
+ <td>{#{ menu.utilisateur.id}}</td>
+{#% endif %#} 
+ 
         
         <td><a href="{{ path('my_app_esprit_menu_delete',{'id':menu.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/delete.png') }}" alt="" />  </a></td>
         <td><a href="{{ path('my_app_esprit_menu_edit',{'id':menu.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/update.png') }}" alt="" />  </a></td>

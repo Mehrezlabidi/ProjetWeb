@@ -23,7 +23,7 @@ class Role
       
    /**
      * @ORM\ManyToOne(targetEntity="Utilisateur", inversedBy="roles", cascade={"remove"})
-     * @ORM\JoinColumn(name="utilisateur_id", referencedColumnName="id")
+     * @ORM\JoinColumn(name="utilisateur_id", referencedColumnName="id",nullable=false)
      */
  
    protected $utilisateur;

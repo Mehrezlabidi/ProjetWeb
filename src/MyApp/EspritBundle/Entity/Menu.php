@@ -31,7 +31,7 @@ class Menu
 
        /**
      * @ORM\ManyToOne(targetEntity="Utilisateur", inversedBy="menus", cascade={"remove"})
-     * @ORM\JoinColumn(name="utilisateur_id", referencedColumnName="id")
+     * @ORM\JoinColumn(name="utilisateur_id", referencedColumnName="id",nullable=false)
      */
  
    protected $utilisateur;
