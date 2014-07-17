@@ -3,18 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/config/routing.yml</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Form/RoleType.php</file>
             <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Controller/ActualiteController.php</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Controller/RoleController.php</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Entity/Actualite.php</file>
             <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/views/Actualite/show.html.twig</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Form/RubriqueType.php</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Form/ArticleType.php</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Form/ActualiteType.php</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Form/SousRubriqueType.php</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/public/css/show.css</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Form/MenuType.php</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Controller/ArticleController.php</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Entity/Article.php</file>
             <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/views/Article/show.html.twig</file>
         </group>
     </open-files>

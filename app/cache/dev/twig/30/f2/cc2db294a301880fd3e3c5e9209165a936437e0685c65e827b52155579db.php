@@ -17,13 +17,12 @@ class __TwigTemplate_30f2cc2db294a301880fd3e3c5e9209165a936437e0685c65e827b52155
     {
         // line 1
         echo " 
- 
 <!DOCTYPE html>
 <html>
 <head>
     <title>Liste Actualités</title>
       <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 7
+        // line 6
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/css/show.css"), "html", null, true);
         echo "\"/> 
 
@@ -41,9 +40,10 @@ class __TwigTemplate_30f2cc2db294a301880fd3e3c5e9209165a936437e0685c65e827b52155
         <th>Titre</th>
         <th>Date Insertion</th>
         <th>Description</th>
+        <th>Utilisateur associé</th>
         <th>Image</th>
         
-         <th>Utilisateur associé</th>
+    
     </tr>
     </thead>
    
@@ -62,7 +62,10 @@ class __TwigTemplate_30f2cc2db294a301880fd3e3c5e9209165a936437e0685c65e827b52155
             // line 32
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["actualite"]) ? $context["actualite"] : $this->getContext($context, "actualite")), "titre"), "html", null, true);
             echo "</td>
-        <td> </td> <!-- date ici pas converti -->
+        <td>";
+            // line 33
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute((isset($context["actualite"]) ? $context["actualite"] : $this->getContext($context, "actualite")), "dateinsertion"), "d/m/Y"), "html", null, true);
+            echo "</td> <!-- date ici pas converti -->
         <td>";
             // line 34
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["actualite"]) ? $context["actualite"] : $this->getContext($context, "actualite")), "description"), "html", null, true);
@@ -126,6 +129,6 @@ class __TwigTemplate_30f2cc2db294a301880fd3e3c5e9209165a936437e0685c65e827b52155
 
     public function getDebugInfo()
     {
-        return array (  106 => 48,  99 => 43,  88 => 40,  82 => 39,  77 => 37,  72 => 35,  68 => 34,  63 => 32,  59 => 31,  56 => 30,  52 => 29,  27 => 7,  19 => 1,);
+        return array (  109 => 48,  102 => 43,  91 => 40,  85 => 39,  80 => 37,  75 => 35,  71 => 34,  67 => 33,  63 => 32,  59 => 31,  56 => 30,  52 => 29,  26 => 6,  19 => 1,);
     }
 }

@@ -1,5 +1,4 @@
  
- 
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,9 +19,10 @@
         <th>Titre</th>
         <th>Date Insertion</th>
         <th>Description</th>
+        <th>Utilisateur associé</th>
         <th>Image</th>
         
-         <th>Utilisateur associé</th>
+    
     </tr>
     </thead>
    
@@ -30,7 +30,7 @@
      <tr>
         <th>{{ actualite.id }}</th> 
         <td>{{ actualite.titre }}</td>
-        <td> </td> <!-- date ici pas converti -->
+        <td>{{ actualite.dateinsertion|date('d/m/Y')  }}</td> <!-- date ici pas converti -->
         <td>{{ actualite.description }}</td>
        <td>{{ actualite.utilisateur.id}}</td>
  

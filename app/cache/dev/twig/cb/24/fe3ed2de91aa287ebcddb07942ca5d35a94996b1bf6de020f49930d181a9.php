@@ -16,7 +16,7 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo " 
+        echo "
  
 <!DOCTYPE html>
 <html>
