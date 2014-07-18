@@ -60,31 +60,52 @@ class __TwigTemplate_d1ee66589cccf79f1997cdbd28c94e1e0997b7bc0a9bb02a2eb1739d3af
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "id"), "html", null, true);
             echo "</th> 
       
-        <td>";
+        <td><b>No  </b>";
             // line 31
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "position"), "html", null, true);
             echo "</td>
-         <td>";
-            // line 32
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "state"), "html", null, true);
-            echo "</td>
+        
+        
+        
+        
+        
+        
+         
+          ";
+            // line 39
+            if (($this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "state") == 1)) {
+                // line 40
+                echo "          <td><b>access</b></td>
+          ";
+            } else {
+                // line 42
+                echo "          <td><b>denied</b></td>
+          ";
+            }
+            // line 44
+            echo "         
+         
+         
+         
+         
+         
            <td>";
-            // line 33
+            // line 50
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "title"), "html", null, true);
             echo "</td>
-            <td>";
-            // line 34
+            <td><b>No  </b>";
+            // line 51
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "menu"), "id"), "html", null, true);
             echo "</td>
 
         <td><a href=\"";
-            // line 36
+            // line 53
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_delete", array("id" => $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/delete.png"), "html", null, true);
             echo "\" alt=\"\" />  </a></td>
         <td><a href=\"";
-            // line 37
+            // line 54
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_edit", array("id" => $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/update.png"), "html", null, true);
@@ -95,14 +116,14 @@ class __TwigTemplate_d1ee66589cccf79f1997cdbd28c94e1e0997b7bc0a9bb02a2eb1739d3af
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['rubrique'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 40
+        // line 57
         echo "    </tr>        
     
  
 
 </table>
     <h2><a href=\"";
-        // line 45
+        // line 62
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_new");
         echo "\">ajouter rubrique</a></h2>
 </center>
@@ -126,6 +147,6 @@ class __TwigTemplate_d1ee66589cccf79f1997cdbd28c94e1e0997b7bc0a9bb02a2eb1739d3af
 
     public function getDebugInfo()
     {
-        return array (  106 => 45,  99 => 40,  88 => 37,  82 => 36,  77 => 34,  73 => 33,  69 => 32,  65 => 31,  60 => 29,  57 => 28,  53 => 27,  30 => 7,  25 => 5,  19 => 1,);
+        return array (  127 => 62,  120 => 57,  109 => 54,  103 => 53,  98 => 51,  94 => 50,  86 => 44,  82 => 42,  78 => 40,  76 => 39,  65 => 31,  60 => 29,  57 => 28,  53 => 27,  30 => 7,  25 => 5,  19 => 1,);
     }
 }

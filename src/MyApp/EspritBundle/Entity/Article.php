@@ -67,7 +67,9 @@ class Article
      * @ORM\Column(name="date", type="date")
      */
     private $date;
-
+     public function __construct() {
+        $this->date = new \Datetime();
+    }
 
     /**
      * Get id

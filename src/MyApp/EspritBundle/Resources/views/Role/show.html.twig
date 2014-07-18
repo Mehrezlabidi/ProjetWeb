@@ -25,10 +25,22 @@
    
        {% for role in role %}
      <tr>
-        <th>{{ role.id }}</th> 
-      
-        <td>{{ role.permission }}</td>
-          <td>{{ role.utilisateur.id}}</td>
+         <th>{{ role.id }}</th> 
+        
+         
+          {% if role.permission == 1 %}
+          <td><b>access</b></td>
+          {%  else    %}
+          <td><b>denied</b></td>
+          {% endif  %}
+        
+         
+         
+         
+         
+         
+         
+          <td><b>No  </b>{{ role.utilisateur.id}}</td>
         
         <td><a href="{{ path('my_app_esprit_role_delete',{'id':role.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/delete.png') }}" alt="" />  </a></td>
         <td><a href="{{ path('my_app_esprit_role_edit',{'id':role.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/update.png') }}" alt="" />  </a></td>

@@ -28,10 +28,27 @@
      <tr>
         <th>{{ rubrique.id }}</th> 
       
-        <td>{{ rubrique.position}}</td>
-         <td>{{ rubrique.state}}</td>
+        <td><b>No  </b>{{ rubrique.position}}</td>
+        
+        
+        
+        
+        
+        
+         
+          {% if rubrique.state == 1 %}
+          <td><b>access</b></td>
+          {%  else    %}
+          <td><b>denied</b></td>
+          {% endif  %}
+         
+         
+         
+         
+         
+         
            <td>{{ rubrique.title}}</td>
-            <td>{{ rubrique.menu.id}}</td>
+            <td><b>No  </b>{{ rubrique.menu.id}}</td>
 
         <td><a href="{{ path('my_app_esprit_rubrique_delete',{'id':rubrique.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/delete.png') }}" alt="" />  </a></td>
         <td><a href="{{ path('my_app_esprit_rubrique_edit',{'id':rubrique.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/update.png') }}" alt="" />  </a></td>

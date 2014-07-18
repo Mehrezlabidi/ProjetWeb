@@ -30,11 +30,19 @@
      <tr>
         <th>{{ sousrubrique.id }}</th> 
       
-         <td>{{ sousrubrique.position}}</td>
-         <td>{{ sousrubrique.state}}</td>
+         <td><b>No  </b>{{ sousrubrique.position}}</td>
+    
+         
+          {% if sousrubrique.state == 1 %}
+          <td><b>access</b></td>
+          {%  else    %}
+          <td><b>denied</b></td>
+          {% endif  %}
+         
+         
          <td>{{ sousrubrique.title}}</td>
          
-          <td>{{ sousrubrique.rubrique.id}}</td>
+         <td><b>No  </b>{{ sousrubrique.rubrique.id}}</td>
           
         <td><a href="{{ path('my_app_esprit_sousrubrique_delete',{'id':sousrubrique.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/delete.png') }}" alt="" />  </a></td>
         <td><a href="{{ path('my_app_esprit_sousrubrique_edit',{'id':sousrubrique.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/update.png') }}" alt="" />  </a></td>

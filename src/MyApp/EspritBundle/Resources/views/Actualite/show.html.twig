@@ -33,10 +33,24 @@
         <td>{{ actualite.titre }}</td>
         <td>{{ actualite.dateinsertion|date('d/m/Y')  }}</td> <!-- date ici pas converti -->
         <td>{{ actualite.description }}</td>
-       <td>{{ actualite.utilisateur.id}}</td>
- 
+       <td><b>No  </b>{{ actualite.utilisateur.id}}</td>
+       
+       {% if actualite.image is  not  null %}
         <td><img src="{{ actualite.image }}" alt="" width="100" height="100" class="img-border"></td>
+       {% endif %}
         
+        {#si je mets pas d image dans la BD une autre s'affiche #} 
+        {% if actualite.image is   null %}
+         <td> <img src="http://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg" alt="{{ actualite.image }}"alt="" width="100" height="100" class="img-border" /></td>
+        {% endif %}
+           
+           
+           
+           
+           
+           
+           
+           
         <td><a href="{{ path('my_app_esprit_actualite_delete',{'id':actualite.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/delete.png') }}" alt="" />  </a></td>
         <td><a href="{{ path('my_app_esprit_actualite_edit',{'id':actualite.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/update.png') }}" alt="" />  </a></td>
 

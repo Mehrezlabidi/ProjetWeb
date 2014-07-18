@@ -314,9 +314,9 @@ updateSelects(today.getTime());
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
 \t\t<div class=\"select_sub\">
 \t\t\t<ul class=\"sub\">
-\t\t\t\t<li><a href=\"#nogo\">ajout Menu</a></li>
-\t\t\t\t<li><a href=\"#nogo\">afficher Menu</a></li>
-\t\t\t\t<li><a href=\"#nogo\"> delete Menu</a></li>
+\t\t\t\t<li><a href=\"#nogo\">ajout un Menu</a></li>
+\t\t\t\t<li><a href=\"#nogo\">afficher liste des Menus</a></li>
+\t\t\t\t<li><a href=\"#nogo\"> supprimer un Menu</a></li>
 \t\t\t</ul>
 \t\t</div>
 \t\t<!--[if lte IE 6]></td></tr></table></a><![endif]-->
@@ -332,9 +332,9 @@ updateSelects(today.getTime());
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
 \t\t<div class=\"select_sub show\">
 \t\t\t<ul class=\"sub\">
-\t\t\t\t<li><a href=\"#nogo\">ajouter Rubrique</a></li>
-\t\t\t\t<li class=\"sub_show\"><a href=\"#nogo\">afficher Rubrique</a></li>
-\t\t\t\t<li><a href=\"#nogo\">delete Rubrique</a></li>
+\t\t\t\t<li><a href=\"#nogo\">ajouter une Rubrique</a></li>
+\t\t\t\t<li class=\"sub_show\"><a href=\"#nogo\">afficher liste des Rubriques</a></li>
+\t\t\t\t<li><a href=\"#nogo\">supprimer une Rubrique</a></li>
 \t\t\t</ul>
 \t\t</div>
 \t\t<!--[if lte IE 6]></td></tr></table></a><![endif]-->
@@ -350,9 +350,9 @@ updateSelects(today.getTime());
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
 \t\t<div class=\"select_sub\">
 \t\t\t<ul class=\"sub\">
-\t\t\t\t<li><a href=\"#nogo\">ajouter Sous Rubrique</a></li>
-\t\t\t\t<li><a href=\"#nogo\">afficher Sous Rubrique</a></li>
-\t\t\t\t<li><a href=\"#nogo\">delete Sous Rubrique</a></li>
+\t\t\t\t<li><a href=\"#nogo\">ajouter une Sous Rubrique</a></li>
+\t\t\t\t<li><a href=\"#nogo\">afficher liste des Rubriques</a></li>
+\t\t\t\t<li><a href=\"#nogo\">supprimer une Sous Rubrique</a></li>
 \t\t\t</ul>
 \t\t</div>
 \t\t<!--[if lte IE 6]></td></tr></table></a><![endif]-->
@@ -368,9 +368,9 @@ updateSelects(today.getTime());
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
 \t\t<div class=\"select_sub\">
 \t\t\t<ul class=\"sub\">
-\t\t\t\t<li><a href=\"#nogo\">ajouter article</a></li>
-\t\t\t\t<li><a href=\"#nogo\">afficher article</a></li>
-\t\t\t\t<li><a href=\"#nogo\">delete article</a></li>
+\t\t\t\t<li><a href=\"#nogo\">ajouter un article</a></li>
+\t\t\t\t<li><a href=\"#nogo\">afficher liste des articles</a></li>
+\t\t\t\t<li><a href=\"#nogo\">supprimer un article</a></li>
 \t\t\t 
 \t\t\t</ul>
 \t\t</div>
@@ -387,9 +387,9 @@ updateSelects(today.getTime());
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
 \t\t<div class=\"select_sub\">
 \t\t\t<ul class=\"sub\">
-\t\t\t\t<li><a href=\"#nogo\">ajouter actualit&eacute;</a></li>
-\t\t\t\t<li><a href=\"#nogo\">afficher actualit&eacute;</a></li>
-\t\t\t\t<li><a href=\"#nogo\">delete actualit&eacute;</a></li>
+\t\t\t\t<li><a href=\"#nogo\">ajouter  une actualit&eacute;</a></li>
+\t\t\t\t<li><a href=\"#nogo\">afficher liste des actualit&eacute;s</a></li>
+\t\t\t\t<li><a href=\"#nogo\">supprimer une actualit&eacute;</a></li>
 \t\t\t</ul>
 \t\t</div>
 \t\t<!--[if lte IE 6]></td></tr></table></a><![endif]-->

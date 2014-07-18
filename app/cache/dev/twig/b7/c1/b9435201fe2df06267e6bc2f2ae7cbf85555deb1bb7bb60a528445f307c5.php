@@ -62,32 +62,44 @@ class __TwigTemplate_b7c1b9435201fe2df06267e6bc2f2ae7cbf85555deb1bb7bb60a528445f
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "id"), "html", null, true);
             echo "</th> 
       
-         <td>";
+         <td><b>No  </b>";
             // line 33
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "position"), "html", null, true);
             echo "</td>
+    
+         
+          ";
+            // line 36
+            if (($this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "state") == 1)) {
+                // line 37
+                echo "          <td><b>access</b></td>
+          ";
+            } else {
+                // line 39
+                echo "          <td><b>denied</b></td>
+          ";
+            }
+            // line 41
+            echo "         
+         
          <td>";
-            // line 34
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "state"), "html", null, true);
-            echo "</td>
-         <td>";
-            // line 35
+            // line 43
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "title"), "html", null, true);
             echo "</td>
          
-          <td>";
-            // line 37
+         <td><b>No  </b>";
+            // line 45
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "rubrique"), "id"), "html", null, true);
             echo "</td>
           
         <td><a href=\"";
-            // line 39
+            // line 47
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_sousrubrique_delete", array("id" => $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/delete.png"), "html", null, true);
             echo "\" alt=\"\" />  </a></td>
         <td><a href=\"";
-            // line 40
+            // line 48
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_sousrubrique_edit", array("id" => $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/update.png"), "html", null, true);
@@ -98,14 +110,14 @@ class __TwigTemplate_b7c1b9435201fe2df06267e6bc2f2ae7cbf85555deb1bb7bb60a528445f
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['sousrubrique'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 43
+        // line 51
         echo "    </tr>        
     
  
 
 </table>
     <h2><a href=\"";
-        // line 48
+        // line 56
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_sousrubrique_new");
         echo "\">ajouter sous rubrique</a></h2>
 </center>
@@ -128,6 +140,6 @@ class __TwigTemplate_b7c1b9435201fe2df06267e6bc2f2ae7cbf85555deb1bb7bb60a528445f
 
     public function getDebugInfo()
     {
-        return array (  109 => 48,  102 => 43,  91 => 40,  85 => 39,  80 => 37,  75 => 35,  71 => 34,  67 => 33,  62 => 31,  59 => 30,  55 => 29,  31 => 8,  26 => 6,  19 => 1,);
+        return array (  121 => 56,  114 => 51,  103 => 48,  97 => 47,  92 => 45,  87 => 43,  83 => 41,  79 => 39,  75 => 37,  73 => 36,  67 => 33,  62 => 31,  59 => 30,  55 => 29,  31 => 8,  26 => 6,  19 => 1,);
     }
 }

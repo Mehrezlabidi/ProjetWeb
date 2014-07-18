@@ -10,8 +10,8 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table()
  * @ORM\Entity
  */
-class Actualite
-{
+class Actualite {
+
     /**
      * @var integer
      *
@@ -20,6 +20,7 @@ class Actualite
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+
     public function getUtilisateur() {
         return $this->utilisateur;
     }
@@ -28,12 +29,12 @@ class Actualite
         $this->utilisateur = $utilisateur;
     }
 
-       /**
+    /**
      * @ORM\ManyToOne(targetEntity="Utilisateur", inversedBy="actualites", cascade={"remove"})
      * @ORM\JoinColumn(name="utilisateur_id", referencedColumnName="id",nullable=false)
      */
- 
-   protected $utilisateur;
+    protected $utilisateur;
+
     /**
      * @var string
      *
@@ -48,6 +49,10 @@ class Actualite
      */
     private $dateinsertion;
 
+    public function __construct() {
+        $this->dateinsertion = new \Datetime();
+    }
+
     /**
      * @var string
      *
@@ -58,18 +63,16 @@ class Actualite
     /**
      * @var string
      *
-     * @ORM\Column(name="image", type="string", length=255)
+     * @ORM\Column(name="image", type="string", length=255,nullable=true)
      */
     private $image;
-
 
     /**
      * Get id
      *
      * @return integer 
      */
-    public function getId()
-    {
+    public function getId() {
         return $this->id;
     }
 
@@ -79,10 +82,9 @@ class Actualite
      * @param string $titre
      * @return Actualite
      */
-    public function setTitre($titre)
-    {
+    public function setTitre($titre) {
         $this->titre = $titre;
-    
+
         return $this;
     }
 
@@ -91,8 +93,7 @@ class Actualite
      *
      * @return string 
      */
-    public function getTitre()
-    {
+    public function getTitre() {
         return $this->titre;
     }
 
@@ -102,10 +103,9 @@ class Actualite
      * @param \DateTime $dateinsertion
      * @return Actualite
      */
-    public function setDateinsertion($dateinsertion)
-    {
+    public function setDateinsertion($dateinsertion) {
         $this->dateinsertion = $dateinsertion;
-    
+
         return $this;
     }
 
@@ -114,8 +114,7 @@ class Actualite
      *
      * @return \DateTime 
      */
-    public function getDateinsertion()
-    {
+    public function getDateinsertion() {
         return $this->dateinsertion;
     }
 
@@ -125,10 +124,9 @@ class Actualite
      * @param string $description
      * @return Actualite
      */
-    public function setDescription($description)
-    {
+    public function setDescription($description) {
         $this->description = $description;
-    
+
         return $this;
     }
 
@@ -137,8 +135,7 @@ class Actualite
      *
      * @return string 
      */
-    public function getDescription()
-    {
+    public function getDescription() {
         return $this->description;
     }
 
@@ -148,10 +145,9 @@ class Actualite
      * @param string $image
      * @return Actualite
      */
-    public function setImage($image)
-    {
+    public function setImage($image) {
         $this->image = $image;
-    
+
         return $this;
     }
 
@@ -160,14 +156,12 @@ class Actualite
      *
      * @return string 
      */
-    public function getImage()
-    {
+    public function getImage() {
         return $this->image;
     }
-    
-        public function __toString()
-    {
-          return $this-> id.'';
+
+    public function __toString() {
+        return $this->id . '';
     }
-    
+
 }
