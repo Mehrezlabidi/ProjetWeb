@@ -78,11 +78,11 @@ class __TwigTemplate_f2b1464512ed27bde67e945b187b8b9425856c174edbfe4c22031ecc9cb
          
         
 
-          <td>";
+          <td>No  ";
             // line 40
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "rubrique"), "id"), "html", null, true);
             echo "</td>
-         <td>";
+         <td>No  ";
             // line 41
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "sousrubrique"), "id"), "html", null, true);
             echo "</td>
@@ -90,19 +90,43 @@ class __TwigTemplate_f2b1464512ed27bde67e945b187b8b9425856c174edbfe4c22031ecc9cb
          
              
              
-         <td><img src=\"";
-            // line 46
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "image"), "html", null, true);
-            echo "\" alt=\"\" width=\"100\" height=\"100\" class=\"img-border\"></td>
+        
+       ";
+            // line 47
+            if ((!(null === $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "image")))) {
+                // line 48
+                echo "        <td><img src=\"";
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "image"), "html", null, true);
+                echo "\" alt=\"\" width=\"100\" height=\"100\" class=\"img-border\"></td>
+       ";
+            }
+            // line 50
+            echo "        
+        ";
+            // line 51
+            echo " 
+        ";
+            // line 52
+            if ((null === $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "image"))) {
+                // line 53
+                echo "         <td> <img src=\"http://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg\" alt=\"";
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "image"), "html", null, true);
+                echo "\"alt=\"\" width=\"100\" height=\"100\" class=\"img-border\" /></td>
+        ";
+            }
+            // line 55
+            echo "         
+         
+         
          
         <td><a href=\"";
-            // line 48
+            // line 59
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_article_delete", array("id" => $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/delete.png"), "html", null, true);
             echo "\" alt=\"\" />  </a></td>
         <td><a href=\"";
-            // line 49
+            // line 60
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_article_edit", array("id" => $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/update.png"), "html", null, true);
@@ -113,14 +137,14 @@ class __TwigTemplate_f2b1464512ed27bde67e945b187b8b9425856c174edbfe4c22031ecc9cb
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['article'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 52
+        // line 63
         echo "    </tr>        
     
  
 
 </table>
     <h2><a href=\"";
-        // line 57
+        // line 68
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_article_new");
         echo "\">ajouter article</a></h2>
 </center>
@@ -143,6 +167,6 @@ class __TwigTemplate_f2b1464512ed27bde67e945b187b8b9425856c174edbfe4c22031ecc9cb
 
     public function getDebugInfo()
     {
-        return array (  124 => 57,  117 => 52,  106 => 49,  100 => 48,  95 => 46,  87 => 41,  83 => 40,  76 => 36,  71 => 34,  67 => 33,  63 => 32,  60 => 31,  56 => 30,  30 => 7,  25 => 5,  19 => 1,);
+        return array (  148 => 68,  141 => 63,  130 => 60,  124 => 59,  118 => 55,  112 => 53,  110 => 52,  107 => 51,  104 => 50,  98 => 48,  96 => 47,  87 => 41,  83 => 40,  76 => 36,  71 => 34,  67 => 33,  63 => 32,  60 => 31,  56 => 30,  30 => 7,  25 => 5,  19 => 1,);
     }
 }

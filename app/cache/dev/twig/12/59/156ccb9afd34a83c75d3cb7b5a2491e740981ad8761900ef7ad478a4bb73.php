@@ -10,6 +10,7 @@ class __TwigTemplate_1259156ccb9afd34a83c75d3cb7b5a2491e740981ad8761900ef7ad478a
         $this->parent = $this->env->loadTemplate("MyAppEspritBundle::layout.html.twig");
 
         $this->blocks = array(
+            'content' => array($this, 'block_content'),
         );
     }
 
@@ -21,6 +22,16 @@ class __TwigTemplate_1259156ccb9afd34a83c75d3cb7b5a2491e740981ad8761900ef7ad478a
     protected function doDisplay(array $context, array $blocks = array())
     {
         $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 5
+    public function block_content($context, array $blocks = array())
+    {
+        // line 6
+        echo "<h3>Top des Rubrique les plus jeunes</h3>
+";
+        // line 7
+        echo $this->env->getExtension('actions')->renderUri("MyAppEspritBundle:Rubrique:top", array());
     }
 
     public function getTemplateName()
@@ -35,6 +46,6 @@ class __TwigTemplate_1259156ccb9afd34a83c75d3cb7b5a2491e740981ad8761900ef7ad478a
 
     public function getDebugInfo()
     {
-        return array ();
+        return array (  34 => 7,  31 => 6,  28 => 5,);
     }
 }

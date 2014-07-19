@@ -104,5 +104,26 @@ class RubriqueController extends Controller
     $build['form'] = $form->createView();
 
     return $this->render('MyAppEspritBundle:Rubrique:edit.html.twig', $build);
-  }     
+  }    
+  
+  
+  
+  
+  public function topAction($max = 5)
+{
+    $em = $this->container->get('doctrine')->getEntityManager();
+
+    $qb = $em->createQueryBuilder();
+    $qb->select('a')
+      ->from('MyAppEspritBundle:Rubrique', 'a')
+      ->orderBy('a.position')
+      ->setMaxResults($max);
+
+    $query = $qb->getQuery();
+    $rubrique = $query->getResult();
+
+    return $this->container->get('templating')->renderResponse('MyAppEspritBundle:Rubrique:lister.html.twig', array(
+        'rubrique' => $rubrique,
+    ));
+}
 }

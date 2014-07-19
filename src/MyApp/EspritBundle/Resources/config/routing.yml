@@ -1,6 +1,11 @@
+my_app_esprit_top:
+    pattern:  /index.php
+    defaults: { _controller: MyAppEspritBundle:Rubrique:top }
+    
 my_app_esprit_homepage:
     pattern:  / 
     defaults: { _controller: MyAppEspritBundle:Default:index }
+    
 my_app_esprit_administration:
     pattern:  /administration 
     defaults: { _controller: MyAppEspritBundle:Default:administration}    

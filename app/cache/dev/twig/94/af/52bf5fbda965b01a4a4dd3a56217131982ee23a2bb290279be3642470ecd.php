@@ -159,7 +159,7 @@ class __TwigTemplate_94af52bf5fbda965b01a4a4dd3a56217131982ee23a2bb290279be36424
 \t\t\tupdateSelects(selected[0]);
 \t\t}
 \t);
-\t
+
 var updateSelects = function (selectedDate)
 {
 \tvar selectedDate = new Date(selectedDate);
@@ -216,7 +216,7 @@ updateSelects(today.getTime());
             </a>
 \t</div>
 \t<!-- end logo -->
-\t
+
 \t<!--  start top-search -->
 \t<div id=\"top-search\">
 \t\t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\">
@@ -237,7 +237,7 @@ updateSelects(today.getTime());
         // line 206
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/top_search_btn.gif"), "html", null, true);
         echo "\"  />                   
-\t\t 
+
 \t\t</td>
 \t\t</tr>
 \t\t</table>
@@ -250,7 +250,7 @@ updateSelects(today.getTime());
 
 </div>
 <!-- End: page-top-outer -->
-\t
+
 <div class=\"clear\">&nbsp;</div>
  
 <!--  start nav-outer-repeat................................................................................................. START -->
@@ -260,7 +260,7 @@ updateSelects(today.getTime());
 
 \t\t<!-- start nav-right -->
 \t\t<div id=\"nav-right\">
-\t\t
+
 \t\t\t<div class=\"nav-divider\">&nbsp;</div>
 \t\t\t<div class=\"showhide-account\">
    <img src=\"";
@@ -278,7 +278,7 @@ updateSelects(today.getTime());
                             
                         </a>
 \t\t\t<div class=\"clear\">&nbsp;</div>
-\t\t
+
 \t\t\t<!--  start account-content -->\t
 \t\t\t<div class=\"account-content\">
 \t\t\t<div class=\"account-drop-inner\">
@@ -298,7 +298,7 @@ updateSelects(today.getTime());
 \t\t\t</div>
 \t\t\t</div>
 \t\t\t<!--  end account-content -->
-\t\t
+
 \t\t</div>
 \t\t<!-- end nav-right -->
 
@@ -306,7 +306,7 @@ updateSelects(today.getTime());
 \t\t<!--  start nav -->
 \t\t<div class=\"nav\">
 \t\t<div class=\"table\">
-\t\t
+
  <ul class=\"select\"><li><a href=\"";
         // line 271
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_show");
@@ -322,9 +322,9 @@ updateSelects(today.getTime());
 \t\t<!--[if lte IE 6]></td></tr></table></a><![endif]-->
 \t\t</li>
 \t\t</ul>
-\t\t
+
 \t\t<div class=\"nav-divider\">&nbsp;</div>
-\t\t                    
+
   <ul class=\"current\"><li><a href=\"";
         // line 286
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_show");
@@ -340,9 +340,9 @@ updateSelects(today.getTime());
 \t\t<!--[if lte IE 6]></td></tr></table></a><![endif]-->
 \t\t</li>
 \t\t</ul>
-\t\t
+
 \t\t<div class=\"nav-divider\">&nbsp;</div>
-\t\t
+
  <ul class=\"select\"><li><a href=\"";
         // line 301
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_sousrubrique_show");
@@ -358,9 +358,9 @@ updateSelects(today.getTime());
 \t\t<!--[if lte IE 6]></td></tr></table></a><![endif]-->
 \t\t</li>
 \t\t</ul>
-\t\t
+
 \t\t<div class=\"nav-divider\">&nbsp;</div>
-\t\t
+
  <ul class=\"select\"><li><a href=\"";
         // line 316
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_article_show");
@@ -371,15 +371,15 @@ updateSelects(today.getTime());
 \t\t\t\t<li><a href=\"#nogo\">ajouter un article</a></li>
 \t\t\t\t<li><a href=\"#nogo\">afficher liste des articles</a></li>
 \t\t\t\t<li><a href=\"#nogo\">supprimer un article</a></li>
-\t\t\t 
+
 \t\t\t</ul>
 \t\t</div>
 \t\t<!--[if lte IE 6]></td></tr></table></a><![endif]-->
 \t\t</li>
 \t\t</ul>
-\t\t
+
 \t\t<div class=\"nav-divider\">&nbsp;</div>
-\t\t
+
  <ul class=\"select\"><li><a href=\"";
         // line 332
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_actualite_show");
@@ -395,7 +395,7 @@ updateSelects(today.getTime());
 \t\t<!--[if lte IE 6]></td></tr></table></a><![endif]-->
 \t\t</li>
 \t\t</ul>
-\t\t
+
 \t\t<div class=\"clear\"></div>
 \t\t</div>
 \t\t<div class=\"clear\"></div>
@@ -446,7 +446,7 @@ updateSelects(today.getTime());
 \t\t<td>
 \t\t<!--  start content-table-inner ...................................................................... START -->
 \t\t<div id=\"content-table-inner\">
-\t\t
+
 \t\t\t<!--  start table-content  -->
 \t\t\t<div id=\"table-content\">
 \t\t\t <!-- <h2>Sub Heading </h2> -->
@@ -465,13 +465,13 @@ ou d'applications multimédia.<br/>Ils partagent les fonctionnalités suivantes 
 \t\t\t<br />
 <li>ils permettent de hiérarchiser les utilisateurs et de leur attribuer des rôles et des permissions (utilisateur anonyme, administrateur, contributeur, etc.) </li>
 <li> certains SGC incluent la gestion de versions.</li>\t\t 
-\t\t\t
-\t\t\t
+
+
 \t\t\t</div>
 \t\t\t<!--  end table-content  -->
-\t
+
 \t\t\t<div class=\"clear\"></div>
-\t\t 
+
 \t\t</div>
 \t\t<!--  end content-table-inner ............................................END  -->
 \t\t</td>

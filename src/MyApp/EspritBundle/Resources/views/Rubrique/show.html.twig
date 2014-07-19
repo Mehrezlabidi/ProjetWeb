@@ -29,24 +29,11 @@
         <th>{{ rubrique.id }}</th> 
       
         <td><b>No  </b>{{ rubrique.position}}</td>
-        
-        
-        
-        
-        
-        
-         
           {% if rubrique.state == 1 %}
           <td><b>access</b></td>
           {%  else    %}
           <td><b>denied</b></td>
           {% endif  %}
-         
-         
-         
-         
-         
-         
            <td>{{ rubrique.title}}</td>
             <td><b>No  </b>{{ rubrique.menu.id}}</td>
 

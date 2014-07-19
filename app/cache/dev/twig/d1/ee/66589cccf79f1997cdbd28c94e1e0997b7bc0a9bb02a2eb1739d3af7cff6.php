@@ -64,48 +64,34 @@ class __TwigTemplate_d1ee66589cccf79f1997cdbd28c94e1e0997b7bc0a9bb02a2eb1739d3af
             // line 31
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "position"), "html", null, true);
             echo "</td>
-        
-        
-        
-        
-        
-        
-         
           ";
-            // line 39
+            // line 32
             if (($this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "state") == 1)) {
-                // line 40
+                // line 33
                 echo "          <td><b>access</b></td>
           ";
             } else {
-                // line 42
+                // line 35
                 echo "          <td><b>denied</b></td>
           ";
             }
-            // line 44
-            echo "         
-         
-         
-         
-         
-         
-           <td>";
-            // line 50
+            // line 37
+            echo "           <td>";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "title"), "html", null, true);
             echo "</td>
             <td><b>No  </b>";
-            // line 51
+            // line 38
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "menu"), "id"), "html", null, true);
             echo "</td>
 
         <td><a href=\"";
-            // line 53
+            // line 40
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_delete", array("id" => $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/delete.png"), "html", null, true);
             echo "\" alt=\"\" />  </a></td>
         <td><a href=\"";
-            // line 54
+            // line 41
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_edit", array("id" => $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/update.png"), "html", null, true);
@@ -116,14 +102,14 @@ class __TwigTemplate_d1ee66589cccf79f1997cdbd28c94e1e0997b7bc0a9bb02a2eb1739d3af
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['rubrique'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 57
+        // line 44
         echo "    </tr>        
     
  
 
 </table>
     <h2><a href=\"";
-        // line 62
+        // line 49
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_new");
         echo "\">ajouter rubrique</a></h2>
 </center>
@@ -147,6 +133,6 @@ class __TwigTemplate_d1ee66589cccf79f1997cdbd28c94e1e0997b7bc0a9bb02a2eb1739d3af
 
     public function getDebugInfo()
     {
-        return array (  127 => 62,  120 => 57,  109 => 54,  103 => 53,  98 => 51,  94 => 50,  86 => 44,  82 => 42,  78 => 40,  76 => 39,  65 => 31,  60 => 29,  57 => 28,  53 => 27,  30 => 7,  25 => 5,  19 => 1,);
+        return array (  113 => 49,  106 => 44,  95 => 41,  89 => 40,  84 => 38,  79 => 37,  75 => 35,  71 => 33,  69 => 32,  65 => 31,  60 => 29,  57 => 28,  53 => 27,  30 => 7,  25 => 5,  19 => 1,);
     }
 }

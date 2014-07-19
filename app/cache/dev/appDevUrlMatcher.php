@@ -138,6 +138,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'my_app_rubrique_homepage')), array (  '_controller' => 'MyApp\\RubriqueBundle\\Controller\\DefaultController::indexAction',));
         }
 
+        // my_app_esprit_top
+        if ($pathinfo === '/index.php') {
+            return array (  '_controller' => 'MyApp\\EspritBundle\\Controller\\RubriqueController::topAction',  '_route' => 'my_app_esprit_top',);
+        }
+
         // my_app_esprit_homepage
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {

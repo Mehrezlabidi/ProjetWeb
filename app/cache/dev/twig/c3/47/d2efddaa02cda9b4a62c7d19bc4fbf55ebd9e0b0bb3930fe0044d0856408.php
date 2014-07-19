@@ -58,22 +58,20 @@ class __TwigTemplate_c347d2efddaa02cda9b4a62c7d19bc4fbf55ebd9e0b0bb3930fe0044d08
             // line 28
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["role"]) ? $context["role"] : $this->getContext($context, "role")), "id"), "html", null, true);
             echo "</th> 
-         
-          ";
-            // line 30
-            if (($this->getAttribute((isset($context["role"]) ? $context["role"] : $this->getContext($context, "role")), "permission") == 1)) {
-                // line 31
-                echo "          <td><b>access</b></td>
         
          
-         
+          ";
+            // line 31
+            if (($this->getAttribute((isset($context["role"]) ? $context["role"] : $this->getContext($context, "role")), "permission") == 1)) {
+                // line 32
+                echo "          <td><b>access</b></td>
           ";
             } else {
-                // line 36
+                // line 34
                 echo "          <td><b>denied</b></td>
           ";
             }
-            // line 38
+            // line 36
             echo "        
          
          
@@ -81,19 +79,19 @@ class __TwigTemplate_c347d2efddaa02cda9b4a62c7d19bc4fbf55ebd9e0b0bb3930fe0044d08
          
          
          
-          <td>";
-            // line 45
+          <td><b>No  </b>";
+            // line 43
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["role"]) ? $context["role"] : $this->getContext($context, "role")), "utilisateur"), "id"), "html", null, true);
             echo "</td>
         
         <td><a href=\"";
-            // line 47
+            // line 45
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_role_delete", array("id" => $this->getAttribute((isset($context["role"]) ? $context["role"] : $this->getContext($context, "role")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/delete.png"), "html", null, true);
             echo "\" alt=\"\" />  </a></td>
         <td><a href=\"";
-            // line 48
+            // line 46
             echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_role_edit", array("id" => $this->getAttribute((isset($context["role"]) ? $context["role"] : $this->getContext($context, "role")), "id"))), "html", null, true);
             echo "\">  <img src=\"";
             echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/update.png"), "html", null, true);
@@ -104,14 +102,14 @@ class __TwigTemplate_c347d2efddaa02cda9b4a62c7d19bc4fbf55ebd9e0b0bb3930fe0044d08
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['role'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 51
+        // line 49
         echo "    </tr>        
     
  
 
 </table>
     <h2><a href=\"";
-        // line 56
+        // line 54
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_role_new");
         echo "\">ajouter role</a></h2>
 </center>
@@ -135,6 +133,6 @@ class __TwigTemplate_c347d2efddaa02cda9b4a62c7d19bc4fbf55ebd9e0b0bb3930fe0044d08
 
     public function getDebugInfo()
     {
-        return array (  115 => 56,  108 => 51,  97 => 48,  91 => 47,  86 => 45,  77 => 38,  73 => 36,  66 => 31,  64 => 30,  59 => 28,  56 => 27,  52 => 26,  31 => 8,  26 => 6,  19 => 1,);
+        return array (  113 => 54,  106 => 49,  95 => 46,  89 => 45,  84 => 43,  75 => 36,  71 => 34,  67 => 32,  65 => 31,  59 => 28,  56 => 27,  52 => 26,  31 => 8,  26 => 6,  19 => 1,);
     }
 }

@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 {% block head %}
-    <title>Home</title>
+   <title>{% block title %}Home{% endblock %}</title>
     <meta charset="utf-8">
 <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" /> 
     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/stylesheet.css') }}"/> 
@@ -17,7 +17,7 @@
 {% endblock %}
     <body>
         <!--==============================header=================================-->
-            {% block content %}{% endblock %}
+            
         <table cellpadding="0" cellspacing="0" border="0" class="main">
             <tr>
                 <td align="center">	
@@ -391,9 +391,11 @@
                                                              </td>
                                                              <td>
                                                              <ul>
-                                                <li class="bg_list_un"><a href="#">Article 1</a></li>
-                                                <li class="bg_list_un"><a href="#">Article 2</a></li>
-                                                <li class="bg_list_un"><a href="#">Article 3</a></li>
+                   <li class="bg_list_un"><a href="#">Article 1</a></li>
+                   <li class="bg_list_un"><a href="#">Article 2</a></li>
+                   <li class="bg_list_un"><a href="#">Article 3</a></li>
+                   <li class="bg_list_un"><a href="#">{% block content %}{% endblock %}</a></li>  
+                                              
                                                            </ul>
                                                 <br style="line-height:10px" />
                                                  </td>
@@ -483,7 +485,7 @@
     </td>
 </tr>
 </table>
-
+               
 </body>
 </html>
 

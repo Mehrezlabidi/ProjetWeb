@@ -11,6 +11,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 
         $this->blocks = array(
             'head' => array($this, 'block_head'),
+            'title' => array($this, 'block_title'),
             'content' => array($this, 'block_content'),
             'container' => array($this, 'block_container'),
         );
@@ -29,11 +30,8 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
         // line 18
         echo "    <body>
         <!--==============================header=================================-->
-            ";
-        // line 20
-        $this->displayBlock('content', $context, $blocks);
-        // line 21
-        echo "        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"main\">
+            
+        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"main\">
             <tr>
                 <td align=\"center\">\t
                     <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"width:718px\">
@@ -570,16 +568,21 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                              </td>
                                                              <td>
                                                              <ul>
-                                                <li class=\"bg_list_un\"><a href=\"#\">Article 1</a></li>
-                                                <li class=\"bg_list_un\"><a href=\"#\">Article 2</a></li>
-                                                <li class=\"bg_list_un\"><a href=\"#\">Article 3</a></li>
+                   <li class=\"bg_list_un\"><a href=\"#\">Article 1</a></li>
+                   <li class=\"bg_list_un\"><a href=\"#\">Article 2</a></li>
+                   <li class=\"bg_list_un\"><a href=\"#\">Article 3</a></li>
+                   <li class=\"bg_list_un\"><a href=\"#\">";
+        // line 397
+        $this->displayBlock('content', $context, $blocks);
+        echo "</a></li>  
+                                              
                                                            </ul>
                                                 <br style=\"line-height:10px\" />
                                                  </td>
                                         <td class=\"c1_right\">
 
                                             <img src=\"";
-        // line 402
+        // line 404
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"9\" height=\"1\" />                              
                                                  </td>
@@ -587,7 +590,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                  <tr>
                                                  <td>
                                           <img src=\"";
-        // line 407
+        // line 409
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c1_bl.jpg"), "html", null, true);
         echo "\" alt=\"\"/>   
                                                                           
@@ -595,14 +598,14 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                         <td class=\"c1_bottom\">
 
                                             <img src=\"";
-        // line 412
+        // line 414
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"1\" height=\"9\" />                          
                                         </td>
                                         <td>
 
                                            <img src=\"";
-        // line 416
+        // line 418
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c1_br.jpg"), "html", null, true);
         echo "\" alt=\"\" />        
                                     </tr>
@@ -611,7 +614,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                 <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"box_header_txt\">
                                     <tr>
                                       <td>  <img src=\"";
-        // line 422
+        // line 424
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/title1_left.jpg"), "html", null, true);
         echo "\" alt=\"\" />                                   
                                           </td>
@@ -620,7 +623,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                         <td style=\"width:100%\">specials:</td>
                                         <td>
                                            <img src=\"";
-        // line 428
+        // line 430
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/title1_right.jpg"), "html", null, true);
         echo "\" alt=\"\" />                                 
 
@@ -642,7 +645,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                     <td>
                                                         <br style=\"line-height:5px\" />
                                                         <img src=\"";
-        // line 447
+        // line 449
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/0px.jpg"), "html", null, true);
         echo "\" alt=\"\" />                           
 
@@ -672,14 +675,14 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                 <td style=\"padding:11px 0px 0px 13px;\">
 
                     <img src=\"";
-        // line 474
+        // line 476
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/fp.jpg"), "html", null, true);
         echo "\" alt=\"\" align=\"left\"/>                           
 
 
 
                     <img src=\"";
-        // line 478
+        // line 480
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"31\" height=\"1\"/>                                   
                     Pets store &copy; 2008 &nbsp;|&nbsp; <a href=\"#\">Privacy policy</a>
@@ -689,14 +692,14 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
     </td>
 </tr>
 </table>
-
+               
 </body>
 </html>
 
 ";
-        // line 490
-        $this->displayBlock('container', $context, $blocks);
         // line 492
+        $this->displayBlock('container', $context, $blocks);
+        // line 494
         echo "
 
 
@@ -711,7 +714,9 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
     public function block_head($context, array $blocks = array())
     {
         // line 7
-        echo "    <title>Home</title>
+        echo "   <title>";
+        $this->displayBlock('title', $context, $blocks);
+        echo "</title>
     <meta charset=\"utf-8\">
 <link rel=\"icon\" sizes=\"16x16\" href=\"";
         // line 9
@@ -742,12 +747,18 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 ";
     }
 
-    // line 20
+    // line 7
+    public function block_title($context, array $blocks = array())
+    {
+        echo "Home";
+    }
+
+    // line 397
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 490
+    // line 492
     public function block_container($context, array $blocks = array())
     {
     }
@@ -764,6 +775,6 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 
     public function getDebugInfo()
     {
-        return array (  751 => 490,  746 => 20,  739 => 15,  734 => 13,  730 => 12,  726 => 11,  722 => 10,  718 => 9,  714 => 7,  711 => 6,  700 => 492,  698 => 490,  683 => 478,  676 => 474,  646 => 447,  624 => 428,  615 => 422,  606 => 416,  599 => 412,  591 => 407,  583 => 402,  566 => 388,  556 => 381,  550 => 378,  542 => 373,  528 => 362,  520 => 357,  502 => 342,  492 => 335,  475 => 321,  461 => 310,  451 => 303,  444 => 299,  436 => 294,  428 => 289,  418 => 282,  410 => 277,  395 => 265,  379 => 252,  369 => 245,  363 => 242,  356 => 238,  348 => 233,  340 => 228,  332 => 223,  325 => 219,  314 => 211,  303 => 203,  295 => 198,  279 => 185,  264 => 173,  255 => 167,  248 => 163,  239 => 157,  221 => 142,  213 => 137,  203 => 130,  193 => 123,  186 => 119,  179 => 115,  171 => 110,  144 => 86,  138 => 83,  134 => 82,  130 => 81,  121 => 75,  116 => 73,  94 => 62,  85 => 56,  79 => 53,  64 => 41,  56 => 36,  48 => 31,  36 => 21,  34 => 20,  30 => 18,  28 => 6,  22 => 2,);
+        return array (  762 => 492,  757 => 397,  751 => 7,  744 => 15,  739 => 13,  735 => 12,  731 => 11,  727 => 10,  723 => 9,  717 => 7,  714 => 6,  703 => 494,  701 => 492,  686 => 480,  679 => 476,  649 => 449,  627 => 430,  618 => 424,  609 => 418,  602 => 414,  594 => 409,  586 => 404,  576 => 397,  564 => 388,  554 => 381,  548 => 378,  540 => 373,  526 => 362,  518 => 357,  500 => 342,  490 => 335,  473 => 321,  459 => 310,  449 => 303,  442 => 299,  434 => 294,  426 => 289,  416 => 282,  408 => 277,  393 => 265,  377 => 252,  367 => 245,  361 => 242,  354 => 238,  346 => 233,  338 => 228,  330 => 223,  323 => 219,  312 => 211,  301 => 203,  293 => 198,  277 => 185,  262 => 173,  253 => 167,  246 => 163,  237 => 157,  219 => 142,  211 => 137,  201 => 130,  191 => 123,  184 => 119,  177 => 115,  169 => 110,  142 => 86,  136 => 83,  132 => 82,  128 => 81,  119 => 75,  114 => 73,  92 => 62,  83 => 56,  77 => 53,  62 => 41,  54 => 36,  46 => 31,  31 => 18,  29 => 6,  23 => 2,);
     }
 }
