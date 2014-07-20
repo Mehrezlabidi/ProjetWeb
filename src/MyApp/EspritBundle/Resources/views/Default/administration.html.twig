@@ -230,14 +230,18 @@ $(document).pngFix( );
 
 			<div class="nav-divider">&nbsp;</div>
 			<div class="showhide-account">
-   <img src="{{ asset('bundles/myappesprit/images/shared/nav/nav_myaccount.gif') }}" width="93" height="14" alt="" />
-                        
+                            
+  
+  <a href="{{ path('fos_user_profile_show' ) }}">  
+  <img src="{{ asset('bundles/myappesprit/images/shared/nav/nav_myaccount.gif') }}" width="93" height="14" alt="" />
+    </a>                    
                         </div>
 			<div class="nav-divider">&nbsp;</div>
-			<a href="" id="logout">
+		       <div class="showhide-account">
+      <a href="{{ path('fos_user_security_logout' ) }}">                          
   <img src="{{ asset('bundles/myappesprit/images/shared/nav/nav_logout.gif') }}" width="64" height="14" alt=""  />                       
-                            
-                        </a>
+       </a>                       
+                        </div>
 			<div class="clear">&nbsp;</div>
 
 			<!--  start account-content -->	

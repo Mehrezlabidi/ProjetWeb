@@ -3,13 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Entity/Utilisateur.php</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Entity/Actualite.php</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Entity/SousRubrique.php</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Entity/Menu.php</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Entity/Rubrique.php</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Entity/Article.php</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Entity/Role.php</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/UserBundle/Resources/Config/routing/group.xml</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/views/Default/index.html.twig</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/UserBundle/Resources/Config/routing/security.xml</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/UserBundle/Resources/Config/routing/change_password.xml</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Controller/RubriqueController.php</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/UserBundle/Resources/Config/routing/resetting.xml</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/UserBundle/Resources/views/Profile/show.html.twig</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/UserBundle/Resources/Config/routing/profile.xml</file>
+            <file>file:/C:/wamp/www/ProjetWeb/app/config/security.yml</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/UserBundle/Resources/views/Profile/show_content.html.twig</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/UserBundle/Resources/views/Security/login.html.twig</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/Acme/DemoBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Controller/DefaultController.php</file>
         </group>
     </open-files>
 </project-private>

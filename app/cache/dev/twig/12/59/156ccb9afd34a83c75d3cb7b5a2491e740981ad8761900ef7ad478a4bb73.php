@@ -27,10 +27,6 @@ class __TwigTemplate_1259156ccb9afd34a83c75d3cb7b5a2491e740981ad8761900ef7ad478a
     // line 5
     public function block_content($context, array $blocks = array())
     {
-        // line 6
-        echo "<h3>Top des Rubrique les plus jeunes</h3>
-";
-        // line 7
         echo $this->env->getExtension('actions')->renderUri("MyAppEspritBundle:Rubrique:top", array());
     }
 
@@ -46,6 +42,6 @@ class __TwigTemplate_1259156ccb9afd34a83c75d3cb7b5a2491e740981ad8761900ef7ad478a
 
     public function getDebugInfo()
     {
-        return array (  34 => 7,  31 => 6,  28 => 5,);
+        return array (  28 => 5,);
     }
 }

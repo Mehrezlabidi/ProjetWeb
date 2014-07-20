@@ -263,20 +263,30 @@ updateSelects(today.getTime());
 
 \t\t\t<div class=\"nav-divider\">&nbsp;</div>
 \t\t\t<div class=\"showhide-account\">
-   <img src=\"";
-        // line 233
+                            
+  
+  <a href=\"";
+        // line 235
+        echo $this->env->getExtension('routing')->getPath("fos_user_profile_show");
+        echo "\">  
+  <img src=\"";
+        // line 236
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/nav/nav_myaccount.gif"), "html", null, true);
         echo "\" width=\"93\" height=\"14\" alt=\"\" />
-                        
+    </a>                    
                         </div>
 \t\t\t<div class=\"nav-divider\">&nbsp;</div>
-\t\t\t<a href=\"\" id=\"logout\">
+\t\t       <div class=\"showhide-account\">
+      <a href=\"";
+        // line 241
+        echo $this->env->getExtension('routing')->getPath("fos_user_security_logout");
+        echo "\">                          
   <img src=\"";
-        // line 238
+        // line 242
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/nav/nav_logout.gif"), "html", null, true);
         echo "\" width=\"64\" height=\"14\" alt=\"\"  />                       
-                            
-                        </a>
+       </a>                       
+                        </div>
 \t\t\t<div class=\"clear\">&nbsp;</div>
 
 \t\t\t<!--  start account-content -->\t
@@ -308,7 +318,7 @@ updateSelects(today.getTime());
 \t\t<div class=\"table\">
 
  <ul class=\"select\"><li><a href=\"";
-        // line 271
+        // line 275
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_show");
         echo "\"><b>Menu</b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
@@ -326,7 +336,7 @@ updateSelects(today.getTime());
 \t\t<div class=\"nav-divider\">&nbsp;</div>
 
   <ul class=\"current\"><li><a href=\"";
-        // line 286
+        // line 290
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_show");
         echo "\"><b>Rubrique</b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
@@ -344,7 +354,7 @@ updateSelects(today.getTime());
 \t\t<div class=\"nav-divider\">&nbsp;</div>
 
  <ul class=\"select\"><li><a href=\"";
-        // line 301
+        // line 305
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_sousrubrique_show");
         echo "\"><b>Sous Rubrique</b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
@@ -362,7 +372,7 @@ updateSelects(today.getTime());
 \t\t<div class=\"nav-divider\">&nbsp;</div>
 
  <ul class=\"select\"><li><a href=\"";
-        // line 316
+        // line 320
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_article_show");
         echo "\"><b>Article</b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
@@ -381,7 +391,7 @@ updateSelects(today.getTime());
 \t\t<div class=\"nav-divider\">&nbsp;</div>
 
  <ul class=\"select\"><li><a href=\"";
-        // line 332
+        // line 336
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_actualite_show");
         echo "\"><b>Actualit&eacute; </b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
@@ -426,7 +436,7 @@ updateSelects(today.getTime());
 \t\t<th rowspan=\"3\" class=\"sized\">
                    
   <img src=\"";
-        // line 374
+        // line 378
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/side_shadowleft.jpg"), "html", null, true);
         echo "\" width=\"20\" height=\"300\" alt=\"\"  />                  
                 </th>
@@ -436,7 +446,7 @@ updateSelects(today.getTime());
 \t\t<th rowspan=\"3\" class=\"sized\">
                    
         <img src=\"";
-        // line 381
+        // line 385
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/side_shadowright.jpg"), "html", null, true);
         echo "\" width=\"20\" height=\"300\" alt=\"\"  />           
                 </th>
@@ -520,6 +530,6 @@ ou d'applications multimédia.<br/>Ils partagent les fonctionnalités suivantes 
 
     public function getDebugInfo()
     {
-        return array (  440 => 381,  430 => 374,  385 => 332,  366 => 316,  348 => 301,  330 => 286,  312 => 271,  276 => 238,  268 => 233,  238 => 206,  214 => 185,  120 => 94,  31 => 8,  25 => 5,  19 => 1,);
+        return array (  450 => 385,  440 => 378,  395 => 336,  376 => 320,  358 => 305,  340 => 290,  322 => 275,  286 => 242,  282 => 241,  274 => 236,  270 => 235,  238 => 206,  214 => 185,  120 => 94,  31 => 8,  25 => 5,  19 => 1,);
     }
 }

@@ -27,26 +27,30 @@ class __TwigTemplate_f7432268cc21c28d7c63d42ccbd321afd35d9659ee8759f364ed79ddaa8
 \t<!-- Basics -->
 \t
 \t<meta charset=\"utf-8\">
+        <link rel=\"icon\" sizes=\"16x16\" href=\"";
+        // line 11
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("favicon.ico"), "html", null, true);
+        echo "\" /> 
 \t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\">
 \t
-\t<title>Login</title>
+\t<title></title>
 
 \t<!-- CSS -->
 \t
  <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 17
+        // line 18
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/css/stylesheet.css"), "html", null, true);
         echo "\"/> 
       <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 18
+        // line 19
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/css/reset.css"), "html", null, true);
         echo "\"/> 
         <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 19
+        // line 20
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/css/animate.css"), "html", null, true);
         echo "\"/> 
        <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 20
+        // line 21
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/css/styles.css"), "html", null, true);
         echo "\"/>  
       
@@ -61,9 +65,9 @@ class __TwigTemplate_f7432268cc21c28d7c63d42ccbd321afd35d9659ee8759f364ed79ddaa8
 \t
 \t<div id=\"container\">
 \t\t  ";
-        // line 32
+        // line 33
         $this->displayBlock('fos_user_content', $context, $blocks);
-        // line 34
+        // line 35
         echo "\t</div>
 \t
 \t
@@ -81,10 +85,10 @@ class __TwigTemplate_f7432268cc21c28d7c63d42ccbd321afd35d9659ee8759f364ed79ddaa8
 \t";
     }
 
-    // line 32
+    // line 33
     public function block_fos_user_content($context, array $blocks = array())
     {
-        // line 33
+        // line 34
         echo "                  ";
     }
 
@@ -100,6 +104,6 @@ class __TwigTemplate_f7432268cc21c28d7c63d42ccbd321afd35d9659ee8759f364ed79ddaa8
 
     public function getDebugInfo()
     {
-        return array (  88 => 33,  85 => 32,  67 => 34,  65 => 32,  50 => 20,  46 => 19,  42 => 18,  38 => 17,  20 => 1,  70 => 27,  54 => 14,  47 => 10,  43 => 9,  39 => 7,  33 => 5,  31 => 4,  28 => 3,);
+        return array (  92 => 34,  89 => 33,  71 => 35,  69 => 33,  54 => 21,  50 => 20,  46 => 19,  42 => 18,  32 => 11,  20 => 1,);
     }
 }
