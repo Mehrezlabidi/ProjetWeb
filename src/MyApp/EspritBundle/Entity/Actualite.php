@@ -30,7 +30,7 @@ class Actualite {
     }
 
     /**
-     * @ORM\ManyToOne(targetEntity="Utilisateur", inversedBy="actualites", cascade={"remove"})
+     * @ORM\ManyToOne(targetEntity="Utilisateur", inversedBy="actualites")
      * @ORM\JoinColumn(name="utilisateur_id", referencedColumnName="id",nullable=false)
      */
     protected $utilisateur;

@@ -109,7 +109,7 @@ class RubriqueController extends Controller
   
   
   
-  public function topAction($max = 5)
+  public function topAction($max = 50)
 {
     $em = $this->container->get('doctrine')->getEntityManager();
 
@@ -122,8 +122,9 @@ class RubriqueController extends Controller
     $query = $qb->getQuery();
     $rubrique = $query->getResult();
 
-    return $this->container->get('templating')->renderResponse('MyAppEspritBundle:Rubrique:lister.html.twig', array(
-        'rubrique' => $rubrique,
-    ));
+    return $this->container->get('templating')
+            ->renderResponse('MyAppEspritBundle:Rubrique:lister.html.twig', array('rubrique' => $rubrique, ));
+        
+   
 }
 }

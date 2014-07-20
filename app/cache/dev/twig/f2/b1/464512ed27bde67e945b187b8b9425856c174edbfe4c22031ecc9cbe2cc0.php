@@ -45,7 +45,7 @@ class __TwigTemplate_f2b1464512ed27bde67e945b187b8b9425856c174edbfe4c22031ecc9cb
         <th>Date</th>
        
          <th>Rubrique associé</th>
-         <th>Sous Rubrique associé</th>
+      <!--   <th>Sous Rubrique associé</th>  -->
          <th>Image</th>
     </tr>
     
@@ -82,10 +82,9 @@ class __TwigTemplate_f2b1464512ed27bde67e945b187b8b9425856c174edbfe4c22031ecc9cb
             // line 40
             echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "rubrique"), "id"), "html", null, true);
             echo "</td>
-         <td>No  ";
+       <!--    <td>No  ";
             // line 41
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "sousrubrique"), "id"), "html", null, true);
-            echo "</td>
+            echo "</td>  -->
        
          
              
@@ -167,6 +166,6 @@ class __TwigTemplate_f2b1464512ed27bde67e945b187b8b9425856c174edbfe4c22031ecc9cb
 
     public function getDebugInfo()
     {
-        return array (  148 => 68,  141 => 63,  130 => 60,  124 => 59,  118 => 55,  112 => 53,  110 => 52,  107 => 51,  104 => 50,  98 => 48,  96 => 47,  87 => 41,  83 => 40,  76 => 36,  71 => 34,  67 => 33,  63 => 32,  60 => 31,  56 => 30,  30 => 7,  25 => 5,  19 => 1,);
+        return array (  147 => 68,  140 => 63,  129 => 60,  123 => 59,  117 => 55,  111 => 53,  109 => 52,  106 => 51,  103 => 50,  97 => 48,  95 => 47,  87 => 41,  83 => 40,  76 => 36,  71 => 34,  67 => 33,  63 => 32,  60 => 31,  56 => 30,  30 => 7,  25 => 5,  19 => 1,);
     }
 }

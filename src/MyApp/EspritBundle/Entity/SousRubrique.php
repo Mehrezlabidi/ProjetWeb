@@ -12,10 +12,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class SousRubrique
 {
-    
-  
-
-        /**
+    /**
      * @var integer
      *
      * @ORM\Column(name="id", type="integer")
@@ -23,14 +20,9 @@ class SousRubrique
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-    
-         /**
-     * @ORM\OneToMany(targetEntity="Article", mappedBy="SousRubrique", cascade={"remove", "persist"})
-     */
-    protected $articles;
 
-          /**
-     * @ORM\ManyToOne(targetEntity="Rubrique", inversedBy="sousrubriques", cascade={"remove"})
+    /**
+     * @ORM\ManyToOne(targetEntity="Rubrique", inversedBy="sousrubriques")
      * @ORM\JoinColumn(name="rubrique_id", referencedColumnName="id",nullable=false)
      */
  

@@ -20,7 +20,7 @@ class ArticleType extends AbstractType
             ->add('nom')
             ->add('date')
             ->add('rubrique')
-            ->add('sousrubrique')
+         ##   ->add('sousrubrique')
         ;
     }
     

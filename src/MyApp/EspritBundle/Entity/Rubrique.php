@@ -15,7 +15,7 @@ class Rubrique
    
 
       
-        /**
+    /**
      * @var integer
      *
      * @ORM\Column(name="id", type="integer")
@@ -24,27 +24,27 @@ class Rubrique
      */
     private $id;
     
-      /**
-     * @ORM\OneToMany(targetEntity="SousRubrique", mappedBy="Rubrique", cascade={"remove", "persist"})
+    /**
+     * @ORM\OneToMany(targetEntity="SousRubrique", mappedBy="Rubrique")
      */
     protected $sousrubriques;
     
     
     
-      /**
-     * @ORM\OneToMany(targetEntity="Article", mappedBy="Rubrique", cascade={"remove", "persist"})
+    /**
+     * @ORM\OneToMany(targetEntity="Article", mappedBy="Rubrique")
      */
     protected $articles;
     
-          /**
-     * @ORM\ManyToOne(targetEntity="Menu", inversedBy="rubriques", cascade={"remove"})
+    /**
+     * @ORM\ManyToOne(targetEntity="Menu", inversedBy="rubriques")
      * @ORM\JoinColumn(name="menu_id", referencedColumnName="id",nullable=false)
      */
  
      protected $menu;
  
 
-        /**
+    /**
      * @var integer
      *
      * @ORM\Column(name="position", type="integer")

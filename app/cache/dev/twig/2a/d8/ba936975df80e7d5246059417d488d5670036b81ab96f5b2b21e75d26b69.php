@@ -133,7 +133,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
         echo "\" width=\"9\" height=\"9\"   alt=\"\" /></td>
                                                     <td><img src=\"";
         // line 83
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c1_tl.jpg"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c1_tr.jpg"), "html", null, true);
         echo "\"  alt=\"\" /></td>
                                                 </tr>
                                                 <tr>
@@ -568,11 +568,9 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                              </td>
                                                              <td>
                                                              <ul>
-                   <li class=\"bg_list_un\"><a href=\"#\">Article 1</a></li>
-                   <li class=\"bg_list_un\"><a href=\"#\">Article 2</a></li>
-                   <li class=\"bg_list_un\"><a href=\"#\">Article 3</a></li>
-                   <li class=\"bg_list_un\"><a href=\"#\">";
-        // line 397
+            
+                                                                 <li class=\"bg_list_un\"><a href=\"#\">";
+        // line 395
         $this->displayBlock('content', $context, $blocks);
         echo "</a></li>  
                                               
@@ -582,7 +580,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                         <td class=\"c1_right\">
 
                                             <img src=\"";
-        // line 404
+        // line 402
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"9\" height=\"1\" />                              
                                                  </td>
@@ -590,7 +588,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                  <tr>
                                                  <td>
                                           <img src=\"";
-        // line 409
+        // line 407
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c1_bl.jpg"), "html", null, true);
         echo "\" alt=\"\"/>   
                                                                           
@@ -598,14 +596,14 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                         <td class=\"c1_bottom\">
 
                                             <img src=\"";
-        // line 414
+        // line 412
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"1\" height=\"9\" />                          
                                         </td>
                                         <td>
 
                                            <img src=\"";
-        // line 418
+        // line 416
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c1_br.jpg"), "html", null, true);
         echo "\" alt=\"\" />        
                                     </tr>
@@ -614,7 +612,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                 <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"box_header_txt\">
                                     <tr>
                                       <td>  <img src=\"";
-        // line 424
+        // line 422
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/title1_left.jpg"), "html", null, true);
         echo "\" alt=\"\" />                                   
                                           </td>
@@ -623,7 +621,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                         <td style=\"width:100%\">specials:</td>
                                         <td>
                                            <img src=\"";
-        // line 430
+        // line 428
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/title1_right.jpg"), "html", null, true);
         echo "\" alt=\"\" />                                 
 
@@ -645,7 +643,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                     <td>
                                                         <br style=\"line-height:5px\" />
                                                         <img src=\"";
-        // line 449
+        // line 447
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/0px.jpg"), "html", null, true);
         echo "\" alt=\"\" />                           
 
@@ -675,14 +673,14 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                 <td style=\"padding:11px 0px 0px 13px;\">
 
                     <img src=\"";
-        // line 476
+        // line 474
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/fp.jpg"), "html", null, true);
         echo "\" alt=\"\" align=\"left\"/>                           
 
 
 
                     <img src=\"";
-        // line 480
+        // line 478
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"31\" height=\"1\"/>                                   
                     Pets store &copy; 2008 &nbsp;|&nbsp; <a href=\"#\">Privacy policy</a>
@@ -697,9 +695,9 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 </html>
 
 ";
-        // line 492
+        // line 490
         $this->displayBlock('container', $context, $blocks);
-        // line 494
+        // line 492
         echo "
 
 
@@ -753,12 +751,12 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
         echo "Home";
     }
 
-    // line 397
+    // line 395
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 492
+    // line 490
     public function block_container($context, array $blocks = array())
     {
     }
@@ -775,6 +773,6 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 
     public function getDebugInfo()
     {
-        return array (  762 => 492,  757 => 397,  751 => 7,  744 => 15,  739 => 13,  735 => 12,  731 => 11,  727 => 10,  723 => 9,  717 => 7,  714 => 6,  703 => 494,  701 => 492,  686 => 480,  679 => 476,  649 => 449,  627 => 430,  618 => 424,  609 => 418,  602 => 414,  594 => 409,  586 => 404,  576 => 397,  564 => 388,  554 => 381,  548 => 378,  540 => 373,  526 => 362,  518 => 357,  500 => 342,  490 => 335,  473 => 321,  459 => 310,  449 => 303,  442 => 299,  434 => 294,  426 => 289,  416 => 282,  408 => 277,  393 => 265,  377 => 252,  367 => 245,  361 => 242,  354 => 238,  346 => 233,  338 => 228,  330 => 223,  323 => 219,  312 => 211,  301 => 203,  293 => 198,  277 => 185,  262 => 173,  253 => 167,  246 => 163,  237 => 157,  219 => 142,  211 => 137,  201 => 130,  191 => 123,  184 => 119,  177 => 115,  169 => 110,  142 => 86,  136 => 83,  132 => 82,  128 => 81,  119 => 75,  114 => 73,  92 => 62,  83 => 56,  77 => 53,  62 => 41,  54 => 36,  46 => 31,  31 => 18,  29 => 6,  23 => 2,);
+        return array (  760 => 490,  755 => 395,  749 => 7,  742 => 15,  737 => 13,  733 => 12,  729 => 11,  725 => 10,  721 => 9,  715 => 7,  712 => 6,  701 => 492,  699 => 490,  684 => 478,  677 => 474,  647 => 447,  625 => 428,  616 => 422,  607 => 416,  600 => 412,  592 => 407,  584 => 402,  574 => 395,  564 => 388,  554 => 381,  548 => 378,  540 => 373,  526 => 362,  518 => 357,  500 => 342,  490 => 335,  473 => 321,  459 => 310,  449 => 303,  442 => 299,  434 => 294,  426 => 289,  416 => 282,  408 => 277,  393 => 265,  377 => 252,  367 => 245,  361 => 242,  354 => 238,  346 => 233,  338 => 228,  330 => 223,  323 => 219,  312 => 211,  301 => 203,  293 => 198,  277 => 185,  262 => 173,  253 => 167,  246 => 163,  237 => 157,  219 => 142,  211 => 137,  201 => 130,  191 => 123,  184 => 119,  177 => 115,  169 => 110,  142 => 86,  136 => 83,  132 => 82,  128 => 81,  119 => 75,  114 => 73,  92 => 62,  83 => 56,  77 => 53,  62 => 41,  54 => 36,  46 => 31,  31 => 18,  29 => 6,  23 => 2,);
     }
 }

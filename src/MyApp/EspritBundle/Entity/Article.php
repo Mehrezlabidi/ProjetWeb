@@ -15,7 +15,7 @@ class Article
     
 
 
-        /**
+    /**
      * @var integer
      *
      * @ORM\Column(name="id", type="integer")
@@ -23,23 +23,14 @@ class Article
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-
     
     /**
-     * @ORM\ManyToOne(targetEntity="Article", inversedBy="rubriques", cascade={"remove"})
-     * @ORM\JoinColumn(name="rubrique_id", referencedColumnName="id")
+     * @ORM\ManyToOne(targetEntity="Article", inversedBy="rubriques")
+     * @ORM\JoinColumn(name="rubrique_id", referencedColumnName="id",nullable=false)
      */
  
      protected $rubrique;
     
-     /**
-     * @ORM\ManyToOne(targetEntity="Article", inversedBy="sousrubriques", cascade={"remove"})
-     * @ORM\JoinColumn(name="sousrubrique_id", referencedColumnName="id")
-     */
- 
-     protected $sousrubrique;
-     
-     
     /**
      * @var string
      *

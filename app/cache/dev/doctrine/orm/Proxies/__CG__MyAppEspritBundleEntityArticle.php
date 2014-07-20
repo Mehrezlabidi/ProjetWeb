@@ -132,7 +132,7 @@ class Article extends \MyApp\EspritBundle\Entity\Article implements \Doctrine\OR
 
     public function __sleep()
     {
-        return array('__isInitialized__', 'id', 'texte', 'image', 'nom', 'date', 'rubrique', 'sousrubrique');
+        return array('__isInitialized__', 'id', 'texte', 'image', 'nom', 'date', 'rubrique');
     }
 
     public function __clone()

@@ -29,7 +29,7 @@ class Utilisateur
     }
 
     /**
-     * @ORM\OneToMany(targetEntity="Role", mappedBy="utilisateur", cascade={"remove", "persist"})
+     * @ORM\OneToMany(targetEntity="Role", mappedBy="utilisateur")
      */
     protected $roles;
     public function getMenus() {
@@ -49,12 +49,12 @@ class Utilisateur
     }
 
            /**
-     * @ORM\OneToMany(targetEntity="Menu", mappedBy="utilisateur", cascade={"remove", "persist"})
+     * @ORM\OneToMany(targetEntity="Menu", mappedBy="utilisateur")
      */
     protected $menus;
     
        /**
-     * @ORM\OneToMany(targetEntity="Actualite", mappedBy="utilisateur", cascade={"remove", "persist"})
+     * @ORM\OneToMany(targetEntity="Actualite", mappedBy="utilisateur")
      */
     protected $actualites;
     

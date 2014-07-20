@@ -21,8 +21,8 @@ class Role
      */
     private $id;
       
-   /**
-     * @ORM\ManyToOne(targetEntity="Utilisateur", inversedBy="roles", cascade={"remove"})
+    /**
+     * @ORM\ManyToOne(targetEntity="Utilisateur", inversedBy="roles")
      * @ORM\JoinColumn(name="utilisateur_id", referencedColumnName="id",nullable=false)
      */
  

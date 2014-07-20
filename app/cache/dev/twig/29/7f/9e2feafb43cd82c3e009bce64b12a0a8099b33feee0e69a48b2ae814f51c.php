@@ -21,14 +21,18 @@ class __TwigTemplate_297f9e2feafb43cd82c3e009bce64b12a0a8099b33feee0e69a48b2ae81
 <html lang=\"en\">
 <head>
 <meta charset=\"utf-8\">
+<link rel=\"icon\" sizes=\"16x16\" href=\"";
+        // line 6
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("favicon.ico"), "html", null, true);
+        echo "\" />
 <title>Forms</title>
  
 <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 8
+        // line 9
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/css/style.css"), "html", null, true);
         echo "\"/> 
 <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 9
+        // line 10
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("http://fonts.googleapis.com/css?family=Engagement"), "html", null, true);
         echo "\"/> 
  
@@ -48,13 +52,13 @@ class __TwigTemplate_297f9e2feafb43cd82c3e009bce64b12a0a8099b33feee0e69a48b2ae81
  
 <h1>Modify Rubrique</h1>
 <form   action=\"\"   method=\"post\" ";
-        // line 26
+        // line 27
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'enctype');
         echo ">
 \t <ul>
                   <li>
                  ";
-        // line 29
+        // line 30
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'widget');
         echo "
                   </li>
@@ -101,6 +105,6 @@ class __TwigTemplate_297f9e2feafb43cd82c3e009bce64b12a0a8099b33feee0e69a48b2ae81
 
     public function getDebugInfo()
     {
-        return array (  58 => 29,  52 => 26,  32 => 9,  28 => 8,  19 => 1,);
+        return array (  62 => 30,  56 => 27,  36 => 10,  32 => 9,  26 => 6,  19 => 1,);
     }
 }

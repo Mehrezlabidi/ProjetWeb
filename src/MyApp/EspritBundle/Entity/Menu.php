@@ -15,7 +15,7 @@ class Menu
     
 
 
-        /**
+    /**
      * @var integer
      *
      * @ORM\Column(name="id", type="integer")
@@ -23,14 +23,16 @@ class Menu
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-      /**
-     * @ORM\OneToMany(targetEntity="Rubrique", mappedBy="menu", cascade={"remove", "persist"})
+    
+    /**
+     * @ORM\OneToMany(targetEntity="Rubrique", mappedBy="menu")
      */
+    
     protected $rubriques;
   
 
-       /**
-     * @ORM\ManyToOne(targetEntity="Utilisateur", inversedBy="menus", cascade={"remove"})
+    /**
+     * @ORM\ManyToOne(targetEntity="Utilisateur", inversedBy="menus")
      * @ORM\JoinColumn(name="utilisateur_id", referencedColumnName="id",nullable=false)
      */
  
