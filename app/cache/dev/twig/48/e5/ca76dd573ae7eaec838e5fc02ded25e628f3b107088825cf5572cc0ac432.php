@@ -11,7 +11,7 @@ class __TwigTemplate_48e5ca76dd573ae7eaec838e5fc02ded25e628f3b107088825cf5572cc0
 
         $this->blocks = array(
             'title' => array($this, 'block_title'),
-            'content' => array($this, 'block_content'),
+            'Rubrique' => array($this, 'block_Rubrique'),
         );
     }
 
@@ -31,8 +31,9 @@ class __TwigTemplate_48e5ca76dd573ae7eaec838e5fc02ded25e628f3b107088825cf5572cc0
     }
 
     // line 4
-    public function block_content($context, array $blocks = array())
+    public function block_Rubrique($context, array $blocks = array())
     {
+        // line 5
         $this->env->loadTemplate("MyAppEspritBundle:Rubrique:liste.html.twig")->display(array_merge($context, array("rubrique" => (isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")))));
     }
 
@@ -48,6 +49,6 @@ class __TwigTemplate_48e5ca76dd573ae7eaec838e5fc02ded25e628f3b107088825cf5572cc0
 
     public function getDebugInfo()
     {
-        return array (  34 => 4,  29 => 3,);
+        return array (  37 => 5,  34 => 4,  29 => 3,);
     }
 }

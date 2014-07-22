@@ -343,7 +343,7 @@ updateSelects(today.getTime());
 \t\t<div class=\"select_sub show\">
 \t\t\t<ul class=\"sub\">
 \t\t\t\t<li><a href=\"#nogo\">ajouter une Rubrique</a></li>
-\t\t\t\t<li class=\"sub_show\"><a href=\"#nogo\">afficher liste des Rubriques</a></li>
+\t\t\t\t<li><a href=\"#nogo\">afficher liste des Rubriques</a></li>
 \t\t\t\t<li><a href=\"#nogo\">supprimer une Rubrique</a></li>
 \t\t\t</ul>
 \t\t</div>

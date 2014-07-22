@@ -1,5 +1,5 @@
 /* ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯          ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯*/
-body {padding:0; margin:0; background:url(images/top.jpg) repeat-x}
+body {padding:0; margin:0; background:url(../images/top.jpg) repeat-x}
 body, td, input, textarea, select{
 	font:normal 11px Tahoma;
 	color:#2A383D;
@@ -30,7 +30,7 @@ table  {width:100%;}
 	font-size:10px; 
 }
 .box_body ul {
-	margin:0px 0px 0px 12px;
+	//////////////////////margin:0px 0px 0px 12px;
 	padding:0; 
 	list-style:none;
 }

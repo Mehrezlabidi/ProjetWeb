@@ -140,7 +140,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         // my_app_esprit_top
         if ($pathinfo === '/index.php') {
-            return array (  '_controller' => 'MyApp\\EspritBundle\\Controller\\RubriqueController::topAction',  '_route' => 'my_app_esprit_top',);
+            return array (  '_controller' => 'MyApp\\EspritBundle\\Controller\\SousrubriqueController::topAction',  '_route' => 'my_app_esprit_top',);
         }
 
         // my_app_esprit_homepage

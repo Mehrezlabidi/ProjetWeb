@@ -14,4 +14,5 @@ class DefaultController extends Controller
     {
         return $this->render('MyAppEspritBundle:Default:administration.html.twig');
     }
+ 
 }
