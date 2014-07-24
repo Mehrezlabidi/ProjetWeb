@@ -1,6 +1,6 @@
 my_app_esprit_top:
-    pattern:  /index.php
-    defaults: { _controller: MyAppEspritBundle:Sousrubrique:top }
+    pattern:  /index.php 
+    defaults: { _controller: MyAppEspritBundle:Article:top } 
     
 my_app_esprit_homepage:
     pattern:  / 

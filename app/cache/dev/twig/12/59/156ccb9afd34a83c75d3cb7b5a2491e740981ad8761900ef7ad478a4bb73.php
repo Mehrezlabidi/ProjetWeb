@@ -7,27 +7,30 @@ class __TwigTemplate_1259156ccb9afd34a83c75d3cb7b5a2491e740981ad8761900ef7ad478a
     {
         parent::__construct($env);
 
-        $this->parent = $this->env->loadTemplate("MyAppEspritBundle::layout.html.twig");
+        $this->parent = false;
 
         $this->blocks = array(
             'content' => array($this, 'block_content'),
         );
     }
 
-    protected function doGetParent(array $context)
-    {
-        return "MyAppEspritBundle::layout.html.twig";
-    }
-
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $this->parent->display($context, array_merge($this->blocks, $blocks));
+        // line 1
+        echo " ";
+        $this->displayBlock('content', $context, $blocks);
     }
 
-    // line 5
     public function block_content($context, array $blocks = array())
     {
-        echo $this->env->getExtension('actions')->renderUri("MyAppEspritBundle:Rubrique:top", array());
+        // line 2
+        echo " 
+";
+        // line 3
+        echo $this->env->getExtension('actions')->renderUri("MyAppEspritBundle:Article:top", array());
+        // line 4
+        echo "
+";
     }
 
     public function getTemplateName()
@@ -35,13 +38,8 @@ class __TwigTemplate_1259156ccb9afd34a83c75d3cb7b5a2491e740981ad8761900ef7ad478a
         return "MyAppEspritBundle:Default:index.html.twig";
     }
 
-    public function isTraitable()
-    {
-        return false;
-    }
-
     public function getDebugInfo()
     {
-        return array (  28 => 5,);
+        return array (  32 => 4,  30 => 3,  27 => 2,  20 => 1,);
     }
 }

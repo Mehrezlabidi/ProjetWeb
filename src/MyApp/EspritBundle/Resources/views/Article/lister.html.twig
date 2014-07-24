@@ -1,0 +1,14 @@
+{% extends 'MyAppEspritBundle::layout.html.twig' %}
+
+ 
+
+{% block content %}
+
+{% include 'MyAppEspritBundle:Article:liste.html.twig' with {'article' : article}  %}
+{% include 'MyAppEspritBundle:Article:liste.html.twig' with {'rubrique' : rubrique}  %}
+ {% include 'MyAppEspritBundle:Article:liste.html.twig' with {'actualite' : actualite}  %}
+{% include 'MyAppEspritBundle:Article:liste.html.twig' with {'sousrubrique' : sousrubrique}  %}
+{% include 'MyAppEspritBundle:Article:liste.html.twig' with {'menu' : menu}  %}
+{% include 'MyAppEspritBundle:Article:liste.html.twig' with {'role' : role}  %}
+
+{% endblock %}

@@ -25,7 +25,7 @@ class Article
     private $id;
     
     /**
-     * @ORM\ManyToOne(targetEntity="Article", inversedBy="rubriques")
+     * @ORM\ManyToOne(targetEntity="Rubrique", inversedBy="articles")
      * @ORM\JoinColumn(name="rubrique_id", referencedColumnName="id",nullable=false)
      */
  

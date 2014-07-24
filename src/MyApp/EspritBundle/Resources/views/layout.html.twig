@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 {% block head %}
-   <title>{% block title %}Home{% endblock %}</title>
+   <title>   </title>
     <meta charset="utf-8">
 <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" /> 
 
@@ -19,6 +19,10 @@
     <body>
         <!--==============================header=================================-->
             
+ 
+ 
+
+               
         <table cellpadding="0" cellspacing="0" border="0" class="main">
             <tr>
                 <td align="center">	
@@ -95,27 +99,39 @@
                                                         <br style="line-height:5px" />
                                                         <ul>
                                          
-          <!-- menu a gauche  -->                                   
-
+          <!-- menu a gauche  -->     
+     
 	<ul class="menu"> 
-   {% if sousrubrique|length > 0 %}
-            {% for each in sousrubrique %}
-	        
-                <li class="item1"><a href="#">{{ each.rubrique.title }}<span>R</span></a>           
-			<ul>                 
-	                        <li class="subitem1"><a href="#">{{ each.title}}<span>S</span></a></li>        
-			</ul>
-		</li>     
-            {% endfor %} 
-           
-   {% else %}
-	<b>Aucun sous rubrique pour l'instant.</b>
-   {% endif %}            
-		      
-	</ul>
-
+  
+ {% for rubrique in rubrique  %}
+                <li class="item1"><a href="#"> {{  rubrique.title }} <span>R</span></a>  
+                    
+			 <ul>                 
+               {% for sousrubrique in sousrubrique %}
+                         {# on affiche seulement les sous rubriques associés#}
+                    {% if sousrubrique.rubrique.id == rubrique.id %}     
+                             <li class="subitem1"><a href="#">{{sousrubrique.title }} <span>S</span></a></li> 
+                    {% endif %}         
+               {%endfor%} 
  
-
+               {% for  article in  article %} 
+                             {# on affiche seulement les articles associés#}
+                      {% if article.rubrique.id == rubrique.id %} 
+                             <li class="subitem1"><a href="#">{{article.nom }} <span>A</span></a></li>
+                      {% endif %}  
+               {%endfor%}  
+			</ul>
+                    
+		</li>     
+                
+            
+ {%endfor%}   
+  
+       
+	</ul>
+  
+   
+   
 <!--initiate accordion-->
 <script type="text/javascript">
 	$(function() {

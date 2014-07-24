@@ -114,6 +114,77 @@ class ArticleController extends Controller
     
     
     
+public function topAction($max = 50)
+{
+    $em = $this->container->get('doctrine')->getEntityManager();
+    
+    
+    /*recuperer article*/
+    $qb1 = $em->createQueryBuilder();
+    $qb1->select('a')
+     ->from('MyAppEspritBundle:Article', 'a')   
+     ->setMaxResults($max);
+     $query1 = $qb1->getQuery();
+    $article = $query1->getResult();
+    
+     /*recuperer rubrique*/
+     $qb2= $em->createQueryBuilder();
+     $qb2->select('b')
+      ->from('MyAppEspritBundle:Rubrique', 'b')   
+      ->setMaxResults($max);
+     $query2 = $qb2->getQuery();
+     $rubrique = $query2->getResult();
+     
+     /*recuperer sousrubrique*/
+     $qb3= $em->createQueryBuilder();
+     $qb3->select('c')
+      ->from('MyAppEspritBundle:Sousrubrique', 'c')   
+      ->setMaxResults($max);
+     $query3 = $qb3->getQuery();
+     $sousrubrique = $query3->getResult();
+     
+    /*recuperer actualite*/
+     $qb4= $em->createQueryBuilder();
+     $qb4->select('c')
+      ->from('MyAppEspritBundle:Actualite', 'c')   
+      ->setMaxResults($max);
+     $query4 = $qb4->getQuery();
+     $actualite = $query4->getResult();
+     
+     /*recuperer menu*/
+     $qb5= $em->createQueryBuilder();
+     $qb5->select('c')
+      ->from('MyAppEspritBundle:Menu', 'c')   
+      ->setMaxResults($max);
+     $query5 = $qb5->getQuery();
+     $menu = $query5->getResult();
+   
+    
+      /*recuperer role*/
+     $qb6= $em->createQueryBuilder();
+     $qb6->select('c')
+      ->from('MyAppEspritBundle:Role', 'c')   
+      ->setMaxResults($max);
+     $query6 = $qb6->getQuery();
+     $role = $query6->getResult();
+     
+   
+    
+    
+    
+    
+     
+    return $this->container->get('templating')->renderResponse('MyAppEspritBundle:Article:lister.html.twig', array(
+        
+        'article' => $article,
+        'rubrique' => $rubrique,
+        'sousrubrique' => $sousrubrique,
+        'actualite' => $actualite,
+        'menu' => $menu,
+        'role' => $role,
+        
+    ));
+}
     
     
 }
