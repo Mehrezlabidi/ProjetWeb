@@ -1,0 +1,21 @@
+{% extends 'MyAppEspritBundle::layout.html.twig' %}
+
+
+ {% block article%}
+</br>
+<ul>
+    <li>&nbsp;&nbsp;&nbsp;{{article.nom}}  </li></br> 
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ article.date|date('d/m/Y')}} </li></br>
+    
+</ul>
+ 
+</br>
+  
+    &nbsp;&nbsp;&nbsp;<img src="{{ article.image }}" alt="" width="100" height="100" class="img-border"> </br></br>
+     &nbsp;&nbsp;&nbsp;{{article.texte}}
+{% endblock %}
+     
+     
+     
+     
+     

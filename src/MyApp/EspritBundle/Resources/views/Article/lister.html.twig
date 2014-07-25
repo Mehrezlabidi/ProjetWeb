@@ -4,11 +4,34 @@
 
 {% block content %}
 
-{% include 'MyAppEspritBundle:Article:liste.html.twig' with {'article' : article}  %}
-{% include 'MyAppEspritBundle:Article:liste.html.twig' with {'rubrique' : rubrique}  %}
- {% include 'MyAppEspritBundle:Article:liste.html.twig' with {'actualite' : actualite}  %}
-{% include 'MyAppEspritBundle:Article:liste.html.twig' with {'sousrubrique' : sousrubrique}  %}
-{% include 'MyAppEspritBundle:Article:liste.html.twig' with {'menu' : menu}  %}
-{% include 'MyAppEspritBundle:Article:liste.html.twig' with {'role' : role}  %}
+{% include 'MyAppEspritBundle:Article:lister.html.twig' with {'article' : article}  %}
+{% include 'MyAppEspritBundle:Article:lister.html.twig' with {'rubrique' : rubrique}  %}
+ {% include 'MyAppEspritBundle:Article:lister.html.twig' with {'actualite' : actualite}  %}
+{% include 'MyAppEspritBundle:Article:lister.html.twig' with {'sousrubrique' : sousrubrique}  %}
+{% include 'MyAppEspritBundle:Article:lister.html.twig' with {'menu' : menu}  %}
+{% include 'MyAppEspritBundle:Article:lister.html.twig' with {'role' : role}  %}
 
+{% endblock %}
+
+ {% block menu %}
+ {% for rubrique in rubrique  %}
+                <li class="item1"><a href="#"> {{  rubrique.title }} <span>R</span></a>                     
+			 <ul>                 
+               {% for sousrubrique in sousrubrique %}
+                         {# on affiche seulement les sous rubriques associés#}
+                    {% if sousrubrique.rubrique.id == rubrique.id %}     
+ <li class="subitem1"><a href="#">{{sousrubrique.title }} <span>S</span></a></li> 
+                    {% endif %}         
+               {%endfor%} 
+               {% for  article in  article %} 
+                             {# on affiche seulement les articles associés#}
+                      {% if article.rubrique.id == rubrique.id %} 
+  <li class="subitem1">
+      <a href="{{ path('my_app_esprit_article_voir',{'id':article.id}) }}">{{article.nom }} <span>A</span></a>
+  </li>
+                      {% endif %}  
+               {%endfor%}  
+			</ul>                   
+		</li>                
+ {%endfor%}
 {% endblock %}

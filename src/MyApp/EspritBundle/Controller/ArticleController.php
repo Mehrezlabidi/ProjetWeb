@@ -177,7 +177,8 @@ public function topAction($max = 50)
     
     
      
-    return $this->container->get('templating')->renderResponse('MyAppEspritBundle:Article:lister.html.twig', array(
+    return $this->container->get('templating')
+            ->renderResponse('MyAppEspritBundle:Article:lister.html.twig', array(
         
         'article' => $article,
         'rubrique' => $rubrique,
@@ -189,5 +190,29 @@ public function topAction($max = 50)
     ));
 }
     
+
+    public function showbyidAction($id)
+    {
+         $em = $this->getDoctrine()->getEntityManager();
+ 
+    $article = $em->getRepository('MyAppEspritBundle:Article')->find($id);
+ 
+    if (!$article) {
+        throw $this->createNotFoundException('Unable to find article entity.');
+    }
+ 
+    //$deleteForm = $this->createDeleteForm($id);
+ 
+    return $this->render('MyAppEspritBundle:Article:showbyid.html.twig', array(
+        'article'      => $article,
+      //  'delete_form' => $deleteForm->createView(),
+ 
+    ));
+        
+        
+        
+        
+    }
+
     
 }

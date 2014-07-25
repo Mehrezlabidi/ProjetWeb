@@ -334,83 +334,91 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        if (0 === strpos($pathinfo, '/admin')) {
-            // sonata_admin_redirect
-            if (rtrim($pathinfo, '/') === '/admin') {
-                if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'sonata_admin_redirect');
-                }
-
-                return array (  '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\RedirectController::redirectAction',  'route' => 'sonata_admin_dashboard',  'permanent' => 'true',  '_route' => 'sonata_admin_redirect',);
+        if (0 === strpos($pathinfo, '/a')) {
+            // my_app_esprit_article_voir
+            if (0 === strpos($pathinfo, '/article') && preg_match('#^/article/(?P<id>\\d+)/voir$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'my_app_esprit_article_voir')), array (  '_controller' => 'MyApp\\EspritBundle\\Controller\\ArticleController::showbyidAction',));
             }
 
-            // sonata_admin_dashboard
-            if ($pathinfo === '/admin/dashboard') {
-                return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CoreController::dashboardAction',  '_route' => 'sonata_admin_dashboard',);
-            }
+            if (0 === strpos($pathinfo, '/admin')) {
+                // sonata_admin_redirect
+                if (rtrim($pathinfo, '/') === '/admin') {
+                    if (substr($pathinfo, -1) !== '/') {
+                        return $this->redirect($pathinfo.'/', 'sonata_admin_redirect');
+                    }
 
-            if (0 === strpos($pathinfo, '/admin/core')) {
-                // sonata_admin_retrieve_form_element
-                if ($pathinfo === '/admin/core/get-form-field-element') {
-                    return array (  '_controller' => 'sonata.admin.controller.admin:retrieveFormFieldElementAction',  '_route' => 'sonata_admin_retrieve_form_element',);
+                    return array (  '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\RedirectController::redirectAction',  'route' => 'sonata_admin_dashboard',  'permanent' => 'true',  '_route' => 'sonata_admin_redirect',);
                 }
 
-                // sonata_admin_append_form_element
-                if ($pathinfo === '/admin/core/append-form-field-element') {
-                    return array (  '_controller' => 'sonata.admin.controller.admin:appendFormFieldElementAction',  '_route' => 'sonata_admin_append_form_element',);
+                // sonata_admin_dashboard
+                if ($pathinfo === '/admin/dashboard') {
+                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CoreController::dashboardAction',  '_route' => 'sonata_admin_dashboard',);
                 }
 
-                // sonata_admin_short_object_information
-                if (0 === strpos($pathinfo, '/admin/core/get-short-object-description') && preg_match('#^/admin/core/get\\-short\\-object\\-description(?:\\.(?P<_format>html|json))?$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'sonata_admin_short_object_information')), array (  '_controller' => 'sonata.admin.controller.admin:getShortObjectDescriptionAction',  '_format' => 'html',));
+                if (0 === strpos($pathinfo, '/admin/core')) {
+                    // sonata_admin_retrieve_form_element
+                    if ($pathinfo === '/admin/core/get-form-field-element') {
+                        return array (  '_controller' => 'sonata.admin.controller.admin:retrieveFormFieldElementAction',  '_route' => 'sonata_admin_retrieve_form_element',);
+                    }
+
+                    // sonata_admin_append_form_element
+                    if ($pathinfo === '/admin/core/append-form-field-element') {
+                        return array (  '_controller' => 'sonata.admin.controller.admin:appendFormFieldElementAction',  '_route' => 'sonata_admin_append_form_element',);
+                    }
+
+                    // sonata_admin_short_object_information
+                    if (0 === strpos($pathinfo, '/admin/core/get-short-object-description') && preg_match('#^/admin/core/get\\-short\\-object\\-description(?:\\.(?P<_format>html|json))?$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'sonata_admin_short_object_information')), array (  '_controller' => 'sonata.admin.controller.admin:getShortObjectDescriptionAction',  '_format' => 'html',));
+                    }
+
+                    // sonata_admin_set_object_field_value
+                    if ($pathinfo === '/admin/core/set-object-field-value') {
+                        return array (  '_controller' => 'sonata.admin.controller.admin:setObjectFieldValueAction',  '_route' => 'sonata_admin_set_object_field_value',);
+                    }
+
                 }
 
-                // sonata_admin_set_object_field_value
-                if ($pathinfo === '/admin/core/set-object-field-value') {
-                    return array (  '_controller' => 'sonata.admin.controller.admin:setObjectFieldValueAction',  '_route' => 'sonata_admin_set_object_field_value',);
+                // sonata_admin_search
+                if ($pathinfo === '/admin/search') {
+                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CoreController::searchAction',  '_route' => 'sonata_admin_search',);
                 }
 
-            }
+                if (0 === strpos($pathinfo, '/admin/myapp/rubrique/rubrique')) {
+                    // admin_myapp_rubrique_rubrique_list
+                    if ($pathinfo === '/admin/myapp/rubrique/rubrique/list') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::listAction',  '_sonata_admin' => 'sonata.admin.rubrique',  '_sonata_name' => 'admin_myapp_rubrique_rubrique_list',  '_route' => 'admin_myapp_rubrique_rubrique_list',);
+                    }
 
-            // sonata_admin_search
-            if ($pathinfo === '/admin/search') {
-                return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CoreController::searchAction',  '_route' => 'sonata_admin_search',);
-            }
+                    // admin_myapp_rubrique_rubrique_create
+                    if ($pathinfo === '/admin/myapp/rubrique/rubrique/create') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::createAction',  '_sonata_admin' => 'sonata.admin.rubrique',  '_sonata_name' => 'admin_myapp_rubrique_rubrique_create',  '_route' => 'admin_myapp_rubrique_rubrique_create',);
+                    }
 
-            if (0 === strpos($pathinfo, '/admin/myapp/rubrique/rubrique')) {
-                // admin_myapp_rubrique_rubrique_list
-                if ($pathinfo === '/admin/myapp/rubrique/rubrique/list') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::listAction',  '_sonata_admin' => 'sonata.admin.rubrique',  '_sonata_name' => 'admin_myapp_rubrique_rubrique_list',  '_route' => 'admin_myapp_rubrique_rubrique_list',);
-                }
+                    // admin_myapp_rubrique_rubrique_batch
+                    if ($pathinfo === '/admin/myapp/rubrique/rubrique/batch') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::batchAction',  '_sonata_admin' => 'sonata.admin.rubrique',  '_sonata_name' => 'admin_myapp_rubrique_rubrique_batch',  '_route' => 'admin_myapp_rubrique_rubrique_batch',);
+                    }
 
-                // admin_myapp_rubrique_rubrique_create
-                if ($pathinfo === '/admin/myapp/rubrique/rubrique/create') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::createAction',  '_sonata_admin' => 'sonata.admin.rubrique',  '_sonata_name' => 'admin_myapp_rubrique_rubrique_create',  '_route' => 'admin_myapp_rubrique_rubrique_create',);
-                }
+                    // admin_myapp_rubrique_rubrique_edit
+                    if (preg_match('#^/admin/myapp/rubrique/rubrique/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_myapp_rubrique_rubrique_edit')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::editAction',  '_sonata_admin' => 'sonata.admin.rubrique',  '_sonata_name' => 'admin_myapp_rubrique_rubrique_edit',));
+                    }
 
-                // admin_myapp_rubrique_rubrique_batch
-                if ($pathinfo === '/admin/myapp/rubrique/rubrique/batch') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::batchAction',  '_sonata_admin' => 'sonata.admin.rubrique',  '_sonata_name' => 'admin_myapp_rubrique_rubrique_batch',  '_route' => 'admin_myapp_rubrique_rubrique_batch',);
-                }
+                    // admin_myapp_rubrique_rubrique_delete
+                    if (preg_match('#^/admin/myapp/rubrique/rubrique/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_myapp_rubrique_rubrique_delete')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::deleteAction',  '_sonata_admin' => 'sonata.admin.rubrique',  '_sonata_name' => 'admin_myapp_rubrique_rubrique_delete',));
+                    }
 
-                // admin_myapp_rubrique_rubrique_edit
-                if (preg_match('#^/admin/myapp/rubrique/rubrique/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_myapp_rubrique_rubrique_edit')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::editAction',  '_sonata_admin' => 'sonata.admin.rubrique',  '_sonata_name' => 'admin_myapp_rubrique_rubrique_edit',));
-                }
+                    // admin_myapp_rubrique_rubrique_show
+                    if (preg_match('#^/admin/myapp/rubrique/rubrique/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                        return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_myapp_rubrique_rubrique_show')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::showAction',  '_sonata_admin' => 'sonata.admin.rubrique',  '_sonata_name' => 'admin_myapp_rubrique_rubrique_show',));
+                    }
 
-                // admin_myapp_rubrique_rubrique_delete
-                if (preg_match('#^/admin/myapp/rubrique/rubrique/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_myapp_rubrique_rubrique_delete')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::deleteAction',  '_sonata_admin' => 'sonata.admin.rubrique',  '_sonata_name' => 'admin_myapp_rubrique_rubrique_delete',));
-                }
+                    // admin_myapp_rubrique_rubrique_export
+                    if ($pathinfo === '/admin/myapp/rubrique/rubrique/export') {
+                        return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::exportAction',  '_sonata_admin' => 'sonata.admin.rubrique',  '_sonata_name' => 'admin_myapp_rubrique_rubrique_export',  '_route' => 'admin_myapp_rubrique_rubrique_export',);
+                    }
 
-                // admin_myapp_rubrique_rubrique_show
-                if (preg_match('#^/admin/myapp/rubrique/rubrique/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'admin_myapp_rubrique_rubrique_show')), array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::showAction',  '_sonata_admin' => 'sonata.admin.rubrique',  '_sonata_name' => 'admin_myapp_rubrique_rubrique_show',));
-                }
-
-                // admin_myapp_rubrique_rubrique_export
-                if ($pathinfo === '/admin/myapp/rubrique/rubrique/export') {
-                    return array (  '_controller' => 'Sonata\\AdminBundle\\Controller\\CRUDController::exportAction',  '_sonata_admin' => 'sonata.admin.rubrique',  '_sonata_name' => 'admin_myapp_rubrique_rubrique_export',  '_route' => 'admin_myapp_rubrique_rubrique_export',);
                 }
 
             }

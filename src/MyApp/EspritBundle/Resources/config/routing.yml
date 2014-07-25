@@ -112,6 +112,11 @@ my_app_esprit_role_edit:
     pattern:  /role/{id}/edit
     defaults: { _controller: MyAppEspritBundle:Role:edit}  
     #               fin du routing              #
+my_app_esprit_article_voir:
+    pattern:   /article/{id}/voir
+    defaults:  { _controller: MyAppEspritBundle:Article:showbyid }
+    requirements:
+        id:  \d+    
     
     
  
