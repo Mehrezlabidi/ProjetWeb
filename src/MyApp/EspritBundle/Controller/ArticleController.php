@@ -52,8 +52,7 @@ class ArticleController extends Controller
             'article' => $article,
         ));
     }
-    
-    
+ 
     
     public function deleteAction($id)
     {
@@ -88,8 +87,12 @@ class ArticleController extends Controller
     
     $form = $this->createFormBuilder($article)
         
-        ->add('position', 'integer')
-        ->add('title', 'text')
+        ->add('texte', 'text')   
+        ->add('image', 'text') 
+        ->add('nom', 'text')
+        ->add('date', 'date')   
+            
+            
         ->add('rubrique','entity',array('class'=>'MyApp\EspritBundle\Entity\Rubrique','property'=>'id'))
       ##  ->add('sousrubrique','entity',array('class'=>'MyApp\EspritBundle\Entity\Sousrubrique','property'=>'id'))
             

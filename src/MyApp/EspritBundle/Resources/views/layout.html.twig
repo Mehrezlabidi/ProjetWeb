@@ -110,14 +110,14 @@
                {% for sousrubrique in sousrubrique %}
                          {# on affiche seulement les sous rubriques associés#}
                     {% if sousrubrique.rubrique.id == rubrique.id %}     
-                             <li class="subitem1"><a href="#">{{sousrubrique.title }} <span>S</span></a></li> 
+ <li class="subitem1"><a href="#">{{sousrubrique.title }} <span>S</span></a></li> 
                     {% endif %}         
                {%endfor%} 
  
                {% for  article in  article %} 
                              {# on affiche seulement les articles associés#}
                       {% if article.rubrique.id == rubrique.id %} 
-                             <li class="subitem1"><a href="#">{{article.nom }} <span>A</span></a></li>
+  <li class="subitem1"><a href="#">{{article.nom }} <span>A</span></a></li>
                       {% endif %}  
                {%endfor%}  
 			</ul>
@@ -201,7 +201,7 @@
                                                     </td>
                                                 </tr>
                                             </table>
-                                            <table cellpadding="0" cellspacing="0" border="0" class="product">
+                                    <!--        <table cellpadding="0" cellspacing="0" border="0" class="product">
                                                 <tr>
                                                     <td style="padding:0px 2px 3px 2px;">
                                                         <table cellpadding="0" cellspacing="0" border="0">
@@ -380,7 +380,7 @@
                                                         </a>
                                                     </td>
                                                 </tr>
-                                            </table>
+                                            </table> -->
                                         </td>
                                         <td><img src="images/spacer.gif" alt="" width="1" height="1" /></td>
                                         <td style="width:177px">

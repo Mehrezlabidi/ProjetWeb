@@ -181,7 +181,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                 echo "                    ";
                 if (($this->getAttribute($this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "rubrique"), "id") == $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "id"))) {
                     echo "     
-                             <li class=\"subitem1\"><a href=\"#\">";
+ <li class=\"subitem1\"><a href=\"#\">";
                     // line 113
                     echo twig_escape_filter($this->env, $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "title"), "html", null, true);
                     echo " <span>S</span></a></li> 
@@ -208,7 +208,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                 echo "                      ";
                 if (($this->getAttribute($this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "rubrique"), "id") == $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "id"))) {
                     echo " 
-                             <li class=\"subitem1\"><a href=\"#\">";
+  <li class=\"subitem1\"><a href=\"#\">";
                     // line 120
                     echo twig_escape_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "nom"), "html", null, true);
                     echo " <span>A</span></a></li>
@@ -331,7 +331,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                     </td>
                                                 </tr>
                                             </table>
-                                            <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"product\">
+                                    <!--        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"product\">
                                                 <tr>
                                                     <td style=\"padding:0px 2px 3px 2px;\">
                                                         <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">
@@ -585,7 +585,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                         </a>
                                                     </td>
                                                 </tr>
-                                            </table>
+                                            </table> -->
                                         </td>
                                         <td><img src=\"images/spacer.gif\" alt=\"\" width=\"1\" height=\"1\" /></td>
                                         <td style=\"width:177px\">
