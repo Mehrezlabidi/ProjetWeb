@@ -126,7 +126,8 @@ public function topAction($max = 50)
     /*recuperer article*/
     $qb1 = $em->createQueryBuilder();
     $qb1->select('a')
-     ->from('MyAppEspritBundle:Article', 'a')   
+     ->from('MyAppEspritBundle:Article', 'a')  
+     ->orderBy('a.date')       
      ->setMaxResults($max);
      $query1 = $qb1->getQuery();
     $article = $query1->getResult();
@@ -134,7 +135,8 @@ public function topAction($max = 50)
      /*recuperer rubrique*/
      $qb2= $em->createQueryBuilder();
      $qb2->select('b')
-      ->from('MyAppEspritBundle:Rubrique', 'b')   
+      ->from('MyAppEspritBundle:Rubrique', 'b')  
+       ->orderBy('b.position')        
       ->setMaxResults($max);
      $query2 = $qb2->getQuery();
      $rubrique = $query2->getResult();
@@ -142,7 +144,8 @@ public function topAction($max = 50)
      /*recuperer sousrubrique*/
      $qb3= $em->createQueryBuilder();
      $qb3->select('c')
-      ->from('MyAppEspritBundle:Sousrubrique', 'c')   
+      ->from('MyAppEspritBundle:Sousrubrique', 'c') 
+      ->orderBy('c.position')         
       ->setMaxResults($max);
      $query3 = $qb3->getQuery();
      $sousrubrique = $query3->getResult();
@@ -150,7 +153,8 @@ public function topAction($max = 50)
     /*recuperer actualite*/
      $qb4= $em->createQueryBuilder();
      $qb4->select('c')
-      ->from('MyAppEspritBundle:Actualite', 'c')   
+      ->from('MyAppEspritBundle:Actualite', 'c')  
+       ->orderBy('c.dateinsertion')        
       ->setMaxResults($max);
      $query4 = $qb4->getQuery();
      $actualite = $query4->getResult();
@@ -158,7 +162,8 @@ public function topAction($max = 50)
      /*recuperer menu*/
      $qb5= $em->createQueryBuilder();
      $qb5->select('c')
-      ->from('MyAppEspritBundle:Menu', 'c')   
+      ->from('MyAppEspritBundle:Menu', 'c')  
+      ->orderBy('c.position')         
       ->setMaxResults($max);
      $query5 = $qb5->getQuery();
      $menu = $query5->getResult();
@@ -167,7 +172,8 @@ public function topAction($max = 50)
       /*recuperer role*/
      $qb6= $em->createQueryBuilder();
      $qb6->select('c')
-      ->from('MyAppEspritBundle:Role', 'c')   
+      ->from('MyAppEspritBundle:Role', 'c')  
+      ->orderBy('c.permission')         
       ->setMaxResults($max);
      $query6 = $qb6->getQuery();
      $role = $query6->getResult();

@@ -72,10 +72,10 @@ class __TwigTemplate_75e3ce1b04bc6194d94ee665e0d53d75179ea572f0a27995465c1be0563
     
     
     </br></br>
-     &nbsp;&nbsp;&nbsp;";
+    &nbsp;&nbsp;&nbsp;";
         // line 29
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "texte"), "html", null, true);
-        echo "
+        echo " 
 ";
     }
 

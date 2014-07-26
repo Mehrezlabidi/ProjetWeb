@@ -1,22 +1,22 @@
 
- 
 <!DOCTYPE html>
 <html>
 <head>
     <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" /> 
-    <title>Liste Menus</title>
-      <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/show.css') }}"/> 
-
+    <title>Liste menus</title>
+     <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/show.css') }}"/> 
 </head>
 
 <body>
-<div style="padding: 120px 50px 0 10px;">
+    <div style="padding: 120px 50px 0 10px;">
 <h2>Les menus</h2>
-<div style="height: 170px;  width: 800px;overflow: auto; padding: 20px -40px 0 -10px;">
 <center >
+      <div style="height:141px;width:500px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+
 <table class="bordered" >
     <thead>
 
+    
     <tr>
         <th>#</th>        
         <th>Title</th>
@@ -26,8 +26,9 @@
     </thead>
    
        {% for menu in menu %}
-     <tr>
-        <th>{{ menu.id }}</th> 
+
+        <tr>
+        <td>{{ menu.id }}</th> 
         <td>{{ menu.title }}</td>
         <td><b>No  </b>{{ menu.position }}</td>
         
@@ -43,14 +44,14 @@
         <td><a href="{{ path('my_app_esprit_menu_edit',{'id':menu.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/update.png') }}" alt="" />  </a></td>
 
         {% endfor %}
-    </tr>        
+    </tr>       
     
  
 
-</table></div>
-    <h2><a href="{{ path('my_app_esprit_menu_new') }}">ajouter menu</a></h2>
+</table> </div> 
 </center>
     </div>
+    <center><h2><a href="{{ path('my_app_esprit_menu_new') }}">ajouter menu</a></h2></center>
 
 </body>
 </html>

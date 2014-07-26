@@ -180,4 +180,12 @@ pugx_multi_user:
           template: MyAppUserBundle:Registration:user_two.form.html.twig
         profile:
           form: 
-            type: MyApp\UserBundle\Form\Type\ProfileUserTwoFormType        
+            type: MyApp\UserBundle\Form\Type\ProfileUserTwoFormType
+            
+ #pour truncate lors dee l affichage d un texte assez long#
+services:
+    twig.extension.text:
+       class: Twig_Extensions_Extension_Text
+       tags:
+           - { name: twig.extension }            
+            

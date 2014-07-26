@@ -10,7 +10,8 @@
 <body>
     <div style="padding: 120px 50px 0 10px;">
 <h2>Les articles</h2>
-<center >
+<center ><div style="height:150px;width:655px;border:1px solid #ccc;font:10px/15px Georgia, Garamond, Serif;overflow:auto;">
+
 <table class="bordered" >
 <thead>
 
@@ -31,7 +32,7 @@
        {% for article in article %}
      <tr>
          <th>{{ article.id }}</th> 
-         <td>{{ article.texte }}</td>
+         <td>{{ article.texte | truncate(20, true, '...') }}</td>
          <td>{{ article.nom }}</td>
       <!--  <td>article.date</td>  -->
          <td>   {{ article.date|date('d/m/Y')}}         </td>
@@ -72,10 +73,10 @@
  
 
 </table>
-    <h2><a href="{{ path('my_app_esprit_article_new') }}">ajouter article</a></h2>
-</center>
-    </div>
-
+  </div> 
+</center> </div>
+    
+ <center><h2><a href="{{ path('my_app_esprit_article_new') }}">ajouter article</a></h2></center>
 </body>
 </html>
  

@@ -95,7 +95,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 <div class=\"stretchMenu\">
 \t<ul class=\"stretchDrop\">
 \t<!-- item 1 -->
-\t <li class=\"slide p1\"><a href=\"#url\">Kodak</a><div><b></b>
+\t <li class=\"slide p1\"><a href=\"#url\">Rub1</a><div><b></b>
 \t\t<dl>
 \t\t<dt>APN</dt>
 \t\t<dd><a href=\"url\">Model #1</a></dd>
@@ -115,7 +115,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 \t\t</div>
 \t</li>
         
-        <li class=\"slide p3\"><a href=\"#url\">Kodak</a><div><b></b>
+        <li class=\"slide p3\"><a href=\"#url\">Rub2</a><div><b></b>
 \t\t<dl>
 \t\t<dt>APN</dt>
 \t\t<dd><a href=\"url\">Model #1</a></dd>
@@ -135,7 +135,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 \t\t</div>
 \t</li>
 \t<!-- item 3 -->
-\t<li class=\"slide p5\"><a href=\"#url\">Kodak</a><div><b></b>
+\t<li class=\"slide p5\"><a href=\"#url\">Rub3</a><div><b></b>
 \t\t<dl>
 \t\t<dt>APN</dt>
 \t\t<dd><a href=\"url\">Model #1</a></dd>
@@ -155,7 +155,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 \t\t</div>
 \t</li>
 \t<!-- item 4 -->
-\t<li class=\"slide p4\"><a href=\"#url\">Olympus</a><div><b></b>
+\t<li class=\"slide p4\"><a href=\"#url\">Rub4</a><div><b></b>
 \t\t<dl>
 \t\t<dt>APN</dt>
 \t\t<dd><a href=\"url\">Model #1</a></dd>
@@ -175,7 +175,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 \t\t</div>
 \t</li>
 \t<!-- item 5 -->
-\t<li class=\"last p1\"><a href=\"#url\">Pentax</a><div><b></b>
+\t<li class=\"last p1\"><a href=\"#url\">Rub5</a><div><b></b>
 \t\t<dl>
 \t\t<dt>APN</dt>
 \t\t<dd><a href=\"url\">Model #1</a></dd>
@@ -350,7 +350,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                     </td>
                                                 </tr>
                                             </table>
-     <div style=\"height:400px;width:350px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;\">
+<!-- div pour  limiter larticle => -->     <div style=\"height:400px;width:350px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;\">
                                             ";
         // line 292
         $this->displayBlock('article', $context, $blocks);

@@ -32,7 +32,7 @@
         <th>{{ actualite.id }}</th> 
         <td>{{ actualite.titre }}</td>
         <td>{{ actualite.dateinsertion|date('d/m/Y')  }}</td> <!-- date ici pas converti -->
-        <td>{{ actualite.description }}</td>
+        <td>{{ actualite.description | truncate(20, true, '...') }}</td>
        <td><b>No  </b>{{ actualite.utilisateur.id}}</td>
        
        {% if actualite.image is  not  null %}
