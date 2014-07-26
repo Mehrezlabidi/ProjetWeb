@@ -252,7 +252,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 ";
         // line 210
         $this->displayBlock('menu', $context, $blocks);
-        // line 211
+        // line 215
         echo "
   
        
@@ -292,7 +292,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                     <td class=\"c1_right\">
 
                                                         <img src=\"";
-        // line 249
+        // line 253
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" width=\"9\" height=\"1\" alt=\"\" />                                     
                                                     </td>
@@ -300,21 +300,21 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                 <tr>
                                                     <td>
                                                         <img src=\"";
-        // line 254
+        // line 258
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c1_bl.jpg"), "html", null, true);
         echo "\" alt=\"\" />                                     
 
                                                     </td>
                                                     <td class=\"c1_bottom\">
                                                         <img src=\"";
-        // line 258
+        // line 262
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"1\" height=\"9\" />                                       
 
                                                     </td>
                                                     <td>
                                                        <img src=\"";
-        // line 262
+        // line 266
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c1_br.jpg"), "html", null, true);
         echo "\" alt=\"\" />                                                  
 
@@ -324,7 +324,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                         </td>
                                         <td>
                                             <img src=\"";
-        // line 269
+        // line 273
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" width=\"3\" height=\"1\" alt=\"\" />                               
 
@@ -334,7 +334,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                 <tr>
                                                     <td>
                                                       <img src=\"";
-        // line 276
+        // line 280
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/title2_left.jpg"), "html", null, true);
         echo "\" alt=\"\" />                                                             
 
@@ -342,7 +342,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                     <td style=\"width:100%\">featured products:</td>
                                                     <td>
                                                        <img src=\"";
-        // line 281
+        // line 285
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/title2_right.jpg"), "html", null, true);
         echo "\" alt=\"\" />                                                         
 
@@ -350,12 +350,13 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                     </td>
                                                 </tr>
                                             </table>
-                                            
+     <div style=\"height:400px;width:350px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;\">
                                             ";
-        // line 288
+        // line 292
         $this->displayBlock('article', $context, $blocks);
-        // line 289
-        echo "                                    <!--        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"product\">
+        // line 293
+        echo "                                            </div>
+                                    <!--        <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"product\">
                                                 <tr>
                                                     <td style=\"padding:0px 2px 3px 2px;\">
                                                         <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\">
@@ -365,7 +366,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                                         <tr>
                                                                             <td>
                                                                               <img src=\"";
-        // line 298
+        // line 303
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c2_tl.jpg"), "html", null, true);
         echo "\" alt=\"\" />                                                        
 
@@ -374,14 +375,14 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                                             <td class=\"c2_top\">
 
                                                                                 <img src=\"";
-        // line 304
+        // line 309
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"9\" height=\"9\" />                 
                                                                             </td>
                                                                             <td>
 
                                                                                <img src=\"";
-        // line 308
+        // line 313
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c2_tr.jpg"), "html", null, true);
         echo "\" alt=\"\" />                  
                                                                             </td>
@@ -390,7 +391,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                                             <td class=\"c2_left\">
 
                                                                                 <img src=\"";
-        // line 314
+        // line 319
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"9\" height=\"1\"  />                
                                                                             </td>
@@ -405,7 +406,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                                                         <td>
 
                                                                                             <img src=\"";
-        // line 326
+        // line 331
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/0p1.jpg"), "html", null, true);
         echo "\" alt=\"\" />                                  
 
@@ -421,7 +422,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                                                             <a href=\"#\">
 
                                                                                                 <img src=\"";
-        // line 339
+        // line 344
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/button_details.jpg"), "html", null, true);
         echo "\" alt=\"\" />                          
                                                                                             </a><br /><br style=\"line-height:2px\" />
@@ -429,7 +430,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 
 
                                                                                                 <img src=\"";
-        // line 344
+        // line 349
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/button_add_to_cart1.jpg"), "html", null, true);
         echo "\" alt=\"\" />                              
                                                                                             </a>
@@ -440,7 +441,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                                             <td class=\"c2_right\">
 
                                                                                 <img src=\"";
-        // line 352
+        // line 357
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"9\" height=\"1\"  />                
 
@@ -451,14 +452,14 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 
 
                                                                                 <img src=\"";
-        // line 360
+        // line 365
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c2_bl.jpg"), "html", null, true);
         echo "\" alt=\"\"  />                  
                                                                             </td>
                                                                             <td class=\"c2_bottom\">
 
                                                                                 <img src=\"";
-        // line 364
+        // line 369
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"1\" height=\"9\"  />                 
                                                                             </td>
@@ -466,7 +467,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 
 
                                                                                <img src=\"";
-        // line 369
+        // line 374
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c2_br.jpg"), "html", null, true);
         echo "\" alt=\"\"  />                 
                                                                             </td>
@@ -474,7 +475,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                                     </table>
                                                                 </td>
                                                                 <td> <img src=\"";
-        // line 374
+        // line 379
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\"alt=\"\" width=\"2\" height=\"1\" /></td>
                                                                 <td style=\"width:172px\">
@@ -482,20 +483,20 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                                         <tr>
                                                                             <td>
                                                                                  <img src=\"";
-        // line 379
+        // line 384
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c2_tl.jpg"), "html", null, true);
         echo "\"alt=\"\"/>  
                                                                                  </td>
                                                                             <td class=\"c2_top\">
 
                                                                                 <img src=\"";
-        // line 383
+        // line 388
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\"alt=\"\" width=\"9\" height=\"9\" />                      
                                                                             </td>
                                                                             <td>
                                                                                <img src=\"";
-        // line 386
+        // line 391
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c2_tr.jpg"), "html", null, true);
         echo "\"alt=\"\"/>                        
 
@@ -505,7 +506,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                                         <tr>
                                                                             <td class=\"c2_left\">
                                                                                 <img src=\"";
-        // line 393
+        // line 398
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\"alt=\"\"  width=\"9\" height=\"1\" />                         
 
@@ -521,7 +522,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                                                         <td>
 
                                                                                             <img src=\"";
-        // line 406
+        // line 411
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/0p2.jpg"), "html", null, true);
         echo "\"alt=\"\"/>                                                 
 
@@ -536,7 +537,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                                                         <td class=\"middle\" style=\"height:54px\">
                                                                                             <a href=\"#\">
                                                                                                 <img src=\"";
-        // line 418
+        // line 423
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/button_details.jpg"), "html", null, true);
         echo "\"alt=\"\"/>                                                            
 
@@ -544,7 +545,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                                                             <a href=\"#\">
 
                                                                                                 <img src=\"";
-        // line 423
+        // line 428
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/button_add_to_cart1.jpg"), "html", null, true);
         echo "\"alt=\"\"/>                                                   
                                                                                             </a>
@@ -554,7 +555,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                                             </td>
                                                                             <td class=\"c2_right\">
                                                                                 <img src=\"";
-        // line 430
+        // line 435
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" width=\"9\" height=\"1\" alt=\"\"/>                                   
                                                                             </td>
@@ -562,7 +563,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                                         <tr>
                                                                             <td>
                                                                                <img src=\"";
-        // line 435
+        // line 440
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c2_bl.jpg"), "html", null, true);
         echo "\"alt=\"\"/>                                     
 
@@ -570,14 +571,14 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                                             </td>
                                                                             <td class=\"c2_bottom\">
                                                                                 <img src=\"";
-        // line 440
+        // line 445
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\"  alt=\"\" width=\"1\" height=\"9\"/>                                      
 
                                                                             </td>
                                                                             <td>
                                                                                <img src=\"";
-        // line 444
+        // line 449
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c2_br.jpg"), "html", null, true);
         echo "\"alt=\"\"/>                                   
 
@@ -587,7 +588,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                                 </td>
                                                                 <td>
                                                                     <img src=\"";
-        // line 451
+        // line 456
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\"  alt=\"\" width=\"2\" height=\"1\"/>              
 
@@ -601,7 +602,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                     <td>
                                                         <a href=\"#\">
                                                             <img src=\"";
-        // line 462
+        // line 467
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/banner3.jpg"), "html", null, true);
         echo "\"  alt=\"\"/>           
 
@@ -618,7 +619,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                     <td>
 
                                                         <img src=\"";
-        // line 476
+        // line 481
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/title2_left.jpg"), "html", null, true);
         echo "\"  alt=\"\"/>                               
                                                     </td>
@@ -628,7 +629,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 
 
                                                        <img src=\"";
-        // line 483
+        // line 488
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/title2_right.jpg"), "html", null, true);
         echo "\"  alt=\"\"/>                                   
                                                     </td>
@@ -646,7 +647,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                 <tr>
                                                     <td>
                                                         <img src=\"";
-        // line 498
+        // line 503
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/title1_left.jpg"), "html", null, true);
         echo "\"  alt=\"\"/>                                        
 
@@ -654,7 +655,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                     <td style=\"width:100%\">information:</td>
                                                     <td>
                                                         <img src=\"";
-        // line 503
+        // line 508
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/title1_right.jpg"), "html", null, true);
         echo "\"  alt=\"\"/>                                             
 
@@ -668,7 +669,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 
 
                                                      <img src=\"";
-        // line 514
+        // line 519
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c1_tl.jpg"), "html", null, true);
         echo "\"  alt=\"\"/>                                       
                                                     </td>
@@ -676,13 +677,13 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 
 
                                                         <img src=\"";
-        // line 519
+        // line 524
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"9\" height=\"9\" />                       
                                                              </td>
                                                              <td>
                                                           <img src=\"";
-        // line 522
+        // line 527
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c1_tr.jpg"), "html", null, true);
         echo "\"  alt=\"\"/>                      
 
@@ -692,7 +693,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                 <tr>
                                                     <td class=\"c1_left\">
                                                         <img src=\"";
-        // line 529
+        // line 534
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"9\" height=\"1\" />                               
 
@@ -702,12 +703,12 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                              <ul>
                                                                  
                                          ";
-        // line 536
+        // line 541
         echo "                             
                                             ";
-        // line 537
+        // line 542
         if ($this->env->getExtension('security')->isGranted("ROLE_ADMIN")) {
-            // line 538
+            // line 543
             echo "                                           
                                           <li class=\"bg_list_un\"><a href=\"#\">Article 1</a></li>
 \t\t\t\t\t  <li class=\"bg_list_un\"><a href=\"#\">Article 2</a></li>
@@ -715,7 +716,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                                  
                                              ";
         }
-        // line 543
+        // line 548
         echo " 
                                              
                                                            </ul>
@@ -724,7 +725,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                         <td class=\"c1_right\">
 
                                             <img src=\"";
-        // line 550
+        // line 555
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"9\" height=\"1\" />                              
                                                  </td>
@@ -732,7 +733,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                  <tr>
                                                  <td>
                                           <img src=\"";
-        // line 555
+        // line 560
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c1_bl.jpg"), "html", null, true);
         echo "\" alt=\"\"/>   
                                                                           
@@ -740,14 +741,14 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                         <td class=\"c1_bottom\">
 
                                             <img src=\"";
-        // line 560
+        // line 565
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"1\" height=\"9\" />                          
                                         </td>
                                         <td>
 
                                            <img src=\"";
-        // line 564
+        // line 569
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c1_br.jpg"), "html", null, true);
         echo "\" alt=\"\" />        
                                     </tr>
@@ -756,7 +757,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                 <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"box_header_txt\">
                                     <tr>
                                       <td>  <img src=\"";
-        // line 570
+        // line 575
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/title1_left.jpg"), "html", null, true);
         echo "\" alt=\"\" />                                   
                                           </td>
@@ -765,7 +766,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                         <td style=\"width:100%\">specials:</td>
                                         <td>
                                            <img src=\"";
-        // line 576
+        // line 581
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/title1_right.jpg"), "html", null, true);
         echo "\" alt=\"\" />                                 
 
@@ -787,7 +788,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                     <td>
                                                         <br style=\"line-height:5px\" />
                                                         <img src=\"";
-        // line 595
+        // line 600
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/0px.jpg"), "html", null, true);
         echo "\" alt=\"\" />                           
 
@@ -817,14 +818,14 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                 <td style=\"padding:11px 0px 0px 13px;\">
 
                     <img src=\"";
-        // line 622
+        // line 627
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/fp.jpg"), "html", null, true);
         echo "\" alt=\"\" align=\"left\"/>                           
 
 
 
                     <img src=\"";
-        // line 626
+        // line 631
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"31\" height=\"1\"/>                                   
                     Pets store &copy; 2008 &nbsp;|&nbsp; <a href=\"#\">Privacy policy</a>
@@ -839,9 +840,9 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 </html>
 
 ";
-        // line 638
+        // line 643
         $this->displayBlock('container', $context, $blocks);
-        // line 639
+        // line 644
         echo "
 
 
@@ -901,14 +902,19 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
     // line 210
     public function block_menu($context, array $blocks = array())
     {
+        echo " 
+
+
+
+ ";
     }
 
-    // line 288
+    // line 292
     public function block_article($context, array $blocks = array())
     {
     }
 
-    // line 638
+    // line 643
     public function block_container($context, array $blocks = array())
     {
     }
@@ -925,6 +931,6 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 
     public function getDebugInfo()
     {
-        return array (  912 => 638,  907 => 288,  902 => 210,  896 => 18,  892 => 17,  888 => 16,  884 => 15,  880 => 14,  876 => 13,  872 => 12,  866 => 9,  862 => 7,  859 => 6,  845 => 639,  843 => 638,  828 => 626,  821 => 622,  791 => 595,  769 => 576,  760 => 570,  751 => 564,  744 => 560,  736 => 555,  728 => 550,  719 => 543,  711 => 538,  709 => 537,  706 => 536,  696 => 529,  686 => 522,  680 => 519,  672 => 514,  658 => 503,  650 => 498,  632 => 483,  622 => 476,  605 => 462,  591 => 451,  581 => 444,  574 => 440,  566 => 435,  558 => 430,  548 => 423,  540 => 418,  525 => 406,  509 => 393,  499 => 386,  493 => 383,  486 => 379,  478 => 374,  470 => 369,  462 => 364,  455 => 360,  444 => 352,  433 => 344,  425 => 339,  409 => 326,  394 => 314,  385 => 308,  378 => 304,  369 => 298,  358 => 289,  356 => 288,  346 => 281,  338 => 276,  328 => 269,  318 => 262,  311 => 258,  304 => 254,  296 => 249,  256 => 211,  254 => 210,  242 => 201,  236 => 198,  232 => 197,  228 => 196,  219 => 190,  214 => 188,  86 => 62,  81 => 59,  66 => 47,  58 => 42,  50 => 37,  31 => 20,  29 => 6,  23 => 2,);
+        return array (  918 => 643,  913 => 292,  903 => 210,  897 => 18,  893 => 17,  889 => 16,  885 => 15,  881 => 14,  877 => 13,  873 => 12,  867 => 9,  863 => 7,  860 => 6,  846 => 644,  844 => 643,  829 => 631,  822 => 627,  792 => 600,  770 => 581,  761 => 575,  752 => 569,  745 => 565,  737 => 560,  729 => 555,  720 => 548,  712 => 543,  710 => 542,  707 => 541,  697 => 534,  687 => 527,  681 => 524,  673 => 519,  659 => 508,  651 => 503,  633 => 488,  623 => 481,  606 => 467,  592 => 456,  582 => 449,  575 => 445,  567 => 440,  559 => 435,  549 => 428,  541 => 423,  526 => 411,  510 => 398,  500 => 391,  494 => 388,  487 => 384,  479 => 379,  471 => 374,  463 => 369,  456 => 365,  445 => 357,  434 => 349,  426 => 344,  410 => 331,  395 => 319,  386 => 313,  379 => 309,  370 => 303,  358 => 293,  356 => 292,  346 => 285,  338 => 280,  328 => 273,  318 => 266,  311 => 262,  304 => 258,  296 => 253,  256 => 215,  254 => 210,  242 => 201,  236 => 198,  232 => 197,  228 => 196,  219 => 190,  214 => 188,  86 => 62,  81 => 59,  66 => 47,  58 => 42,  50 => 37,  31 => 20,  29 => 6,  23 => 2,);
     }
 }

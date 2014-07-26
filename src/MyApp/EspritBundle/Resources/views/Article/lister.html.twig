@@ -3,17 +3,17 @@
  
 
 {% block content %}
-
+          
 {% include 'MyAppEspritBundle:Article:lister.html.twig' with {'article' : article}  %}
 {% include 'MyAppEspritBundle:Article:lister.html.twig' with {'rubrique' : rubrique}  %}
  {% include 'MyAppEspritBundle:Article:lister.html.twig' with {'actualite' : actualite}  %}
 {% include 'MyAppEspritBundle:Article:lister.html.twig' with {'sousrubrique' : sousrubrique}  %}
 {% include 'MyAppEspritBundle:Article:lister.html.twig' with {'menu' : menu}  %}
 {% include 'MyAppEspritBundle:Article:lister.html.twig' with {'role' : role}  %}
-
+ 
 {% endblock %}
 
- {% block menu %}
+ {% block menu %} 
  {% for rubrique in rubrique  %}
                 <li class="item1"><a href="#"> {{  rubrique.title }} <span>R</span></a>                     
 			 <ul>                 

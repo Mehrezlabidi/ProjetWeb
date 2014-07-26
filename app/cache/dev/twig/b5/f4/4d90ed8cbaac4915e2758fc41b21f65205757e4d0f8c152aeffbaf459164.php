@@ -29,7 +29,7 @@ class __TwigTemplate_b5f44d90ed8cbaac4915e2758fc41b21f65205757e4d0f8c152aeffbaf4
     public function block_content($context, array $blocks = array())
     {
         // line 6
-        echo "
+        echo "          
 ";
         // line 7
         $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("article" => (isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")))));
@@ -45,15 +45,16 @@ class __TwigTemplate_b5f44d90ed8cbaac4915e2758fc41b21f65205757e4d0f8c152aeffbaf4
         // line 12
         $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("role" => (isset($context["role"]) ? $context["role"] : $this->getContext($context, "role")))));
         // line 13
-        echo "
+        echo " 
 ";
     }
 
     // line 16
     public function block_menu($context, array $blocks = array())
     {
+        echo " 
+ ";
         // line 17
-        echo " ";
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")));
         foreach ($context['_seq'] as $context["_key"] => $context["rubrique"]) {
@@ -139,6 +140,6 @@ class __TwigTemplate_b5f44d90ed8cbaac4915e2758fc41b21f65205757e4d0f8c152aeffbaf4
 
     public function getDebugInfo()
     {
-        return array (  120 => 33,  113 => 32,  105 => 30,  99 => 28,  93 => 26,  90 => 25,  83 => 24,  78 => 23,  73 => 22,  71 => 21,  67 => 20,  61 => 18,  56 => 17,  53 => 16,  48 => 13,  46 => 12,  44 => 11,  42 => 10,  39 => 9,  37 => 8,  35 => 7,  32 => 6,  29 => 5,);
+        return array (  121 => 33,  114 => 32,  106 => 30,  100 => 28,  94 => 26,  91 => 25,  84 => 24,  79 => 23,  74 => 22,  72 => 21,  68 => 20,  62 => 18,  58 => 17,  53 => 16,  48 => 13,  46 => 12,  44 => 11,  42 => 10,  39 => 9,  37 => 8,  35 => 7,  32 => 6,  29 => 5,);
     }
 }

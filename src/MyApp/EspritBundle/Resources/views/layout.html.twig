@@ -207,7 +207,11 @@
      
 	<ul class="menu"> 
   
-{% block menu %}{% endblock %}
+{% block menu %} 
+
+
+
+ {% endblock %}
 
   
        
@@ -284,8 +288,9 @@
                                                     </td>
                                                 </tr>
                                             </table>
-                                            
+<!-- div pour  limiter larticle => -->     <div style="height:400px;width:350px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
                                             {% block article %}{% endblock %}
+                                            </div>
                                     <!--        <table cellpadding="0" cellspacing="0" border="0" class="product">
                                                 <tr>
                                                     <td style="padding:0px 2px 3px 2px;">
