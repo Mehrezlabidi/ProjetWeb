@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Rubrique
  *
- * @ORM\Table(name="id")
+ * @ORM\Table(name="Rub")
  * @ORM\Entity
  */
 class Rubrique
@@ -40,8 +40,7 @@ class Rubrique
      * @ORM\ManyToOne(targetEntity="Menu", inversedBy="rubriques")
      * @ORM\JoinColumn(name="menu_id", referencedColumnName="id",nullable=false)
      */
- 
-     protected $menu;
+    protected $menu;
  
 
     /**

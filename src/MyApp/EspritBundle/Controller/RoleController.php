@@ -82,7 +82,7 @@ class RoleController extends Controller
         
         ->add('permission', 'checkbox')
          
-        ->add('utilisateur','entity',array('class'=>'MyApp\EspritBundle\Entity\Utilisateur','property'=>'id'))
+        #->add('utilisateur','entity',array('class'=>'MyApp\EspritBundle\Entity\Utilisateur','property'=>'id'))
         ->add('permission', 'checkbox', array('required' => false)) 
         ->getForm();
 

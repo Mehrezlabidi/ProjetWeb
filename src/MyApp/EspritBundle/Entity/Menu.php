@@ -27,7 +27,6 @@ class Menu
     /**
      * @ORM\OneToMany(targetEntity="Rubrique", mappedBy="menu")
      */
-    
     protected $rubriques;
   
 

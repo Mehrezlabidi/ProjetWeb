@@ -324,9 +324,15 @@ updateSelects(today.getTime());
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
 \t\t<div class=\"select_sub\">
 \t\t\t<ul class=\"sub\">
-\t\t\t\t<li><a href=\"#nogo\">ajout un Menu</a></li>
-\t\t\t\t<li><a href=\"#nogo\">afficher liste des Menus</a></li>
-\t\t\t\t<li><a href=\"#nogo\"> supprimer un Menu</a></li>
+\t\t\t\t<li><a href=\"";
+        // line 279
+        echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_new");
+        echo "\">ajout un menu</a></li>
+\t\t\t\t<li><a href=\"";
+        // line 280
+        echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_show");
+        echo "\">afficher liste des menus</a></li>
+\t\t\t
 \t\t\t</ul>
 \t\t</div>
 \t\t<!--[if lte IE 6]></td></tr></table></a><![endif]-->
@@ -342,10 +348,16 @@ updateSelects(today.getTime());
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
 \t\t<div class=\"select_sub show\">
 \t\t\t<ul class=\"sub\">
-\t\t\t\t<li><a href=\"#nogo\">ajouter une Rubrique</a></li>
-\t\t\t\t<li><a href=\"#nogo\">afficher liste des Rubriques</a></li>
-\t\t\t\t<li><a href=\"#nogo\">supprimer une Rubrique</a></li>
-\t\t\t</ul>
+\t\t\t\t<li><a href=\"";
+        // line 294
+        echo $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_new");
+        echo "\">ajouter une rubrique</a></li>
+\t\t\t\t<li><a href=\"";
+        // line 295
+        echo $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_show");
+        echo "\">afficher liste des rubriques</a></li>
+
+                        </ul>
 \t\t</div>
 \t\t<!--[if lte IE 6]></td></tr></table></a><![endif]-->
 \t\t</li>
@@ -360,10 +372,16 @@ updateSelects(today.getTime());
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
 \t\t<div class=\"select_sub\">
 \t\t\t<ul class=\"sub\">
-\t\t\t\t<li><a href=\"#nogo\">ajouter une Sous Rubrique</a></li>
-\t\t\t\t<li><a href=\"#nogo\">afficher liste des Rubriques</a></li>
-\t\t\t\t<li><a href=\"#nogo\">supprimer une Sous Rubrique</a></li>
-\t\t\t</ul>
+\t\t\t\t<li><a href=\"";
+        // line 309
+        echo $this->env->getExtension('routing')->getPath("my_app_esprit_sousrubrique_new");
+        echo "\">ajouter une Sous rubrique</a></li>
+\t\t\t\t<li><a href=\"";
+        // line 310
+        echo $this->env->getExtension('routing')->getPath("my_app_esprit_sousrubrique_show");
+        echo "\">afficher liste des sous rubriques</a></li>
+
+                        </ul>
 \t\t</div>
 \t\t<!--[if lte IE 6]></td></tr></table></a><![endif]-->
 \t\t</li>
@@ -378,10 +396,16 @@ updateSelects(today.getTime());
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
 \t\t<div class=\"select_sub\">
 \t\t\t<ul class=\"sub\">
-\t\t\t\t<li><a href=\"#nogo\">ajouter un article</a></li>
-\t\t\t\t<li><a href=\"#nogo\">afficher liste des articles</a></li>
-\t\t\t\t<li><a href=\"#nogo\">supprimer un article</a></li>
+\t\t\t\t<li><a href=\"";
+        // line 324
+        echo $this->env->getExtension('routing')->getPath("my_app_esprit_article_new");
+        echo "\">ajouter un article</a></li>
+\t\t\t\t<li><a href=\"";
+        // line 325
+        echo $this->env->getExtension('routing')->getPath("my_app_esprit_article_show");
+        echo "\">afficher liste des articles</a></li>
 
+                                
 \t\t\t</ul>
 \t\t</div>
 \t\t<!--[if lte IE 6]></td></tr></table></a><![endif]-->
@@ -397,10 +421,16 @@ updateSelects(today.getTime());
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
 \t\t<div class=\"select_sub\">
 \t\t\t<ul class=\"sub\">
-\t\t\t\t<li><a href=\"#nogo\">ajouter  une actualit&eacute;</a></li>
-\t\t\t\t<li><a href=\"#nogo\">afficher liste des actualit&eacute;s</a></li>
-\t\t\t\t<li><a href=\"#nogo\">supprimer une actualit&eacute;</a></li>
-\t\t\t</ul>
+\t\t\t\t<li><a href=\"";
+        // line 340
+        echo $this->env->getExtension('routing')->getPath("my_app_esprit_actualite_new");
+        echo "\">ajouter  une actualit&eacute;</a></li>
+\t\t\t\t<li><a href=\"";
+        // line 341
+        echo $this->env->getExtension('routing')->getPath("my_app_esprit_actualite_show");
+        echo "\">afficher liste des actualit&eacute;s</a></li>
+
+                        </ul>
 \t\t</div>
 \t\t<!--[if lte IE 6]></td></tr></table></a><![endif]-->
 \t\t</li>
@@ -530,6 +560,6 @@ ou d'applications multimédia.<br/>Ils partagent les fonctionnalités suivantes 
 
     public function getDebugInfo()
     {
-        return array (  450 => 385,  440 => 378,  395 => 336,  376 => 320,  358 => 305,  340 => 290,  322 => 275,  286 => 242,  282 => 241,  274 => 236,  270 => 235,  238 => 206,  214 => 185,  120 => 94,  31 => 8,  25 => 5,  19 => 1,);
+        return array (  480 => 385,  470 => 378,  430 => 341,  426 => 340,  419 => 336,  405 => 325,  401 => 324,  394 => 320,  381 => 310,  377 => 309,  370 => 305,  357 => 295,  353 => 294,  346 => 290,  333 => 280,  329 => 279,  322 => 275,  286 => 242,  282 => 241,  274 => 236,  270 => 235,  238 => 206,  214 => 185,  120 => 94,  31 => 8,  25 => 5,  19 => 1,);
     }
 }

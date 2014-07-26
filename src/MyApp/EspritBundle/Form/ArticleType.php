@@ -21,6 +21,7 @@ class ArticleType extends AbstractType
             ->add('date')
             ->add('rubrique')
          ##   ->add('sousrubrique')
+            ->add('role')
         ;
     }
     

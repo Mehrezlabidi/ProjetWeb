@@ -10,10 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table()
  * @ORM\Entity
  */
-class Article
-{
-    
-
+class Article {
 
     /**
      * @var integer
@@ -23,14 +20,19 @@ class Article
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-    
+
     /**
      * @ORM\ManyToOne(targetEntity="Rubrique", inversedBy="articles")
      * @ORM\JoinColumn(name="rubrique_id", referencedColumnName="id",nullable=false)
      */
- 
-     protected $rubrique;
-    
+    protected $rubrique;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="Role", inversedBy="articles")
+     * @ORM\JoinColumn(name="role_id", referencedColumnName="id",nullable=false)
+     */
+    protected $role;
+
     /**
      * @var string
      *
@@ -58,7 +60,8 @@ class Article
      * @ORM\Column(name="date", type="date")
      */
     private $date;
-     public function __construct() {
+
+    public function __construct() {
         $this->date = new \Datetime();
     }
 
@@ -67,8 +70,7 @@ class Article
      *
      * @return integer 
      */
-    public function getId()
-    {
+    public function getId() {
         return $this->id;
     }
 
@@ -78,10 +80,9 @@ class Article
      * @param string $texte
      * @return Article
      */
-    public function setTexte($texte)
-    {
+    public function setTexte($texte) {
         $this->texte = $texte;
-    
+
         return $this;
     }
 
@@ -90,8 +91,7 @@ class Article
      *
      * @return string 
      */
-    public function getTexte()
-    {
+    public function getTexte() {
         return $this->texte;
     }
 
@@ -101,10 +101,9 @@ class Article
      * @param string $image
      * @return Article
      */
-    public function setImage($image)
-    {
+    public function setImage($image) {
         $this->image = $image;
-    
+
         return $this;
     }
 
@@ -113,8 +112,7 @@ class Article
      *
      * @return string 
      */
-    public function getImage()
-    {
+    public function getImage() {
         return $this->image;
     }
 
@@ -124,10 +122,9 @@ class Article
      * @param string $nom
      * @return Article
      */
-    public function setNom($nom)
-    {
+    public function setNom($nom) {
         $this->nom = $nom;
-    
+
         return $this;
     }
 
@@ -136,8 +133,7 @@ class Article
      *
      * @return string 
      */
-    public function getNom()
-    {
+    public function getNom() {
         return $this->nom;
     }
 
@@ -147,10 +143,9 @@ class Article
      * @param \DateTime $date
      * @return Article
      */
-    public function setDate($date)
-    {
+    public function setDate($date) {
         $this->date = $date;
-    
+
         return $this;
     }
 
@@ -159,12 +154,11 @@ class Article
      *
      * @return \DateTime 
      */
-    public function getDate()
-    {
+    public function getDate() {
         return $this->date;
     }
-    
-        public function getRubrique() {
+
+    public function getRubrique() {
         return $this->rubrique;
     }
 
@@ -179,10 +173,16 @@ class Article
     public function setSousrubrique($sousrubrique) {
         $this->sousrubrique = $sousrubrique;
     }
-    
-          public function __toString()
+    public function getRole() {
+        return $this->role;
+    }
+
+    public function setRole($role) {
+        $this->role = $role;
+    }
+
+        public function __toString()
     {
           return $this-> id.'';
     }
-    
 }

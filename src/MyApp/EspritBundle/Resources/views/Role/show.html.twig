@@ -19,7 +19,7 @@
     <tr>
         <th>#</th>              
         <th>Permission</th>
-        <th>Utilisateur associé</th>
+        
     </tr>
     </thead>
    
@@ -40,7 +40,7 @@
          
          
          
-          <td><b>No  </b>{{ role.utilisateur.id}}</td>
+       
         
         <td><a href="{{ path('my_app_esprit_role_delete',{'id':role.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/delete.png') }}" alt="" />  </a></td>
         <td><a href="{{ path('my_app_esprit_role_edit',{'id':role.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/update.png') }}" alt="" />  </a></td>

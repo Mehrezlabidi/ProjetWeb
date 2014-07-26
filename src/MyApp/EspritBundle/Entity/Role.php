@@ -22,11 +22,17 @@ class Role
     private $id;
       
     /**
-     * @ORM\ManyToOne(targetEntity="Utilisateur", inversedBy="roles")
-     * @ORM\JoinColumn(name="utilisateur_id", referencedColumnName="id",nullable=false)
+     * @ORM\OneToMany(targetEntity="Utilisateur", mappedBy="role")
      */
  
-   protected $utilisateur;
+   protected $utilisateurs;
+   
+    /**
+     * @ORM\OneToMany(targetEntity="Article", mappedBy="role")
+     */
+ 
+   protected $articles;
+   
     /**
      * @var boolean
      *
@@ -73,5 +79,26 @@ class Role
     public function getPermission()
     {
         return $this->permission;
+    }
+    
+    public function getUtilisateurs() {
+        return $this->utilisateurs;
+    }
+
+    public function setUtilisateurs($utilisateurs) {
+        $this->utilisateurs = $utilisateurs;
+    }
+
+    public function getArticles() {
+        return $this->articles;
+    }
+
+    public function setArticles($articles) {
+        $this->articles = $articles;
+    }
+
+     public function __toString()
+    {
+          return $this-> id.'';
     }
 }

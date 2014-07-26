@@ -22,6 +22,7 @@
        
          <th>Rubrique associé</th>
       <!--   <th>Sous Rubrique associé</th>  -->
+        <th>Role associé</th>
          <th>Image</th>
     </tr>
     
@@ -39,9 +40,15 @@
 
           <td>No  {{article.rubrique.id}}</td>
        <!--    <td>No  {#{#article.sousrubrique.id}#}</td>  -->
-       
          
-             
+         
+          {% if article.role.id == 1 %}
+          <td><b>access</b></td>
+          {%  else    %}
+          <td><b>denied</b></td>
+            {% endif  %}
+          
+          
              
         
        {% if article.image is  not  null %}

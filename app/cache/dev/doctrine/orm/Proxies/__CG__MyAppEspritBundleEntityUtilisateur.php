@@ -54,30 +54,6 @@ class Utilisateur extends \MyApp\EspritBundle\Entity\Utilisateur implements \Doc
         return parent::setRoles($roles);
     }
 
-    public function getMenus()
-    {
-        $this->__load();
-        return parent::getMenus();
-    }
-
-    public function getActualites()
-    {
-        $this->__load();
-        return parent::getActualites();
-    }
-
-    public function setMenus($menus)
-    {
-        $this->__load();
-        return parent::setMenus($menus);
-    }
-
-    public function setActualites($actualites)
-    {
-        $this->__load();
-        return parent::setActualites($actualites);
-    }
-
     public function getId()
     {
         if ($this->__isInitialized__ === false) {
@@ -133,6 +109,30 @@ class Utilisateur extends \MyApp\EspritBundle\Entity\Utilisateur implements \Doc
     {
         $this->__load();
         return parent::getMail();
+    }
+
+    public function getMenus()
+    {
+        $this->__load();
+        return parent::getMenus();
+    }
+
+    public function getActualites()
+    {
+        $this->__load();
+        return parent::getActualites();
+    }
+
+    public function setMenus($menus)
+    {
+        $this->__load();
+        return parent::setMenus($menus);
+    }
+
+    public function setActualites($actualites)
+    {
+        $this->__load();
+        return parent::setActualites($actualites);
     }
 
     public function __toString()

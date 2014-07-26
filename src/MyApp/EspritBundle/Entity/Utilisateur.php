@@ -10,8 +10,8 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table(name="utilisateur")
  * @ORM\Entity
  */
-class Utilisateur
-{
+class Utilisateur {
+
     /**
      * @var integer
      *
@@ -20,6 +20,7 @@ class Utilisateur
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+
     public function getRoles() {
         return $this->roles;
     }
@@ -29,35 +30,22 @@ class Utilisateur
     }
 
     /**
-     * @ORM\OneToMany(targetEntity="Role", mappedBy="utilisateur")
+     * @ORM\ManyToOne(targetEntity="Role", inversedBy="utilisateurs")
+     * @ORM\JoinColumn(name="role_id", referencedColumnName="id",nullable=false)
      */
     protected $roles;
-    public function getMenus() {
-        return $this->menus;
-    }
 
-    public function getActualites() {
-        return $this->actualites;
-    }
-
-    public function setMenus($menus) {
-        $this->menus = $menus;
-    }
-
-    public function setActualites($actualites) {
-        $this->actualites = $actualites;
-    }
-
-           /**
+  
+    /**
      * @ORM\OneToMany(targetEntity="Menu", mappedBy="utilisateur")
      */
     protected $menus;
-    
-       /**
+
+    /**
      * @ORM\OneToMany(targetEntity="Actualite", mappedBy="utilisateur")
      */
     protected $actualites;
-    
+
     /**
      * @var string
      *
@@ -86,14 +74,12 @@ class Utilisateur
      */
     private $mail;
 
-
     /**
      * Get id
      *
      * @return integer 
      */
-    public function getId()
-    {
+    public function getId() {
         return $this->id;
     }
 
@@ -103,10 +89,9 @@ class Utilisateur
      * @param string $nom
      * @return Utilisateur
      */
-    public function setNom($nom)
-    {
+    public function setNom($nom) {
         $this->nom = $nom;
-    
+
         return $this;
     }
 
@@ -115,8 +100,7 @@ class Utilisateur
      *
      * @return string 
      */
-    public function getNom()
-    {
+    public function getNom() {
         return $this->nom;
     }
 
@@ -126,10 +110,9 @@ class Utilisateur
      * @param string $login
      * @return Utilisateur
      */
-    public function setLogin($login)
-    {
+    public function setLogin($login) {
         $this->login = $login;
-    
+
         return $this;
     }
 
@@ -138,8 +121,7 @@ class Utilisateur
      *
      * @return string 
      */
-    public function getLogin()
-    {
+    public function getLogin() {
         return $this->login;
     }
 
@@ -149,10 +131,9 @@ class Utilisateur
      * @param string $password
      * @return Utilisateur
      */
-    public function setPassword($password)
-    {
+    public function setPassword($password) {
         $this->password = $password;
-    
+
         return $this;
     }
 
@@ -161,8 +142,7 @@ class Utilisateur
      *
      * @return string 
      */
-    public function getPassword()
-    {
+    public function getPassword() {
         return $this->password;
     }
 
@@ -172,10 +152,9 @@ class Utilisateur
      * @param string $mail
      * @return Utilisateur
      */
-    public function setMail($mail)
-    {
+    public function setMail($mail) {
         $this->mail = $mail;
-    
+
         return $this;
     }
 
@@ -184,16 +163,30 @@ class Utilisateur
      *
      * @return string 
      */
-    public function getMail()
-    {
+    public function getMail() {
         return $this->mail;
     }
-    
-    
-    public function __toString()
-    {
-          return $this-> id.'';
-    }
-    
-}
 
+      public function getMenus() {
+        return $this->menus;
+    }
+
+    public function getActualites() {
+        return $this->actualites;
+    }
+
+    public function setMenus($menus) {
+        $this->menus = $menus;
+    }
+
+    public function setActualites($actualites) {
+        $this->actualites = $actualites;
+    }
+
+    
+    
+    public function __toString() {
+        return $this->id . '';
+    }
+
+}

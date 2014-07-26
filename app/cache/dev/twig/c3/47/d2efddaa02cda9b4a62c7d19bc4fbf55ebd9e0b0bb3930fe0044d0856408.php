@@ -43,7 +43,7 @@ class __TwigTemplate_c347d2efddaa02cda9b4a62c7d19bc4fbf55ebd9e0b0bb3930fe0044d08
     <tr>
         <th>#</th>              
         <th>Permission</th>
-        <th>Utilisateur associé</th>
+        
     </tr>
     </thead>
    
@@ -79,10 +79,7 @@ class __TwigTemplate_c347d2efddaa02cda9b4a62c7d19bc4fbf55ebd9e0b0bb3930fe0044d08
          
          
          
-          <td><b>No  </b>";
-            // line 43
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["role"]) ? $context["role"] : $this->getContext($context, "role")), "utilisateur"), "id"), "html", null, true);
-            echo "</td>
+       
         
         <td><a href=\"";
             // line 45
@@ -133,6 +130,6 @@ class __TwigTemplate_c347d2efddaa02cda9b4a62c7d19bc4fbf55ebd9e0b0bb3930fe0044d08
 
     public function getDebugInfo()
     {
-        return array (  113 => 54,  106 => 49,  95 => 46,  89 => 45,  84 => 43,  75 => 36,  71 => 34,  67 => 32,  65 => 31,  59 => 28,  56 => 27,  52 => 26,  31 => 8,  26 => 6,  19 => 1,);
+        return array (  110 => 54,  103 => 49,  92 => 46,  86 => 45,  75 => 36,  71 => 34,  67 => 32,  65 => 31,  59 => 28,  56 => 27,  52 => 26,  31 => 8,  26 => 6,  19 => 1,);
     }
 }
