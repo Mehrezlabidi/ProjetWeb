@@ -34,7 +34,7 @@ class __TwigTemplate_d1ee66589cccf79f1997cdbd28c94e1e0997b7bc0a9bb02a2eb1739d3af
 <body>
     <div style=\"padding: 120px 50px 0 10px;\">
 <h2>Les rubriques</h2>
-<center >      <div style=\"height:141px;width:545px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;\">
+<center >      <div style=\"height:141px;width:545px;border:0px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;\">
 
 <table class=\"bordered\" >
     <thead>

@@ -36,7 +36,7 @@ class __TwigTemplate_b7c1b9435201fe2df06267e6bc2f2ae7cbf85555deb1bb7bb60a528445f
 <body>
     <div style=\"padding: 120px 50px 0 10px;\">
 <h2>Les sous rubriques</h2>
-<center >      <div style=\"height:141px;width:600px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;\">
+<center ><div style=\"height:141px;width:600px;border:0px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;\">
 
  
 <table class=\"bordered\" >

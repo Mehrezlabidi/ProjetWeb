@@ -68,13 +68,13 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 \t\t<!--  start step-holder -->
 \t\t<div id=\"step-holder\">
 \t\t\t<div class=\"step-no\">1</div>
-\t\t\t<div class=\"step-dark-left\"><a href=\"\">Add product details</a></div>
+\t\t\t<div class=\"step-dark-left\"><a href=\"\">Add  article details</a></div>
 \t\t\t<div class=\"step-dark-right\">&nbsp;</div>
 \t\t\t<div class=\"step-no-off\">2</div>
-\t\t\t<div class=\"step-light-left\">Select related products</div>
+\t\t\t<div class=\"step-light-left\">Select related article</div>
 \t\t\t<div class=\"step-light-right\">&nbsp;</div>
 \t\t\t<div class=\"step-no-off\">3</div>
-\t\t\t<div class=\"step-light-left\">Preview</div>
+\t\t\t<div class=\"step-light-left\">Edit / Delete</div>
 \t\t\t<div class=\"step-light-round\">&nbsp;</div>
 \t\t\t<div class=\"clear\"></div>
 \t\t</div>

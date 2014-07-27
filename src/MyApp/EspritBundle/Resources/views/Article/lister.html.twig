@@ -13,8 +13,9 @@
  
 {% endblock %}
 
- {% block menu %} 
- {% for rubrique in rubrique  %}
+ {% block menu_gauche  %} 
+             
+ {% for rubrique in rubrique  %} {% if rubrique.menu.id == 1 %}
                 <li class="item1"><a href="#"> {{  rubrique.title }} <span>R</span></a>                     
 			 <ul>                 
                {% for sousrubrique in sousrubrique %}
@@ -33,5 +34,39 @@
                {%endfor%}  
 			</ul>                   
 		</li>                
- {%endfor%}
+                             {% endif %}  
+            {%endfor%}
+                          
+{% endblock %}
+ {% block menu_haut  %}
+
+{% for rubrique in rubrique  %} {% if rubrique.menu.id ==2 %}
+
+
+        <li class="slide p1"><a href="#url">{{  rubrique.title }} </a><div><b></b>
+		<dl>
+                 {% for sousrubrique in sousrubrique %}
+                         {# on affiche seulement les sous rubriques associés#}
+                 {% if sousrubrique.rubrique.id == rubrique.id %} 
+		<dt>Sous Rubrique</dt>
+		<dd><a href="url">{{sousrubrique.title }}</a></dd>
+		</dl>
+                {% endif %}         
+               {%endfor%} 
+                 {% for  article in  article %} 
+                             {# on affiche seulement les articles associés#}
+                 {% if article.rubrique.id == rubrique.id %} 
+                
+		<dl>
+		<dt>Article</dt>
+		<dd><a href="{{ path('my_app_esprit_article_voir',{'id':article.id}) }}">{{article.nom }}</a></dd>
+		</dl>
+		 {% endif %}  
+               {%endfor%}  
+		 
+	</li>	 
+
+                     {% endif %}  
+            {%endfor%}
+                          
 {% endblock %}

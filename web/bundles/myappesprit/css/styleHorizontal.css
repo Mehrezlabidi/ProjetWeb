@@ -6,7 +6,9 @@ Copyright (c) 2005-2011 Stu Nicholls. All rights reserved.
 This stylesheet and the associated (x)html may be modified in any 
 way to fit your requirements.
 =================================================================== */
-.stretchHolder {width:750px; height:50px; margin:30px auto 25px auto; position:relative; z-index:100; box-shadow:0 2px 2px rgba(0,0,0,0.8); font-family:arial, sans-serif;}
+.stretchHolder {width:750px; height:50px; margin:30px auto 25px auto; position:relative; z-index:100; 
+/////*box-shadow:0 2px 2px rgba(0,0,0,0.8);*/
+ font-family:arial, sans-serif;}
 .stretchMenu {position:absolute; width:750px; overflow:hidden;}
 .stretchDrop {padding:0; margin:0;  list-style:none; width:1150px; position:relative;}
 .stretchDrop > li.slide {float:left; width:150px;
@@ -19,7 +21,7 @@ transition: 0.25s;
 .stretchDrop > li.last {width:470px; float:left;}
 .stretchDrop > li > a {display:block; font-weight:bold; line-height:50px; padding-left:10px; color:#000; text-decoration:none; font-size:13px; text-shadow: 0 1px 1px #fff; border-left:1px solid #fff;}
 .stretchDrop > li.slide > a {border-right:1px solid #000;}
-.stretchDrop > li.p1 > a {background:#09c;}
+.stretchDrop > li.p1 > a {background:#e7ddc1;}
 .stretchDrop > li.p2 > a {background:#c90;}
 .stretchDrop > li.p3 > a {background:#0c9;}
 .stretchDrop > li.p4 > a {background:#9c0;}
@@ -47,7 +49,7 @@ box-shadow: inset -1px 0 1px rgba(255, 255, 255, 0.4), inset 1px 0 1px rgba(255,
 -webkit-transition: height 0.25s;
 transition: height 0.25s;
 }
-.stretchDrop > li.p1 > div {background:#09c;}
+.stretchDrop > li.p1 > div {background:#e7ddc1;}
 .stretchDrop > li.p2 > div {background:#c90;}
 .stretchDrop > li.p3 > div {background:#0c9;}
 .stretchDrop > li.p4 > div {background:#9c0;}

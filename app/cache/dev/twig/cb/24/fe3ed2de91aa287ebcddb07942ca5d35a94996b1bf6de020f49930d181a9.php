@@ -35,7 +35,7 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
     <div style=\"padding: 120px 50px 0 10px;\">
 <h2>Les menus</h2>
 <center >
-      <div style=\"height:141px;width:500px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;\">
+      <div style=\"height:141px;width:500px;border:0px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;\">
 
 <table class=\"bordered\" >
     <thead>
