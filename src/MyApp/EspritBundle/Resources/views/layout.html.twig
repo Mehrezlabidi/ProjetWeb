@@ -436,10 +436,8 @@
                                          {#visible pour l admin#}                             
                                             {% if is_granted('ROLE_ADMIN') %}
                                            
-                                          <li class="bg_list_un"><a href="#">Article 1</a></li>
-					  <li class="bg_list_un"><a href="#">Article 2</a></li>
-					  <li class="bg_list_un"><a href="#">Article 3</a></li>           
-                                                                 
+                                                 
+                                           {% block menu_droite %} {% endblock %}                      
                                              {% endif %} 
                                              
                                                            </ul>

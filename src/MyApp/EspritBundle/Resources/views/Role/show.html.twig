@@ -4,15 +4,17 @@
 <html>
 <head>
     <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" /> 
-    <title>Liste roles</title>
+    <title> </title>
       <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/show.css') }}"/> 
 
 </head>
 
 <body>
     <div style="padding: 120px 50px 0 10px;">
-<h2>Les roles</h2>
-<center >
+       
+<center >  
+                      
+
 <table class="bordered" >
     <thead>
 
@@ -23,7 +25,7 @@
     </tr>
     </thead>
    
-       {% for role in role %}
+     {% if  role |length > 0  %}{% for  role  in  role  %}
      <tr>
          <th>{{ role.id }}</th> 
         
@@ -45,7 +47,10 @@
         <td><a href="{{ path('my_app_esprit_role_delete',{'id':role.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/delete.png') }}" alt="" />  </a></td>
         <td><a href="{{ path('my_app_esprit_role_edit',{'id':role.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/update.png') }}" alt="" />  </a></td>
 
-        {% endfor %}
+          {% endfor %}
+         {% else %}
+       <h2><p> (  rien   a   afficher )</p></h2> 
+         {% endif %} 
     </tr>        
     
  

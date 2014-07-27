@@ -341,7 +341,7 @@ updateSelects(today.getTime());
 
 \t\t<div class=\"nav-divider\">&nbsp;</div>
 
-  <ul class=\"current\"><li><a href=\"";
+  <ul class=\"select\"><li><a href=\"";
         // line 290
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_show");
         echo "\"><b>Rubrique</b><!--[if IE 7]><!--></a><!--<![endif]-->

@@ -3,15 +3,15 @@
 <html>
 <head>
     <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" /> 
- <title>Liste articles</title>
+ <title> </title>
  <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/show.css') }}"/> 
 </head>
 
 <body>
     <div style="padding: 120px 50px 0 10px;">
-<h2>Les articles</h2>
+<h2>  </h2>
 <center ><div style="height:150px;width:655px;border:0px solid #ccc;font:10px/15px Georgia, Garamond, Serif;overflow:auto;">
-
+  
 <table class="bordered" >
 <thead>
 
@@ -28,8 +28,9 @@
     </tr>
     
 </thead>
-   
-       {% for article in article %}
+  
+        {% if article|length > 0  %}
+       {% for article in article %}    
      <tr>
          <th>{{ article.id }}</th> 
          <td>{{ article.texte | truncate(20, true, '...') }}</td>
@@ -68,6 +69,10 @@
         <td><a href="{{ path('my_app_esprit_article_edit',{'id':article.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/update.png') }}" alt="" />  </a></td>
 
         {% endfor %}
+         {% else %}
+                   <h2><p> (  rien   a   afficher )</p></h2> 
+         {% endif %} 
+                  
     </tr>        
     
  

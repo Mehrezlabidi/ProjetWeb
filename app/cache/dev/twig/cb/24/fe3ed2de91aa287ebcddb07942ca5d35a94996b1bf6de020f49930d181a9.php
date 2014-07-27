@@ -24,7 +24,7 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
         // line 5
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("favicon.ico"), "html", null, true);
         echo "\" /> 
-    <title>Liste menus</title>
+    <title> </title>
      <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
         // line 7
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/css/show.css"), "html", null, true);
@@ -33,10 +33,10 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
 
 <body>
     <div style=\"padding: 120px 50px 0 10px;\">
-<h2>Les menus</h2>
+<h2> </h2>
 <center >
       <div style=\"height:141px;width:500px;border:0px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;\">
-
+  
 <table class=\"bordered\" >
     <thead>
 
@@ -49,57 +49,68 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
     </tr>
     </thead>
    
-       ";
+    ";
         // line 28
-        $context['_parent'] = (array) $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")));
-        foreach ($context['_seq'] as $context["_key"] => $context["menu"]) {
+        if ((twig_length_filter($this->env, (isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu"))) > 0)) {
             // line 29
-            echo "
+            echo "       ";
+            $context['_parent'] = (array) $context;
+            $context['_seq'] = twig_ensure_traversable((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")));
+            foreach ($context['_seq'] as $context["_key"] => $context["menu"]) {
+                // line 30
+                echo "
         <tr>
         <td>";
-            // line 31
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "id"), "html", null, true);
-            echo "</th> 
+                // line 32
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "id"), "html", null, true);
+                echo "</th> 
         <td>";
-            // line 32
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "title"), "html", null, true);
-            echo "</td>
+                // line 33
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "title"), "html", null, true);
+                echo "</td>
         <td><b>No  </b>";
-            // line 33
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "position"), "html", null, true);
-            echo "</td>
+                // line 34
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "position"), "html", null, true);
+                echo "</td>
         
            <td><b>No  </b>";
-            // line 35
-            echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "utilisateur"), "id"), "html", null, true);
-            echo "</td>
+                // line 36
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "utilisateur"), "id"), "html", null, true);
+                echo "</td>
  
 ";
-            // line 40
-            echo " 
+                // line 41
+                echo " 
  
         
         <td><a href=\"";
-            // line 43
-            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_menu_delete", array("id" => $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "id"))), "html", null, true);
-            echo "\">  <img src=\"";
-            echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/delete.png"), "html", null, true);
-            echo "\" alt=\"\" />  </a></td>
+                // line 44
+                echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_menu_delete", array("id" => $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "id"))), "html", null, true);
+                echo "\">  <img src=\"";
+                echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/delete.png"), "html", null, true);
+                echo "\" alt=\"\" />  </a></td>
         <td><a href=\"";
-            // line 44
-            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_menu_edit", array("id" => $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "id"))), "html", null, true);
-            echo "\">  <img src=\"";
-            echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/update.png"), "html", null, true);
-            echo "\" alt=\"\" />  </a></td>
+                // line 45
+                echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_menu_edit", array("id" => $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "id"))), "html", null, true);
+                echo "\">  <img src=\"";
+                echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/update.png"), "html", null, true);
+                echo "\" alt=\"\" />  </a></td>
 
-        ";
+             ";
+            }
+            $_parent = $context['_parent'];
+            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['menu'], $context['_parent'], $context['loop']);
+            $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 48
+            echo "         ";
+        } else {
+            // line 49
+            echo "              <h2><p> (  rien   a   afficher )</p></h2> 
+         ";
         }
-        $_parent = $context['_parent'];
-        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['menu'], $context['_parent'], $context['loop']);
-        $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 47
-        echo "    </tr>       
+        // line 50
+        echo " 
+    </tr>       
     
  
 
@@ -107,7 +118,7 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
 </center>
     </div>
     <center><h2><a href=\"";
-        // line 54
+        // line 58
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_new");
         echo "\">ajouter menu</a></h2></center>
 
@@ -129,6 +140,6 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
 
     public function getDebugInfo()
     {
-        return array (  111 => 54,  102 => 47,  91 => 44,  85 => 43,  80 => 40,  75 => 35,  70 => 33,  66 => 32,  62 => 31,  58 => 29,  54 => 28,  30 => 7,  25 => 5,  19 => 1,);
+        return array (  122 => 58,  112 => 50,  108 => 49,  105 => 48,  94 => 45,  88 => 44,  83 => 41,  78 => 36,  73 => 34,  69 => 33,  65 => 32,  61 => 30,  56 => 29,  54 => 28,  30 => 7,  25 => 5,  19 => 1,);
     }
 }

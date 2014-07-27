@@ -14,6 +14,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
             'menu_haut' => array($this, 'block_menu_haut'),
             'menu_gauche' => array($this, 'block_menu_gauche'),
             'article' => array($this, 'block_article'),
+            'menu_droite' => array($this, 'block_menu_droite'),
             'container' => array($this, 'block_container'),
         );
     }
@@ -613,13 +614,14 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
         if ($this->env->getExtension('security')->isGranted("ROLE_ADMIN")) {
             // line 438
             echo "                                           
-                                          <li class=\"bg_list_un\"><a href=\"#\">Article 1</a></li>
-\t\t\t\t\t  <li class=\"bg_list_un\"><a href=\"#\">Article 2</a></li>
-\t\t\t\t\t  <li class=\"bg_list_un\"><a href=\"#\">Article 3</a></li>           
-                                                                 
+                                                 
+                                           ";
+            // line 440
+            $this->displayBlock('menu_droite', $context, $blocks);
+            echo "                      
                                              ";
         }
-        // line 443
+        // line 441
         echo " 
                                              
                                                            </ul>
@@ -628,7 +630,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                         <td class=\"c1_right\">
 
                                             <img src=\"";
-        // line 450
+        // line 448
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"9\" height=\"1\" />                              
                                                  </td>
@@ -636,7 +638,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                  <tr>
                                                  <td>
                                           <img src=\"";
-        // line 455
+        // line 453
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c1_bl.jpg"), "html", null, true);
         echo "\" alt=\"\"/>   
                                                                           
@@ -644,14 +646,14 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                         <td class=\"c1_bottom\">
 
                                             <img src=\"";
-        // line 460
+        // line 458
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"1\" height=\"9\" />                          
                                         </td>
                                         <td>
 
                                            <img src=\"";
-        // line 464
+        // line 462
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/c1_br.jpg"), "html", null, true);
         echo "\" alt=\"\" />        
                                     </tr>
@@ -660,7 +662,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                 <table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" class=\"box_header_txt\">
                                     <tr>
                                       <td>  <img src=\"";
-        // line 470
+        // line 468
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/title1_left.jpg"), "html", null, true);
         echo "\" alt=\"\" />                                   
                                           </td>
@@ -669,7 +671,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                         <td style=\"width:100%\">specials:</td>
                                         <td>
                                            <img src=\"";
-        // line 476
+        // line 474
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/title1_right.jpg"), "html", null, true);
         echo "\" alt=\"\" />                                 
 
@@ -691,7 +693,7 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                                                     <td>
                                                         <br style=\"line-height:5px\" />
                                                         <img src=\"";
-        // line 495
+        // line 493
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/0px.jpg"), "html", null, true);
         echo "\" alt=\"\" />                           
 
@@ -721,14 +723,14 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
                 <td style=\"padding:11px 0px 0px 13px;\">
 
                     <img src=\"";
-        // line 522
+        // line 520
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/fp.jpg"), "html", null, true);
         echo "\" alt=\"\" align=\"left\"/>                           
 
 
 
                     <img src=\"";
-        // line 526
+        // line 524
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/spacer.gif"), "html", null, true);
         echo "\" alt=\"\" width=\"31\" height=\"1\"/>                                   
                     Pets store &copy; 2008 &nbsp;|&nbsp; <a href=\"#\">Privacy policy</a>
@@ -743,9 +745,9 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 </html>
 
 ";
-        // line 538
+        // line 536
         $this->displayBlock('container', $context, $blocks);
-        // line 539
+        // line 537
         echo "
 
 
@@ -819,7 +821,13 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
     {
     }
 
-    // line 538
+    // line 440
+    public function block_menu_droite($context, array $blocks = array())
+    {
+        echo " ";
+    }
+
+    // line 536
     public function block_container($context, array $blocks = array())
     {
     }
@@ -836,6 +844,6 @@ class __TwigTemplate_2ad8ba936975df80e7d5246059417d488d5670036b81ab96f5b2b21e75d
 
     public function getDebugInfo()
     {
-        return array (  823 => 538,  818 => 187,  812 => 112,  806 => 74,  800 => 18,  796 => 17,  792 => 16,  788 => 15,  784 => 14,  780 => 13,  776 => 12,  770 => 9,  766 => 7,  763 => 6,  749 => 539,  747 => 538,  732 => 526,  725 => 522,  695 => 495,  673 => 476,  664 => 470,  655 => 464,  648 => 460,  640 => 455,  632 => 450,  623 => 443,  615 => 438,  613 => 437,  610 => 436,  600 => 429,  590 => 422,  584 => 419,  576 => 414,  562 => 403,  554 => 398,  536 => 383,  526 => 376,  509 => 362,  495 => 351,  485 => 344,  478 => 340,  470 => 335,  462 => 330,  452 => 323,  444 => 318,  429 => 306,  413 => 293,  403 => 286,  397 => 283,  390 => 279,  382 => 274,  374 => 269,  366 => 264,  359 => 260,  348 => 252,  337 => 244,  329 => 239,  313 => 226,  298 => 214,  289 => 208,  282 => 204,  273 => 198,  261 => 188,  259 => 187,  249 => 180,  241 => 175,  231 => 168,  221 => 161,  214 => 157,  207 => 153,  199 => 148,  162 => 113,  160 => 112,  148 => 103,  142 => 100,  138 => 99,  134 => 98,  125 => 92,  120 => 90,  103 => 75,  101 => 74,  87 => 62,  82 => 59,  67 => 47,  59 => 42,  51 => 37,  32 => 20,  30 => 6,  24 => 2,);
+        return array (  831 => 536,  825 => 440,  820 => 187,  814 => 112,  808 => 74,  802 => 18,  798 => 17,  794 => 16,  790 => 15,  786 => 14,  782 => 13,  778 => 12,  772 => 9,  768 => 7,  765 => 6,  751 => 537,  749 => 536,  734 => 524,  727 => 520,  697 => 493,  675 => 474,  666 => 468,  657 => 462,  650 => 458,  642 => 453,  634 => 448,  625 => 441,  620 => 440,  616 => 438,  614 => 437,  611 => 436,  601 => 429,  591 => 422,  585 => 419,  577 => 414,  563 => 403,  555 => 398,  537 => 383,  527 => 376,  510 => 362,  496 => 351,  486 => 344,  479 => 340,  471 => 335,  463 => 330,  453 => 323,  445 => 318,  430 => 306,  414 => 293,  404 => 286,  398 => 283,  391 => 279,  383 => 274,  375 => 269,  367 => 264,  360 => 260,  349 => 252,  338 => 244,  330 => 239,  314 => 226,  299 => 214,  290 => 208,  283 => 204,  274 => 198,  262 => 188,  260 => 187,  250 => 180,  242 => 175,  232 => 168,  222 => 161,  215 => 157,  208 => 153,  200 => 148,  163 => 113,  161 => 112,  149 => 103,  143 => 100,  139 => 99,  135 => 98,  126 => 92,  121 => 90,  104 => 75,  102 => 74,  88 => 62,  83 => 59,  68 => 47,  60 => 42,  52 => 37,  33 => 20,  31 => 6,  25 => 2,);
     }
 }
