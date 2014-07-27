@@ -24,14 +24,11 @@ class __TwigTemplate_75e3ce1b04bc6194d94ee665e0d53d75179ea572f0a27995465c1be0563
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 4
+    // line 7
     public function block_article($context, array $blocks = array())
     {
-        // line 5
-        echo "
-
-
-</br>
+        // line 8
+        echo "</br>
 <ul>
     <li>&nbsp;&nbsp;&nbsp;";
         // line 10
@@ -75,7 +72,7 @@ class __TwigTemplate_75e3ce1b04bc6194d94ee665e0d53d75179ea572f0a27995465c1be0563
     &nbsp;&nbsp;&nbsp;";
         // line 29
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "texte"), "html", null, true);
-        echo " 
+        echo "  
 ";
     }
 
@@ -91,6 +88,6 @@ class __TwigTemplate_75e3ce1b04bc6194d94ee665e0d53d75179ea572f0a27995465c1be0563
 
     public function getDebugInfo()
     {
-        return array (  77 => 29,  70 => 24,  64 => 23,  61 => 22,  55 => 20,  53 => 19,  42 => 11,  38 => 10,  31 => 5,  28 => 4,);
+        return array (  74 => 29,  67 => 24,  61 => 23,  58 => 22,  52 => 20,  50 => 19,  39 => 11,  35 => 10,  31 => 8,  28 => 7,);
     }
 }

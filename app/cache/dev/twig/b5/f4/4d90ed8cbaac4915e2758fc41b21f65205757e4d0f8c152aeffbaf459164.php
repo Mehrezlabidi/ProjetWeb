@@ -29,80 +29,83 @@ class __TwigTemplate_b5f44d90ed8cbaac4915e2758fc41b21f65205757e4d0f8c152aeffbaf4
     public function block_content($context, array $blocks = array())
     {
         // line 6
-        echo "          
+        echo " 
+   
 ";
-        // line 7
-        $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("article" => (isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")))));
         // line 8
-        $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("rubrique" => (isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")))));
+        $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("article" => (isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")))));
         // line 9
+        $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("rubrique" => (isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")))));
+        // line 10
         echo " ";
         $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("actualite" => (isset($context["actualite"]) ? $context["actualite"] : $this->getContext($context, "actualite")))));
-        // line 10
-        $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("sousrubrique" => (isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")))));
         // line 11
-        $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("menu" => (isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")))));
+        $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("sousrubrique" => (isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")))));
         // line 12
-        $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("role" => (isset($context["role"]) ? $context["role"] : $this->getContext($context, "role")))));
+        $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("menu" => (isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")))));
         // line 13
+        $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("role" => (isset($context["role"]) ? $context["role"] : $this->getContext($context, "role")))));
+        // line 14
         echo " 
 ";
     }
 
-    // line 16
+    // line 17
     public function block_menu($context, array $blocks = array())
     {
-        echo " 
+        // line 18
+        echo "    
+
  ";
-        // line 17
+        // line 20
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")));
         foreach ($context['_seq'] as $context["_key"] => $context["rubrique"]) {
-            // line 18
+            // line 21
             echo "                <li class=\"item1\"><a href=\"#\"> ";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "title"), "html", null, true);
             echo " <span>R</span></a>                     
 \t\t\t <ul>                 
                ";
-            // line 20
+            // line 23
             $context['_parent'] = (array) $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")));
             foreach ($context['_seq'] as $context["_key"] => $context["sousrubrique"]) {
-                // line 21
+                // line 24
                 echo "                         ";
-                // line 22
+                // line 25
                 echo "                    ";
                 if (($this->getAttribute($this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "rubrique"), "id") == $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "id"))) {
                     echo "     
  <li class=\"subitem1\"><a href=\"#\">";
-                    // line 23
+                    // line 26
                     echo twig_escape_filter($this->env, $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "title"), "html", null, true);
                     echo " <span>S</span></a></li> 
                     ";
                 }
-                // line 24
+                // line 27
                 echo "         
                ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['sousrubrique'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 25
+            // line 28
             echo " 
                ";
-            // line 26
+            // line 29
             $context['_parent'] = (array) $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")));
             foreach ($context['_seq'] as $context["_key"] => $context["article"]) {
                 echo " 
                              ";
-                // line 28
+                // line 31
                 echo "                      ";
                 if (($this->getAttribute($this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "rubrique"), "id") == $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "id"))) {
                     echo " 
   <li class=\"subitem1\">
       <a href=\"";
-                    // line 30
+                    // line 33
                     echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_article_voir", array("id" => $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "id"))), "html", null, true);
                     echo "\">";
                     echo twig_escape_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "nom"), "html", null, true);
@@ -110,14 +113,14 @@ class __TwigTemplate_b5f44d90ed8cbaac4915e2758fc41b21f65205757e4d0f8c152aeffbaf4
   </li>
                       ";
                 }
-                // line 32
+                // line 35
                 echo "  
                ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['article'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 33
+            // line 36
             echo "  
 \t\t\t</ul>                   
 \t\t</li>                
@@ -140,6 +143,6 @@ class __TwigTemplate_b5f44d90ed8cbaac4915e2758fc41b21f65205757e4d0f8c152aeffbaf4
 
     public function getDebugInfo()
     {
-        return array (  121 => 33,  114 => 32,  106 => 30,  100 => 28,  94 => 26,  91 => 25,  84 => 24,  79 => 23,  74 => 22,  72 => 21,  68 => 20,  62 => 18,  58 => 17,  53 => 16,  48 => 13,  46 => 12,  44 => 11,  42 => 10,  39 => 9,  37 => 8,  35 => 7,  32 => 6,  29 => 5,);
+        return array (  124 => 36,  117 => 35,  109 => 33,  103 => 31,  97 => 29,  94 => 28,  87 => 27,  82 => 26,  77 => 25,  75 => 24,  71 => 23,  65 => 21,  61 => 20,  57 => 18,  54 => 17,  49 => 14,  47 => 13,  45 => 12,  43 => 11,  40 => 10,  38 => 9,  36 => 8,  32 => 6,  29 => 5,);
     }
 }

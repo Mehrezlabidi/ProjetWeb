@@ -10,25 +10,32 @@ class __TwigTemplate_4e1c780e6a871740d6b461ff7ce183d023e107216c36591557982a81607
         $this->parent = false;
 
         $this->blocks = array(
-            'menuu' => array($this, 'block_menuu'),
+            'ajout_menu' => array($this, 'block_ajout_menu'),
+            'ajout_rubrique' => array($this, 'block_ajout_rubrique'),
+            'ajout_sousrubrique' => array($this, 'block_ajout_sousrubrique'),
+            'ajout_role' => array($this, 'block_ajout_role'),
+            'ajout_article' => array($this, 'block_ajout_article'),
+            'ajout_actualite' => array($this, 'block_ajout_actualite'),
         );
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        // line 1
-        echo "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">
-<html xmlns=\"http://www.w3.org/1999/xhtml\">
+        // line 2
+        echo "
+
+<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />
 <link rel=\"icon\" sizes=\"16x16\" href=\"";
-        // line 5
+        // line 8
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("favicon.ico"), "html", null, true);
         echo "\" /> 
 <title>Administration</title>
  
  <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 8
+        // line 11
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/css/screen.css"), "html", null, true);
         echo "\"/> 
 <!--[if IE]>
@@ -117,7 +124,7 @@ class __TwigTemplate_4e1c780e6a871740d6b461ff7ce183d023e107216c36591557982a81607
 </script> 
 
  <link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 94
+        // line 97
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/css/datePicker.css"), "html", null, true);
         echo "\"/> 
 <!--  date picker script -->
@@ -211,7 +218,7 @@ updateSelects(today.getTime());
 \t<div id=\"logo\">
 \t<a href=\"\">
        <!--  <img src=\"";
-        // line 185
+        // line 188
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/logo.png"), "html", null, true);
         echo "\" width=\"156\" height=\"40\" alt=\"\" />  -->
             </a>
@@ -235,7 +242,7 @@ updateSelects(today.getTime());
 \t\t</td>
 \t\t<td>
  <input type=\"image\" src=\"";
-        // line 206
+        // line 209
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/top_search_btn.gif"), "html", null, true);
         echo "\"  />                   
 
@@ -267,11 +274,11 @@ updateSelects(today.getTime());
                             
   
   <a href=\"";
-        // line 235
+        // line 238
         echo $this->env->getExtension('routing')->getPath("fos_user_profile_show");
         echo "\">  
   <img src=\"";
-        // line 236
+        // line 239
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/nav/nav_myaccount.gif"), "html", null, true);
         echo "\" width=\"93\" height=\"14\" alt=\"\" />
     </a>                    
@@ -279,11 +286,11 @@ updateSelects(today.getTime());
 \t\t\t<div class=\"nav-divider\">&nbsp;</div>
 \t\t       <div class=\"showhide-account\">
       <a href=\"";
-        // line 241
+        // line 244
         echo $this->env->getExtension('routing')->getPath("fos_user_security_logout");
         echo "\">                          
   <img src=\"";
-        // line 242
+        // line 245
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/nav/nav_logout.gif"), "html", null, true);
         echo "\" width=\"64\" height=\"14\" alt=\"\"  />                       
        </a>                       
@@ -319,18 +326,18 @@ updateSelects(today.getTime());
 \t\t<div class=\"table\">
 
  <ul class=\"select\"><li><a href=\"";
-        // line 275
+        // line 278
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_show");
         echo "\"><b>Menu</b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
 \t\t<div class=\"select_sub\">
 \t\t\t<ul class=\"sub\">
 \t\t\t\t<li><a href=\"";
-        // line 279
+        // line 282
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_new");
         echo "\">ajout un menu</a></li>
 \t\t\t\t<li><a href=\"";
-        // line 280
+        // line 283
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_show");
         echo "\">afficher liste des menus</a></li>
 \t\t\t
@@ -343,18 +350,18 @@ updateSelects(today.getTime());
 \t\t<div class=\"nav-divider\">&nbsp;</div>
 
   <ul class=\"current\"><li><a href=\"";
-        // line 290
+        // line 293
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_show");
         echo "\"><b>Rubrique</b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
 \t\t<div class=\"select_sub show\">
 \t\t\t<ul class=\"sub\">
 \t\t\t\t<li><a href=\"";
-        // line 294
+        // line 297
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_new");
         echo "\">ajouter une rubrique</a></li>
 \t\t\t\t<li><a href=\"";
-        // line 295
+        // line 298
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_show");
         echo "\">afficher liste des rubriques</a></li>
 
@@ -367,18 +374,18 @@ updateSelects(today.getTime());
 \t\t<div class=\"nav-divider\">&nbsp;</div>
 
  <ul class=\"select\"><li><a href=\"";
-        // line 305
+        // line 308
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_sousrubrique_show");
         echo "\"><b>Sous Rubrique</b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
 \t\t<div class=\"select_sub\">
 \t\t\t<ul class=\"sub\">
 \t\t\t\t<li><a href=\"";
-        // line 309
+        // line 312
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_sousrubrique_new");
         echo "\">ajouter une Sous rubrique</a></li>
 \t\t\t\t<li><a href=\"";
-        // line 310
+        // line 313
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_sousrubrique_show");
         echo "\">afficher liste des sous rubriques</a></li>
 
@@ -391,18 +398,18 @@ updateSelects(today.getTime());
 \t\t<div class=\"nav-divider\">&nbsp;</div>
 
  <ul class=\"select\"><li><a href=\"";
-        // line 320
+        // line 323
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_article_show");
         echo "\"><b>Article</b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
 \t\t<div class=\"select_sub\">
 \t\t\t<ul class=\"sub\">
 \t\t\t\t<li><a href=\"";
-        // line 324
+        // line 327
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_article_new");
         echo "\">ajouter un article</a></li>
 \t\t\t\t<li><a href=\"";
-        // line 325
+        // line 328
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_article_show");
         echo "\">afficher liste des articles</a></li>
 
@@ -416,18 +423,18 @@ updateSelects(today.getTime());
 \t\t<div class=\"nav-divider\">&nbsp;</div>
 
  <ul class=\"select\"><li><a href=\"";
-        // line 336
+        // line 339
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_actualite_show");
         echo "\"><b>Actualit&eacute; </b><!--[if IE 7]><!--></a><!--<![endif]-->
 \t\t<!--[if lte IE 6]><table><tr><td><![endif]-->
 \t\t<div class=\"select_sub\">
 \t\t\t<ul class=\"sub\">
 \t\t\t\t<li><a href=\"";
-        // line 340
+        // line 343
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_actualite_new");
         echo "\">ajouter  une actualit&eacute;</a></li>
 \t\t\t\t<li><a href=\"";
-        // line 341
+        // line 344
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_actualite_show");
         echo "\">afficher liste des actualit&eacute;s</a></li>
 
@@ -467,7 +474,7 @@ updateSelects(today.getTime());
 \t\t<th rowspan=\"3\" class=\"sized\">
                    
   <img src=\"";
-        // line 378
+        // line 381
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/side_shadowleft.jpg"), "html", null, true);
         echo "\" width=\"20\" height=\"300\" alt=\"\"  />                  
                 </th>
@@ -477,7 +484,7 @@ updateSelects(today.getTime());
 \t\t<th rowspan=\"3\" class=\"sized\">
                    
         <img src=\"";
-        // line 385
+        // line 388
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/side_shadowright.jpg"), "html", null, true);
         echo "\" width=\"20\" height=\"300\" alt=\"\"  />           
                 </th>
@@ -491,32 +498,35 @@ updateSelects(today.getTime());
 \t\t\t<!--  start table-content  -->
 \t\t\t<div id=\"table-content\">
 \t\t\t <!-- <h2>Sub Heading </h2> -->
-\t\t\t<h3>Esprit</h3>
-Un système de gestion de contenu ou SGC (Content Management System ou CMS) est une famille de logiciels destinés à la conception et à la mise à jour dynamique de sites Web 
-ou d'applications multimédia.<br/>Ils partagent les fonctionnalités suivantes : 
-\t\t\t<br />
-\t\t\t<br />
- <li>ils permettent à plusieurs individus de travailler sur un même document  </li>
- <li>ils fournissent une chaîne de publication (workflow) offrant par exemple la possibilité de mettre en ligne le contenu des documents </li>
-\t\t\t<br />
-\t\t\t<br />
-<li>ils permettent de séparer les opérations de gestion de la forme et du contenu </li>
-<li>ils permettent de structurer le contenu (utilisation de FAQ, de documents, de blogs, de forums de discussion, etc.)</li>
-                        <br />
-\t\t\t<br />
-<li>ils permettent de hiérarchiser les utilisateurs et de leur attribuer des rôles et des permissions (utilisateur anonyme, administrateur, contributeur, etc.) </li>
-<li> certains SGC incluent la gestion de versions.</li>\t\t 
-
-
+ \t 
+                           ";
+        // line 402
+        echo "                          ";
+        $this->displayBlock('ajout_menu', $context, $blocks);
+        // line 403
+        echo "                          ";
+        $this->displayBlock('ajout_rubrique', $context, $blocks);
+        // line 404
+        echo "                          ";
+        $this->displayBlock('ajout_sousrubrique', $context, $blocks);
+        // line 405
+        echo "                          ";
+        $this->displayBlock('ajout_role', $context, $blocks);
+        // line 406
+        echo "                          ";
+        $this->displayBlock('ajout_article', $context, $blocks);
+        // line 407
+        echo "                          ";
+        $this->displayBlock('ajout_actualite', $context, $blocks);
+        // line 408
+        echo "                   
+                         
 \t\t\t</div>
 \t\t\t<!--  end table-content  -->
 
 \t\t\t<div class=\"clear\"></div>
-          ";
-        // line 418
-        $this->displayBlock('menuu', $context, $blocks);
-        // line 419
-        echo "\t\t</div>
+
+\t\t</div>
 \t\t<!--  end content-table-inner ............................................END  -->
 \t\t</td>
 \t\t<td id=\"tbl-border-right\"></td>
@@ -552,10 +562,34 @@ ou d'applications multimédia.<br/>Ils partagent les fonctionnalités suivantes 
 </html>";
     }
 
-    // line 418
-    public function block_menuu($context, array $blocks = array())
+    // line 402
+    public function block_ajout_menu($context, array $blocks = array())
     {
-        echo " ";
+    }
+
+    // line 403
+    public function block_ajout_rubrique($context, array $blocks = array())
+    {
+    }
+
+    // line 404
+    public function block_ajout_sousrubrique($context, array $blocks = array())
+    {
+    }
+
+    // line 405
+    public function block_ajout_role($context, array $blocks = array())
+    {
+    }
+
+    // line 406
+    public function block_ajout_article($context, array $blocks = array())
+    {
+    }
+
+    // line 407
+    public function block_ajout_actualite($context, array $blocks = array())
+    {
     }
 
     public function getTemplateName()
@@ -570,6 +604,6 @@ ou d'applications multimédia.<br/>Ils partagent les fonctionnalités suivantes 
 
     public function getDebugInfo()
     {
-        return array (  556 => 418,  519 => 419,  517 => 418,  481 => 385,  471 => 378,  431 => 341,  427 => 340,  420 => 336,  406 => 325,  402 => 324,  395 => 320,  382 => 310,  378 => 309,  371 => 305,  358 => 295,  354 => 294,  347 => 290,  334 => 280,  330 => 279,  323 => 275,  287 => 242,  283 => 241,  275 => 236,  271 => 235,  239 => 206,  215 => 185,  121 => 94,  32 => 8,  26 => 5,  20 => 1,  120 => 56,  113 => 51,  102 => 48,  96 => 47,  91 => 44,  86 => 39,  81 => 37,  76 => 36,  72 => 34,  69 => 33,  65 => 32,  42 => 12,  37 => 10,  28 => 5,);
+        return array (  591 => 407,  586 => 406,  581 => 405,  576 => 404,  571 => 403,  566 => 402,  522 => 408,  519 => 407,  516 => 406,  513 => 405,  510 => 404,  507 => 403,  504 => 402,  488 => 388,  478 => 381,  438 => 344,  434 => 343,  427 => 339,  413 => 328,  409 => 327,  402 => 323,  389 => 313,  385 => 312,  378 => 308,  365 => 298,  361 => 297,  354 => 293,  341 => 283,  337 => 282,  330 => 278,  294 => 245,  290 => 244,  282 => 239,  278 => 238,  246 => 209,  222 => 188,  128 => 97,  39 => 11,  33 => 8,  25 => 2,);
     }
 }

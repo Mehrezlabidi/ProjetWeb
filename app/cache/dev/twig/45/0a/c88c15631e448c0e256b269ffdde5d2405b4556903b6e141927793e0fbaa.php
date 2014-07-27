@@ -7,127 +7,307 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
     {
         parent::__construct($env);
 
-        $this->parent = false;
+        $this->parent = $this->env->loadTemplate("MyAppEspritBundle:Default:template.html.twig");
 
         $this->blocks = array(
+            'ajout_article' => array($this, 'block_ajout_article'),
         );
+    }
+
+    protected function doGetParent(array $context)
+    {
+        return "MyAppEspritBundle:Default:template.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        // line 1
+        $this->parent->display($context, array_merge($this->blocks, $blocks));
+    }
+
+    // line 4
+    public function block_ajout_article($context, array $blocks = array())
+    {
         echo " 
-<!DOCTYPE html>
-<html lang=\"en\">
-<head>
-<meta charset=\"utf-8\">
-<link rel=\"icon\" sizes=\"16x16\" href=\"";
-        // line 6
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("favicon.ico"), "html", null, true);
-        echo "\" />
-<title>Forms</title>
- 
-<link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 9
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/css/style.css"), "html", null, true);
-        echo "\"/> 
-<link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"";
-        // line 10
-        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("http://fonts.googleapis.com/css?family=Engagement"), "html", null, true);
-        echo "\"/> 
- 
-<!--[if IE]>
-  <script src=\"http://html5shiv.googlecode.com/svn/trunk/html5.js\"></script>
-<![endif]-->
-    <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js\" type=\"text/javascript\" charset=\"utf-8\"></script>
-    <script src=\"js/jquery.uniform.min.js\" type=\"text/javascript\" charset=\"utf-8\"></script>
-    <script type=\"text/javascript\" charset=\"utf-8\">
-      \$(function(){
-        \$(\"input:checkbox, input:radio, input:file, select\").uniform();
-      });
-    </script>
-</head>
-<body>
-<article>
-    <div style=\"padding: -5px 50px 0 10px;\">
-<h1>Nouvel Article</h1>
-<form role=\"form\" method=\"post\" action='";
-        // line 27
+  <form role=\"form\" method=\"post\" action='";
+        // line 5
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_article_new");
         echo "'>
-\t<ul>
+<table border=\"0\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" id=\"content-table\">
+<tr>
+\t<th rowspan=\"3\" class=\"sized\">
             
-        <li>
-        \t<label for=\"name\">Texte:</label>
-                  ";
-        // line 32
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "texte"), 'widget');
-        echo "
-        </li>
-        <li>
-        \t<label for=\"name\">Image:</label>
-                  ";
-        // line 36
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "image"), 'widget');
-        echo "
-        </li>
-        <li>
-        \t<label for=\"name\">Nom:</label>
-                  ";
-        // line 40
+              <img src=\"";
+        // line 10
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/side_shadowleft.jpg"), "html", null, true);
+        echo "\" width=\"20\" height=\"300\" alt=\"\" />   
+         
+        </th>
+\t<th class=\"topleft\"></th>
+\t<td id=\"tbl-border-top\">&nbsp;</td>
+\t<th class=\"topright\"></th>
+\t<th rowspan=\"3\" class=\"sized\">
+          
+            
+       <img src=\"";
+        // line 19
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/side_shadowright.jpg"), "html", null, true);
+        echo "\" width=\"20\" height=\"300\" alt=\"\" />       
+        </th>
+</tr>
+<tr>
+\t<td id=\"tbl-border-left\"></td>
+\t<td>
+\t<!--  start content-table-inner -->
+\t<div id=\"content-table-inner\">
+\t
+\t<table border=\"0\" width=\"100%\" cellpadding=\"0\" cellspacing=\"0\">
+\t<tr valign=\"top\">
+\t<td>
+\t
+\t
+\t\t<!--  start step-holder -->
+\t\t<div id=\"step-holder\">
+\t\t\t<div class=\"step-no\">1</div>
+\t\t\t<div class=\"step-dark-left\"><a href=\"\">Add product details</a></div>
+\t\t\t<div class=\"step-dark-right\">&nbsp;</div>
+\t\t\t<div class=\"step-no-off\">2</div>
+\t\t\t<div class=\"step-light-left\">Select related products</div>
+\t\t\t<div class=\"step-light-right\">&nbsp;</div>
+\t\t\t<div class=\"step-no-off\">3</div>
+\t\t\t<div class=\"step-light-left\">Preview</div>
+\t\t\t<div class=\"step-light-round\">&nbsp;</div>
+\t\t\t<div class=\"clear\"></div>
+\t\t</div>
+\t\t<!--  end step-holder -->
+\t
+\t\t<!-- start id-form -->
+\t\t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\"  id=\"id-form\">
+                     <tr>
+\t\t\t<th valign=\"top\">Nom de l'article:</th>
+\t\t\t<td>";
+        // line 52
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nom"), 'widget');
-        echo "
-        </li>
-        <li>
-        \t<label for=\"name\">Date:</label>
-                  ";
-        // line 44
+        echo "</td>   
+                        <td>
+\t\t\t<div class=\"error-left\"></div>
+\t\t\t<div class=\"error-inner\">This field is required.</div>
+\t\t\t</td>
+\t\t</tr>
+                <tr>
+\t\t\t<th valign=\"top\">Image:</th>
+\t\t\t<td>";
+        // line 60
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "image"), 'widget');
+        echo "</td>                      
+\t\t</tr>
+                
+\t\t<tr>
+\t\t\t<th valign=\"top\">Texte :</th>
+\t\t\t<td>";
+        // line 65
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "texte"), 'widget');
+        echo "  </td>
+                        
+                        <td>
+\t\t\t<div class=\"error-left\"></div>
+\t\t\t<div class=\"error-inner\">This field is required.</div>
+\t\t\t</td>
+\t\t</tr>
+\t\t<tr>
+\t\t\t<th valign=\"top\">Role:</th>
+\t\t\t<td>";
+        // line 74
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "role"), 'widget');
+        echo "</td>                      
+\t\t</tr>
+                <tr>
+\t\t\t<th valign=\"top\">Rub:</th>
+\t\t\t<td>";
+        // line 78
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "rubrique"), 'widget');
+        echo "</td>                      
+\t\t</tr>
+               
+                
+                <tr>
+\t\t\t<th valign=\"top\">Select a date:</th>
+\t\t<td>
+\t\t
+\t\t\t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\">
+\t\t\t<tr  valign=\"top\">
+\t\t\t\t<td>
+\t\t\t\t<form id=\"chooseDateForm\" action=\"";
+        // line 89
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "date"), 'widget');
-        echo "
-        </li>
-        
-        
-        
-        
-        
-        
-        
-        
-        <li>\t  <input type=\"hidden\" name=\"name\" value=\"submit\">
-                        ";
-        // line 55
+        echo " 
+                               
+\t\t\t\t</td>
+\t\t\t\t 
+\t\t\t\t<td>
+                                    <a href=\"\" id=\"date-pick\">&nbsp;
+                                        
+   <img src=\"";
+        // line 96
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_calendar.jpg"), "html", null, true);
+        echo "\"   alt=\"\" />                                      
+                                      
+                                    </a> 
+                                </td>
+\t\t\t</tr>
+\t\t\t</table>
+\t\t
+\t\t</td>                      
+\t\t</tr>
+                
+                
+                
+                <tr>
+\t\t\t<th valign=\"top\"></th>
+\t\t\t<td>";
+        // line 110
+        echo " </td>
+                        <td> ";
+        // line 111
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "_token"), 'widget');
-        echo "
-                    <!-- clés etrangeres -->
-                       ";
-        // line 57
-        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'widget');
-        echo "
-       </li>
-\t</ul>
+        echo " </td>
+                        
+                        
+\t\t\t 
+\t\t</tr>
+                
+                   
+\t\t<th>&nbsp;</th>
+\t\t<td valign=\"top\">
+\t\t\t<input type=\"submit\"  value=\"\" class=\"form-submit\" />
+\t\t\t<input type=\"reset\" value=\"\" class=\"form-reset\"  />
+\t\t</td>
+\t\t<td></td>
+\t</tr>
+\t</table>
+\t<!-- end id-form  -->
+
+\t</td>
+\t<td>
+
+\t<!--  start related-activities -->
+\t<div id=\"related-activities\">
+\t\t
+\t\t<!--  start related-act-top -->
+\t\t<div id=\"related-act-top\">
+      <img src=\"";
+        // line 136
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/header_related_act.gif"), "html", null, true);
+        echo "\"  width=\"271\" height=\"43\" alt=\"\" />                 
+\t 
+\t\t</div>
+\t\t<!-- end related-act-top -->
+\t\t
+\t\t<!--  start related-act-bottom -->
+\t\t<div id=\"related-act-bottom\">
+\t\t
+\t\t\t<!--  start related-act-inner -->
+\t\t\t<div id=\"related-act-inner\">
+\t\t\t
+\t\t\t\t<div class=\"left\">
+                                    <a href=\"\">
+    <img src=\"";
+        // line 149
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_plus.gif"), "html", null, true);
+        echo "\"  width=\"21\" height=\"21\" alt=\"\" />                                     
+                                       
+                                    </a></div>
+\t\t\t\t<div class=\"right\">
+\t\t\t\t\t<h5>Add another product</h5>
+\t\t\t\t\tLorem ipsum dolor sit amet consectetur
+\t\t\t\t\tadipisicing elitsed do eiusmod tempor.
+\t\t\t\t\t<ul class=\"greyarrow\">
+\t\t\t\t\t\t<li><a href=\"\">Click here to visit</a></li> 
+\t\t\t\t\t\t<li><a href=\"\">Click here to visit</a> </li>
+\t\t\t\t\t</ul>
+\t\t\t\t</div>
+\t\t\t\t
+\t\t\t\t<div class=\"clear\"></div>
+\t\t\t\t<div class=\"lines-dotted-short\"></div>
+\t\t\t\t
+\t\t\t\t<div class=\"left\"><a href=\"\">
+                                 
+   <img src=\"";
+        // line 167
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_minus.gif"), "html", null, true);
+        echo "\"  width=\"21\" height=\"21\" alt=\"\" />                                     
+                                        
+                                    </a></div>
+\t\t\t\t<div class=\"right\">
+\t\t\t\t\t<h5>Delete products</h5>
+\t\t\t\t\tLorem ipsum dolor sit amet consectetur
+\t\t\t\t\tadipisicing elitsed do eiusmod tempor.
+\t\t\t\t\t<ul class=\"greyarrow\">
+\t\t\t\t\t\t<li><a href=\"\">Click here to visit</a></li> 
+\t\t\t\t\t\t<li><a href=\"\">Click here to visit</a> </li>
+\t\t\t\t\t</ul>
+\t\t\t\t</div>
+\t\t\t\t
+\t\t\t\t<div class=\"clear\"></div>
+\t\t\t\t<div class=\"lines-dotted-short\"></div>
+\t\t\t\t
+\t\t\t\t<div class=\"left\"><a href=\"\">
+     <img src=\"";
+        // line 184
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_edit.gif"), "html", null, true);
+        echo "\"  width=\"21\" height=\"21\" alt=\"\" />                                   
+                                         
+                                    </a></div>
+\t\t\t\t<div class=\"right\">
+\t\t\t\t\t<h5>Edit categories</h5>
+\t\t\t\t\tLorem ipsum dolor sit amet consectetur
+\t\t\t\t\tadipisicing elitsed do eiusmod tempor.
+\t\t\t\t\t<ul class=\"greyarrow\">
+\t\t\t\t\t\t<li><a href=\"\">Click here to visit</a></li> 
+\t\t\t\t\t\t<li><a href=\"\">Click here to visit</a> </li>
+\t\t\t\t\t</ul>
+\t\t\t\t</div>
+\t\t\t\t<div class=\"clear\"></div>
+\t\t\t\t
+\t\t\t</div>
+\t\t\t<!-- end related-act-inner -->
+\t\t\t<div class=\"clear\"></div>
+\t\t
+\t\t</div>
+\t\t<!-- end related-act-bottom -->
+\t
+\t</div>
+\t<!-- end related-activities -->
+
+</td>
+</tr>
+<tr>
+<td>
+      <img src=\"";
+        // line 212
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/blank.gif"), "html", null, true);
+        echo "\" width=\"695\" height=\"1\" alt=\"blank\" /> 
    
-        <button type=\"submit\" class=\"action\">Submit</button>
-        <button type=\"reset\" class=\"right\">Reset</button>
-  
+</td>
+<td></td>
+</tr>
+</table>
+ 
+<div class=\"clear\"></div>
+ 
+
+</div>
+<!--  end content-table-inner  -->
+</td>
+<td id=\"tbl-border-right\"></td>
+</tr>
+<tr>
+\t<th class=\"sized bottomleft\"></th>
+\t<td id=\"tbl-border-bottom\">&nbsp;</td>
+\t<th class=\"sized bottomright\"></th>
+</tr>
+</table>
 </form>
-    </div>
-</article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- ";
+";
     }
 
     public function getTemplateName()
@@ -142,6 +322,6 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 
     public function getDebugInfo()
     {
-        return array (  104 => 57,  99 => 55,  85 => 44,  78 => 40,  71 => 36,  64 => 32,  56 => 27,  36 => 10,  32 => 9,  26 => 6,  19 => 1,);
+        return array (  287 => 212,  256 => 184,  236 => 167,  215 => 149,  199 => 136,  171 => 111,  168 => 110,  151 => 96,  141 => 89,  127 => 78,  120 => 74,  108 => 65,  100 => 60,  89 => 52,  53 => 19,  41 => 10,  33 => 5,  28 => 4,);
     }
 }

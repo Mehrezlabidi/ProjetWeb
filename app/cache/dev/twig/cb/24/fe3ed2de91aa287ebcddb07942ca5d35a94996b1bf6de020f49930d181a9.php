@@ -104,12 +104,12 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
  
 
 </table> </div> 
-    <h2><a href=\"";
-        // line 52
-        echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_new");
-        echo "\">ajouter menu</a></h2>
 </center>
     </div>
+    <center><h2><a href=\"";
+        // line 54
+        echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_new");
+        echo "\">ajouter menu</a></h2></center>
 
 </body>
 </html>
@@ -129,6 +129,6 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
 
     public function getDebugInfo()
     {
-        return array (  109 => 52,  102 => 47,  91 => 44,  85 => 43,  80 => 40,  75 => 35,  70 => 33,  66 => 32,  62 => 31,  58 => 29,  54 => 28,  30 => 7,  25 => 5,  19 => 1,);
+        return array (  111 => 54,  102 => 47,  91 => 44,  85 => 43,  80 => 40,  75 => 35,  70 => 33,  66 => 32,  62 => 31,  58 => 29,  54 => 28,  30 => 7,  25 => 5,  19 => 1,);
     }
 }

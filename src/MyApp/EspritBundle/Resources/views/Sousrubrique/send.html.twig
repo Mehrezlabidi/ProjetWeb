@@ -1,65 +1,217 @@
  
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" />
-<title>Forms</title>
  
-<link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/style.css') }}"/> 
-<link rel="stylesheet" type="text/css" media="screen" href="{{ asset('http://fonts.googleapis.com/css?family=Engagement') }}"/> 
- 
-<!--[if IE]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/jquery.uniform.min.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" charset="utf-8">
-      $(function(){
-        $("input:checkbox, input:radio, input:file, select").uniform();
-      });
-    </script>
-</head>
-<body>
-<article>
-    <div style="padding: 80px 50px 0 10px;">
-<h1>Nouvelle Sous Rubrique</h1>
-<form role="form" method="post" action='{{path('my_app_esprit_sousrubrique_new')}}'>
-	<ul>
-
-         <li>
-        	<label for="name">Position:</label>
-                  {{form_widget(form.position)}}
-        </li> 
-        <li>
-        	<label for="name">Title:</label>
-                  {{form_widget(form.title)}}
-        </li>
-             
-
-
-
-        <li>	  <input type="hidden" name="name" value="submit">
-                        {{form_widget(form._token)}}
+ {% extends 'MyAppEspritBundle:Default:template.html.twig' %}
+ {% block ajout_sousrubrique %} 
+  <form role="form" method="post" action='{{path('my_app_esprit_sousrubrique_new')}}'>
+<table border="0" width="100%" cellpadding="0" cellspacing="0" id="content-table">
+<tr>
+	<th rowspan="3" class="sized">
+            
+              <img src="{{ asset('bundles/myappesprit/images/shared/side_shadowleft.jpg') }}" width="20" height="300" alt="" />   
          
-                       {{form_widget(form)}}
-       </li>
-	</ul>
-    <p>
-        <button type="submit" class="action">Submit</button>
-        <button type="reset" class="right">Reset</button>
-    </p>
-</form>
-    </div>
-</article>
+        </th>
+	<th class="topleft"></th>
+	<td id="tbl-border-top">&nbsp;</td>
+	<th class="topright"></th>
+	<th rowspan="3" class="sized">
+          
+            
+       <img src="{{ asset('bundles/myappesprit/images/shared/side_shadowright.jpg') }}" width="20" height="300" alt="" />       
+        </th>
+</tr>
+<tr>
+	<td id="tbl-border-left"></td>
+	<td>
+	<!--  start content-table-inner -->
+	<div id="content-table-inner">
+	
+	<table border="0" width="100%" cellpadding="0" cellspacing="0">
+	<tr valign="top">
+	<td>
+	
+	
+		<!--  start step-holder -->
+		<div id="step-holder">
+			<div class="step-no">1</div>
+			<div class="step-dark-left"><a href="">Add product details</a></div>
+			<div class="step-dark-right">&nbsp;</div>
+			<div class="step-no-off">2</div>
+			<div class="step-light-left">Select related products</div>
+			<div class="step-light-right">&nbsp;</div>
+			<div class="step-no-off">3</div>
+			<div class="step-light-left">Preview</div>
+			<div class="step-light-round">&nbsp;</div>
+			<div class="clear"></div>
+		</div>
+		<!--  end step-holder -->
+	
+		<!-- start id-form -->
+		<table border="0" cellpadding="0" cellspacing="0"  id="id-form">
+		<tr>
+			<th valign="top">Sub_Rubrique Title:</th>
+			<td>{{form_widget(form.title)}}  </td>
+                        
+                        <td>
+			<div class="error-left"></div>
+			<div class="error-inner">This field is required.</div>
+			</td>
+		</tr>
+		<tr>
+			<th valign="top">Position:</th>
+			<td>{{form_widget(form.position)}}</td>
+                        
+                        
+			<td>
+			<div class="error-left"></div>
+			<div class="error-inner">This field is required.</div>
+			</td>
+		</tr>
+                  <tr>
+			<th valign="top">Etat</th>
+			<td>{{form_widget(form.state)}}</td>
+                         	 
+		</tr>
+                
+                
+                <tr>
+			<th valign="top">Rub No :</th>
+			<td>{{form_widget(form.rubrique)}}</td>
+                        
+                        
+			 
+		</tr>
+                            {{form_widget(form._token)}} 
+                   
+		<th>&nbsp;</th>
+		<td valign="top">
+			<input type="submit"  value="" class="form-submit" />
+			<input type="reset" value="" class="form-reset"  />
+		</td>
+		<td></td>
+	</tr>
+	</table>
+	<!-- end id-form  -->
+
+	</td>
+	<td>
+
+	<!--  start related-activities -->
+	<div id="related-activities">
+		
+		<!--  start related-act-top -->
+		<div id="related-act-top">
+      <img src="{{ asset('bundles/myappesprit/images/forms/header_related_act.gif') }}"  width="271" height="43" alt="" />                 
+	 
+		</div>
+		<!-- end related-act-top -->
+		
+		<!--  start related-act-bottom -->
+		<div id="related-act-bottom">
+		
+			<!--  start related-act-inner -->
+			<div id="related-act-inner">
+			
+				<div class="left">
+                                    <a href="">
+    <img src="{{ asset('bundles/myappesprit/images/forms/icon_plus.gif') }}"  width="21" height="21" alt="" />                                     
+                                       
+                                    </a></div>
+				<div class="right">
+					<h5>Add another product</h5>
+					Lorem ipsum dolor sit amet consectetur
+					adipisicing elitsed do eiusmod tempor.
+					<ul class="greyarrow">
+						<li><a href="">Click here to visit</a></li> 
+						<li><a href="">Click here to visit</a> </li>
+					</ul>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="lines-dotted-short"></div>
+				
+				<div class="left"><a href="">
+                                 
+   <img src="{{ asset('bundles/myappesprit/images/forms/icon_minus.gif') }}"  width="21" height="21" alt="" />                                     
+                                        
+                                    </a></div>
+				<div class="right">
+					<h5>Delete products</h5>
+					Lorem ipsum dolor sit amet consectetur
+					adipisicing elitsed do eiusmod tempor.
+					<ul class="greyarrow">
+						<li><a href="">Click here to visit</a></li> 
+						<li><a href="">Click here to visit</a> </li>
+					</ul>
+				</div>
+				
+				<div class="clear"></div>
+				<div class="lines-dotted-short"></div>
+				
+				<div class="left"><a href="">
+     <img src="{{ asset('bundles/myappesprit/images/forms/icon_edit.gif') }}"  width="21" height="21" alt="" />                                   
+                                         
+                                    </a></div>
+				<div class="right">
+					<h5>Edit categories</h5>
+					Lorem ipsum dolor sit amet consectetur
+					adipisicing elitsed do eiusmod tempor.
+					<ul class="greyarrow">
+						<li><a href="">Click here to visit</a></li> 
+						<li><a href="">Click here to visit</a> </li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+				
+			</div>
+			<!-- end related-act-inner -->
+			<div class="clear"></div>
+		
+		</div>
+		<!-- end related-act-bottom -->
+	
+	</div>
+	<!-- end related-activities -->
+
+</td>
+</tr>
+<tr>
+<td>
+      <img src="{{ asset('bundles/myappesprit/images/shared/blank.gif') }}" width="695" height="1" alt="blank" /> 
+   
+</td>
+<td></td>
+</tr>
+</table>
+ 
+<div class="clear"></div>
  
 
+</div>
+<!--  end content-table-inner  -->
+</td>
+<td id="tbl-border-right"></td>
+</tr>
+<tr>
+	<th class="sized bottomleft"></th>
+	<td id="tbl-border-bottom">&nbsp;</td>
+	<th class="sized bottomright"></th>
+</tr>
+</table>
+</form>
+{% endblock  %}
 
 
 
 
 
 
+
+
+
+
+
+
+ 
 
 
 

@@ -72,7 +72,7 @@ class __TwigTemplate_30f2cc2db294a301880fd3e3c5e9209165a936437e0685c65e827b52155
             echo "</td> <!-- date ici pas converti -->
         <td>";
             // line 35
-            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["actualite"]) ? $context["actualite"] : $this->getContext($context, "actualite")), "description"), "html", null, true);
+            echo twig_escape_filter($this->env, twig_truncate_filter($this->env, $this->getAttribute((isset($context["actualite"]) ? $context["actualite"] : $this->getContext($context, "actualite")), "description"), 20, true, "..."), "html", null, true);
             echo "</td>
        <td><b>No  </b>";
             // line 36

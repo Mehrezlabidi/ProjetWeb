@@ -3,14 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/views/Article/showbyid.html.twig</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/views/Sousrubrique/show.html.twig</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/views/Default/administration.html.twig</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/views/Rubrique/show.html.twig</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/views/Default/index.html.twig</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/views/Menu/show.html.twig</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/views/Article/show.html.twig</file>
-            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/views/layout.html.twig</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/views/Default/template.html.twig</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/views/Menu/send.html.twig</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/views/Article/edit.html.twig</file>
+            <file>file:/C:/wamp/www/ProjetWeb/src/MyApp/EspritBundle/Resources/views/Menu/edit.html.twig</file>
         </group>
     </open-files>
 </project-private>
