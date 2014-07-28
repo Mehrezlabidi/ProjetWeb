@@ -29,7 +29,11 @@
                       {% if article.rubrique.id == rubrique.id %} 
   <li class="subitem1">
       <a href="{{ path('my_app_esprit_article_voir',{'id':article.id}) }}">
-                        {{article.nom }}  
+                        {% if article.role.id == 1 %}  
+                        <h3>    {{article.nom }} </h3>
+                         {%  else    %}
+                       <strike>    {{article.nom }}</strike>
+                        {% endif  %}
       <span>A</span></a>
   </li>
                       {% endif %}  
@@ -61,7 +65,15 @@
                 
 		<dl>
 		<dt>Article</dt>
-		<dd><a href="{{ path('my_app_esprit_article_voir',{'id':article.id}) }}">{{article.nom }}</a></dd>
+		<dd><a href="{{ path('my_app_esprit_article_voir',{'id':article.id}) }}">
+                        
+                        {% if article.role.id == 1 %}  
+                        <h3>    {{article.nom }} </h3>
+                         {%  else    %}
+                       <strike>    {{article.nom }}</strike>
+                        {% endif  %}
+                    
+                    </a></dd>
 		</dl>
 		 {% endif %}  
                {%endfor%}  
