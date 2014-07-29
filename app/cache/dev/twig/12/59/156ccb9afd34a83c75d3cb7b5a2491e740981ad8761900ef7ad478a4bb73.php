@@ -26,11 +26,6 @@ class __TwigTemplate_1259156ccb9afd34a83c75d3cb7b5a2491e740981ad8761900ef7ad478a
         // line 2
         echo " 
 ";
-        // line 3
-        echo $this->env->getExtension('actions')->renderUri("MyAppEspritBundle:Article:top", array());
-        // line 4
-        echo "
-";
     }
 
     public function getTemplateName()
@@ -40,6 +35,6 @@ class __TwigTemplate_1259156ccb9afd34a83c75d3cb7b5a2491e740981ad8761900ef7ad478a
 
     public function getDebugInfo()
     {
-        return array (  32 => 4,  30 => 3,  27 => 2,  20 => 1,);
+        return array (  27 => 2,  20 => 1,);
     }
 }

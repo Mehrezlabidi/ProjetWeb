@@ -35,7 +35,10 @@ class __TwigTemplate_d1ee66589cccf79f1997cdbd28c94e1e0997b7bc0a9bb02a2eb1739d3af
     <div style=\"padding: 120px 50px 0 10px;\">
 <h2> </h2>
 <center >      <div style=\"height:141px;width:545px;border:0px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;\">
-              
+        ";
+        // line 14
+        if ((twig_length_filter($this->env, (isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique"))) > 0)) {
+            echo "      
 <table class=\"bordered\" >
     <thead>
 
@@ -49,11 +52,9 @@ class __TwigTemplate_d1ee66589cccf79f1997cdbd28c94e1e0997b7bc0a9bb02a2eb1739d3af
     </tr>
     </thead>
    
-     ";
-        // line 28
-        if ((twig_length_filter($this->env, (isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique"))) > 0)) {
+     
+                      ";
             // line 29
-            echo "                      ";
             $context['_parent'] = (array) $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")));
             foreach ($context['_seq'] as $context["_key"] => $context["rubrique"]) {
@@ -126,7 +127,7 @@ class __TwigTemplate_d1ee66589cccf79f1997cdbd28c94e1e0997b7bc0a9bb02a2eb1739d3af
 <center><h2><a href=\"";
         // line 57
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_rubrique_new");
-        echo "\">ajouter rubrique</a></h2></center>
+        echo " \" style=\"text-decoration:none\">ajouter rubrique</a></h2></center>
 </body>
 </html>
  
@@ -145,6 +146,6 @@ class __TwigTemplate_d1ee66589cccf79f1997cdbd28c94e1e0997b7bc0a9bb02a2eb1739d3af
 
     public function getDebugInfo()
     {
-        return array (  128 => 57,  117 => 48,  113 => 47,  110 => 46,  99 => 43,  93 => 42,  88 => 40,  83 => 39,  79 => 37,  75 => 35,  73 => 34,  69 => 33,  64 => 31,  61 => 30,  56 => 29,  54 => 28,  30 => 7,  25 => 5,  19 => 1,);
+        return array (  129 => 57,  118 => 48,  114 => 47,  111 => 46,  100 => 43,  94 => 42,  89 => 40,  84 => 39,  80 => 37,  76 => 35,  74 => 34,  70 => 33,  65 => 31,  62 => 30,  58 => 29,  40 => 14,  30 => 7,  25 => 5,  19 => 1,);
     }
 }

@@ -14,7 +14,7 @@
        
 <center >  
                       
-
+{% if  role |length > 0  %}
 <table class="bordered" >
     <thead>
 
@@ -25,7 +25,7 @@
     </tr>
     </thead>
    
-     {% if  role |length > 0  %}{% for  role  in  role  %}
+     {% for  role  in  role  %}
      <tr>
          <th>{{ role.id }}</th> 
         
@@ -35,15 +35,7 @@
           {%  else    %}
           <td><b>denied</b></td>
           {% endif  %}
-        
-         
-         
-         
-         
-         
-         
-       
-        
+          
         <td><a href="{{ path('my_app_esprit_role_delete',{'id':role.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/delete.png') }}" alt="" />  </a></td>
         <td><a href="{{ path('my_app_esprit_role_edit',{'id':role.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/update.png') }}" alt="" />  </a></td>
 
@@ -52,11 +44,9 @@
        <h2><p> (  rien   a   afficher )</p></h2> 
          {% endif %} 
     </tr>        
-    
- 
 
 </table>
-    <h2><a href="{{ path('my_app_esprit_role_new') }}">ajouter role</a></h2>
+    <h2><a href="{{ path('my_app_esprit_role_new') }}" style="text-decoration:none">ajouter role</a></h2>
 </center>
     </div>
 

@@ -8,7 +8,7 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('MyAppEspritBundle:Default:administration.html.twig');
+        return $this->render('MyAppEspritBundle::layout.html.twig');
     }
      public function administrationAction()
     {

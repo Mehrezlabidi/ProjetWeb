@@ -38,8 +38,11 @@ class __TwigTemplate_b7c1b9435201fe2df06267e6bc2f2ae7cbf85555deb1bb7bb60a528445f
 <h2> </h2>
 <center ><div style=\"height:141px;width:600px;border:0px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;\">
                
- 
-<table class=\"bordered\" >
+  ";
+        // line 17
+        if ((twig_length_filter($this->env, (isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique"))) > 0)) {
+            // line 18
+            echo "<table class=\"bordered\" >
     <thead>
 
     <tr>
@@ -51,11 +54,9 @@ class __TwigTemplate_b7c1b9435201fe2df06267e6bc2f2ae7cbf85555deb1bb7bb60a528445f
 
     </tr>
     </thead>
-   ";
-        // line 30
-        if ((twig_length_filter($this->env, (isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique"))) > 0)) {
+  
+      ";
             // line 31
-            echo "                   ";
             $context['_parent'] = (array) $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")));
             foreach ($context['_seq'] as $context["_key"] => $context["sousrubrique"]) {
@@ -134,7 +135,7 @@ class __TwigTemplate_b7c1b9435201fe2df06267e6bc2f2ae7cbf85555deb1bb7bb60a528445f
     <center><h2><a href=\"";
         // line 64
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_sousrubrique_new");
-        echo "\">ajouter sous rubrique</a></h2></center>
+        echo "\" style=\"text-decoration:none\">ajouter sous rubrique</a></h2></center>
 
 </body>
 </html>
@@ -153,6 +154,6 @@ class __TwigTemplate_b7c1b9435201fe2df06267e6bc2f2ae7cbf85555deb1bb7bb60a528445f
 
     public function getDebugInfo()
     {
-        return array (  136 => 64,  126 => 56,  122 => 55,  119 => 54,  108 => 51,  102 => 50,  97 => 48,  92 => 46,  88 => 44,  84 => 42,  80 => 40,  78 => 39,  72 => 36,  67 => 34,  63 => 32,  58 => 31,  56 => 30,  31 => 8,  26 => 6,  19 => 1,);
+        return array (  137 => 64,  127 => 56,  123 => 55,  120 => 54,  109 => 51,  103 => 50,  98 => 48,  93 => 46,  89 => 44,  85 => 42,  81 => 40,  79 => 39,  73 => 36,  68 => 34,  64 => 32,  60 => 31,  45 => 18,  43 => 17,  31 => 8,  26 => 6,  19 => 1,);
     }
 }
