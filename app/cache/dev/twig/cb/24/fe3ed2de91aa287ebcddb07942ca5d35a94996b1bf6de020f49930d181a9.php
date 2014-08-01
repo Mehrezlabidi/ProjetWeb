@@ -113,13 +113,11 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
         echo " 
     </tr>       
     
- 
-
 </table> </div> 
 </center>
     </div>
     <center><h2><a href=\"";
-        // line 58
+        // line 56
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_new");
         echo "\" style=\"text-decoration:none\">ajouter menu</a></h2></center>
 
@@ -141,6 +139,6 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
 
     public function getDebugInfo()
     {
-        return array (  123 => 58,  113 => 50,  109 => 49,  106 => 48,  95 => 45,  89 => 44,  84 => 41,  79 => 36,  74 => 34,  70 => 33,  66 => 32,  62 => 30,  58 => 29,  43 => 16,  41 => 15,  30 => 7,  25 => 5,  19 => 1,);
+        return array (  121 => 56,  113 => 50,  109 => 49,  106 => 48,  95 => 45,  89 => 44,  84 => 41,  79 => 36,  74 => 34,  70 => 33,  66 => 32,  62 => 30,  58 => 29,  43 => 16,  41 => 15,  30 => 7,  25 => 5,  19 => 1,);
     }
 }

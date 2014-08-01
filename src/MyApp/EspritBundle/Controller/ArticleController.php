@@ -211,8 +211,9 @@ public function topAction($max = 50)
     //$deleteForm = $this->createDeleteForm($id);
  
     return $this->render('MyAppEspritBundle:Article:showbyid.html.twig', array(
-        'article'      => $article,
-      //  'delete_form' => $deleteForm->createView(),
+        
+        'article' => $article,
+        
  
     ));
         

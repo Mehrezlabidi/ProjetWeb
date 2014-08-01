@@ -27,26 +27,26 @@ class __TwigTemplate_b5f44d90ed8cbaac4915e2758fc41b21f65205757e4d0f8c152aeffbaf4
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 5
+    // line 3
     public function block_content($context, array $blocks = array())
     {
-        // line 6
-        echo "          
+        echo "  
+            
 ";
-        // line 7
+        // line 5
         $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("article" => (isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")))));
-        // line 8
+        // line 6
         $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("rubrique" => (isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")))));
-        // line 9
+        // line 7
         echo " ";
         $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("actualite" => (isset($context["actualite"]) ? $context["actualite"] : $this->getContext($context, "actualite")))));
-        // line 10
+        // line 8
         $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("sousrubrique" => (isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")))));
-        // line 11
+        // line 9
         $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("menu" => (isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")))));
-        // line 12
+        // line 10
         $this->env->loadTemplate("MyAppEspritBundle:Article:lister.html.twig")->display(array_merge($context, array("role" => (isset($context["role"]) ? $context["role"] : $this->getContext($context, "role")))));
-        // line 13
+        // line 11
         echo " 
 ";
     }
@@ -54,8 +54,8 @@ class __TwigTemplate_b5f44d90ed8cbaac4915e2758fc41b21f65205757e4d0f8c152aeffbaf4
     // line 16
     public function block_menu_gauche($context, array $blocks = array())
     {
-        echo " 
-             
+        echo "  
+              
  ";
         // line 18
         $context['_parent'] = (array) $context;
@@ -166,137 +166,133 @@ class __TwigTemplate_b5f44d90ed8cbaac4915e2758fc41b21f65205757e4d0f8c152aeffbaf4
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")));
         foreach ($context['_seq'] as $context["_key"] => $context["rubrique"]) {
-            echo " ";
+            echo " 
+               ";
+            // line 50
             if (($this->getAttribute($this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "menu"), "position") == 1)) {
-                // line 50
+                // line 51
                 echo "
 
         <li class=\"slide p1\"><a href=\"#url\">";
-                // line 52
+                // line 53
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "title"), "html", null, true);
                 echo " </a><div><b></b>
 \t\t<dl>
                  ";
-                // line 54
+                // line 55
                 $context['_parent'] = (array) $context;
                 $context['_seq'] = twig_ensure_traversable((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")));
                 foreach ($context['_seq'] as $context["_key"] => $context["sousrubrique"]) {
-                    // line 55
-                    echo "                         ";
                     // line 56
+                    echo "                         ";
+                    // line 57
                     echo "                 ";
                     if (($this->getAttribute($this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "rubrique"), "id") == $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "id"))) {
                         echo " 
 \t\t<dt>Sous Rubrique</dt>
 \t\t<dd><a href=\"url\">";
-                        // line 58
+                        // line 59
                         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "title"), "html", null, true);
                         echo "</a></dd>
 \t\t</dl>
                 ";
                     }
-                    // line 60
+                    // line 61
                     echo "         
                ";
                 }
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['sousrubrique'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 61
+                // line 62
                 echo " 
                  ";
-                // line 62
+                // line 63
                 $context['_parent'] = (array) $context;
                 $context['_seq'] = twig_ensure_traversable((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")));
                 foreach ($context['_seq'] as $context["_key"] => $context["article"]) {
                     echo " 
                              ";
-                    // line 64
-                    echo "                 ";
+                    // line 65
+                    echo "                    ";
                     if (($this->getAttribute($this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "rubrique"), "id") == $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "id"))) {
                         echo " 
                 
 \t\t<dl>
 \t\t<dt>Article</dt>
 \t\t<dd><a href=\"";
-                        // line 68
+                        // line 69
                         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_article_voir", array("id" => $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "id"))), "html", null, true);
                         echo "\">
                         
                         ";
-                        // line 70
+                        // line 71
                         if (($this->getAttribute($this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "role"), "id") == 1)) {
                             echo "  
                         <h3>    ";
-                            // line 71
+                            // line 72
                             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "nom"), "html", null, true);
                             echo " </h3>
-                         ";
+                        ";
                         } else {
-                            // line 73
+                            // line 74
                             echo "                       <strike>    ";
                             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "nom"), "html", null, true);
                             echo "</strike>
                         ";
                         }
-                        // line 75
+                        // line 76
                         echo "                    
                     </a></dd>
 \t\t</dl>
-\t\t ";
+\t\t    ";
                     }
-                    // line 78
+                    // line 79
                     echo "  
                ";
                 }
                 $_parent = $context['_parent'];
                 unset($context['_seq'], $context['_iterated'], $context['_key'], $context['article'], $context['_parent'], $context['loop']);
                 $context = array_intersect_key($context, $_parent) + $_parent;
-                // line 79
+                // line 80
                 echo "  
 \t\t 
 \t</li>\t 
 
-                     ";
+                 ";
             }
-            // line 83
+            // line 84
             echo "  
-            ";
+ ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['rubrique'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 85
+        // line 86
         echo "                          
 ";
     }
 
-    // line 89
+    // line 90
     public function block_menu_droite($context, array $blocks = array())
     {
-        // line 90
-        echo "
- ";
         // line 91
+        echo "                  ";
         $context['_parent'] = (array) $context;
         $context['_seq'] = twig_ensure_traversable((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")));
         foreach ($context['_seq'] as $context["_key"] => $context["menu"]) {
+            echo "       
+                            <li class=\"bg_list_un\"><a href=\"#\">";
             // line 92
-            echo "        
-         <li class=\"bg_list_un\"><a href=\"#\">";
-            // line 93
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "title"), "html", null, true);
-            echo " </a></li>
-\t\t\t\t\t 
-        
-";
+            echo " </a></li>\t\t\t\t\t 
+                  ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['menu'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 97
-        echo "
-           ";
+        // line 94
+        echo "           ";
     }
 
     public function getTemplateName()
@@ -311,6 +307,6 @@ class __TwigTemplate_b5f44d90ed8cbaac4915e2758fc41b21f65205757e4d0f8c152aeffbaf4
 
     public function getDebugInfo()
     {
-        return array (  298 => 97,  288 => 93,  285 => 92,  281 => 91,  278 => 90,  275 => 89,  270 => 85,  263 => 83,  256 => 79,  249 => 78,  243 => 75,  237 => 73,  232 => 71,  228 => 70,  223 => 68,  215 => 64,  209 => 62,  206 => 61,  199 => 60,  193 => 58,  187 => 56,  185 => 55,  181 => 54,  176 => 52,  172 => 50,  166 => 49,  160 => 47,  155 => 45,  148 => 43,  142 => 40,  135 => 39,  130 => 37,  124 => 35,  119 => 33,  115 => 32,  111 => 31,  105 => 29,  99 => 27,  96 => 26,  89 => 25,  84 => 24,  79 => 23,  77 => 22,  73 => 21,  67 => 19,  61 => 18,  55 => 16,  50 => 13,  48 => 12,  46 => 11,  44 => 10,  41 => 9,  39 => 8,  37 => 7,  34 => 6,  31 => 5,);
+        return array (  295 => 94,  287 => 92,  280 => 91,  277 => 90,  272 => 86,  265 => 84,  258 => 80,  251 => 79,  245 => 76,  239 => 74,  234 => 72,  230 => 71,  225 => 69,  217 => 65,  211 => 63,  208 => 62,  201 => 61,  195 => 59,  189 => 57,  187 => 56,  183 => 55,  178 => 53,  174 => 51,  172 => 50,  166 => 49,  160 => 47,  155 => 45,  148 => 43,  142 => 40,  135 => 39,  130 => 37,  124 => 35,  119 => 33,  115 => 32,  111 => 31,  105 => 29,  99 => 27,  96 => 26,  89 => 25,  84 => 24,  79 => 23,  77 => 22,  73 => 21,  67 => 19,  61 => 18,  55 => 16,  50 => 11,  48 => 10,  46 => 9,  44 => 8,  41 => 7,  39 => 6,  37 => 5,  31 => 3,);
     }
 }

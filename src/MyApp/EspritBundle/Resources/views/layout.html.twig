@@ -2,9 +2,9 @@
 
 
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 {% block head %}
-   <title>   </title>
+   <title>  Home </title>
     <meta charset="utf-8">
 <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" /> 
 
@@ -67,14 +67,13 @@
                             <td>
                                                                <!--    menu horiz           -->                       
                
-<div class="stretchHolder">
-      <div class="stretchMenu">
-	<ul class="stretchDrop">
-	<!-- item 1 -->
-	                      {% block menu_haut %} {% endblock %}
-</ul>
-</div>
-</div>
+                                 <div class="stretchHolder">
+                                       <div class="stretchMenu">
+	                                     <ul class="stretchDrop">
+	                                                {% block menu_haut %} {% endblock %}
+                                              </ul>
+                                        </div>
+                                  </div>
 
                                                                   <!--  menu horiz          -->
                             </td>
@@ -107,10 +106,9 @@
                                          
           <!-- menu a gauche  -->     
      
-	<ul class="menu"> 
-  
-{% block menu_gauche %} {% endblock %}
-	</ul>
+	                                             <ul class="menu">   
+                                                       {% block menu_gauche %}  {% endblock %}
+	                                             </ul>
   
    
    
@@ -183,10 +181,11 @@
                                                     </td>
                                                 </tr>
                                             </table>
-<!-- div pour  limiter larticle => -->     <div style="height:400px;width:350px;border:0px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+                                               <!-- div pour  limiter larticle => -->   
+                                            <div style="height:400px;width:350px;border:0px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
                                             {% block article %}{% endblock %}
                                             </div>
-                                    <!--        <table cellpadding="0" cellspacing="0" border="0" class="product">
+                                             <!--        <table cellpadding="0" cellspacing="0" border="0" class="product">
                                                 <tr>
                                                     <td style="padding:0px 2px 3px 2px;">
                                                         <table cellpadding="0" cellspacing="0" border="0">
@@ -434,11 +433,9 @@
                                                              <ul>
                                                                  
                                          {#visible pour l admin#}                             
-                                            {% if is_granted('ROLE_ADMIN') %}
-                                           
-                                                 
+                                            {#% if is_granted('ROLE_ADMIN') %#}                                                                                          
                                            {% block menu_droite %} {% endblock %}                      
-                                             {% endif %} 
+                                             {#% endif %#} 
                                              
                                                            </ul>
                                                 <br style="line-height:10px" />
