@@ -17,8 +17,16 @@ class MenuType extends AbstractType
         $builder
             ->add('position')
             ->add('title')
-            ->add('utilisateur')
-        ;
+         
+                
+                
+         ->add('utilisateur', 'entity', array('class' => 'MyApp\EspritBundle\Entity\Utilisateur',     
+          'property' => 'nom',
+          'expanded' => false,
+          'multiple' => false,
+          'required' => true ) 
+                
+        );
     }
     
     /**

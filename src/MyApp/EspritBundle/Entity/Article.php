@@ -36,7 +36,7 @@ class Article {
     /**
      * @var string
      *
-     * @ORM\Column(name="texte", type="string", length=255)
+     * @ORM\Column(name="texte", type="string", length=500 )
      */
     private $texte;
 
@@ -50,7 +50,7 @@ class Article {
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=255)
+     * @ORM\Column(name="nom", type="string", length=255,unique=true)
      */
     private $nom;
 
@@ -183,6 +183,10 @@ class Article {
 
         public function __toString()
     {
-          return $this-> id.'';
+          return $this-> title.''.$this->permission ;
+       
     }
-}
+
+    
+    
+    }

@@ -12,9 +12,6 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Menu
 {
-    
-
-
     /**
      * @var integer
      *
@@ -39,14 +36,14 @@ class Menu
     /**
      * @var integer
      *
-     * @ORM\Column(name="position", type="integer")
+     * @ORM\Column(name="position", type="integer",unique=true)
      */
     private $position;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="title", type="string", length=255)
+     * @ORM\Column(name="title", type="string", length=255,unique=true)
      */
     private $title;
 
@@ -123,7 +120,7 @@ class Menu
     
       public function __toString()
     {
-          return $this-> id.'';
+          return $this-> id.''.$this->nom ;
     }
     
 }

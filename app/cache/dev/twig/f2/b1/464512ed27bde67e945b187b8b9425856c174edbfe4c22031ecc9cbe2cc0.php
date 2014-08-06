@@ -35,8 +35,11 @@ class __TwigTemplate_f2b1464512ed27bde67e945b187b8b9425856c174edbfe4c22031ecc9cb
     <div style=\"padding: 120px 50px 0 10px;\">
 <h2>  </h2>
 <center ><div style=\"height:150px;width:655px;border:0px solid #ccc;font:10px/15px Georgia, Garamond, Serif;overflow:auto;\">
-  
-<table class=\"bordered\" >
+    ";
+        // line 14
+        if ((twig_length_filter($this->env, (isset($context["article"]) ? $context["article"] : $this->getContext($context, "article"))) > 0)) {
+            // line 15
+            echo "<table class=\"bordered\" >
 <thead>
 
     <tr>
@@ -51,99 +54,88 @@ class __TwigTemplate_f2b1464512ed27bde67e945b187b8b9425856c174edbfe4c22031ecc9cb
          <th>Image</th>
     </tr>
     
-</thead>
-  
-        ";
-        // line 32
-        if ((twig_length_filter($this->env, (isset($context["article"]) ? $context["article"] : $this->getContext($context, "article"))) > 0)) {
-            // line 33
-            echo "       ";
+</thead>  
+        
+       ";
+            // line 32
             $context['_parent'] = (array) $context;
             $context['_seq'] = twig_ensure_traversable((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")));
             foreach ($context['_seq'] as $context["_key"] => $context["article"]) {
                 echo "    
      <tr>
          <th>";
-                // line 35
+                // line 34
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "id"), "html", null, true);
                 echo "</th> 
          <td>";
-                // line 36
+                // line 35
                 echo twig_escape_filter($this->env, twig_truncate_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "texte"), 20, true, "..."), "html", null, true);
                 echo "</td>
          <td>";
-                // line 37
+                // line 36
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "nom"), "html", null, true);
                 echo "</td>
       <!--  <td>article.date</td>  -->
          <td>   ";
-                // line 39
+                // line 38
                 echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "date"), "d/m/Y"), "html", null, true);
                 echo "         </td>
          
-        
-
           <td>No  ";
-                // line 43
+                // line 40
                 echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "rubrique"), "id"), "html", null, true);
                 echo "</td>
        <!--    <td>No  ";
-                // line 44
+                // line 41
                 echo "</td>  -->
-         
-         
+                  
           ";
-                // line 47
+                // line 43
                 if (($this->getAttribute($this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "role"), "id") == 1)) {
-                    // line 48
+                    // line 44
                     echo "          <td><b>access</b></td>
           ";
                 } else {
-                    // line 50
+                    // line 46
                     echo "          <td><b>denied</b></td>
             ";
                 }
-                // line 52
-                echo "          
-          
-             
+                // line 47
+                echo "                 
         
        ";
-                // line 56
+                // line 49
                 if ((!(null === $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "image")))) {
-                    // line 57
+                    // line 50
                     echo "        <td><img src=\"";
                     echo twig_escape_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "image"), "html", null, true);
                     echo "\" alt=\"\" width=\"100\" height=\"100\" class=\"img-border\"></td>
        ";
                 }
-                // line 59
+                // line 52
                 echo "        
         ";
-                // line 60
+                // line 53
                 echo " 
         ";
-                // line 61
+                // line 54
                 if ((null === $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "image"))) {
-                    // line 62
+                    // line 55
                     echo "         <td> <img src=\"http://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg\" alt=\"";
                     echo twig_escape_filter($this->env, $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "image"), "html", null, true);
                     echo "\"alt=\"\" width=\"100\" height=\"100\" class=\"img-border\" /></td>
         ";
                 }
-                // line 64
-                echo "         
-         
-         
-         
+                // line 57
+                echo "               
         <td><a href=\"";
-                // line 68
+                // line 58
                 echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_article_delete", array("id" => $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "id"))), "html", null, true);
                 echo "\">  <img src=\"";
                 echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/delete.png"), "html", null, true);
                 echo "\" alt=\"\" />  </a></td>
         <td><a href=\"";
-                // line 69
+                // line 59
                 echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_article_edit", array("id" => $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "id"))), "html", null, true);
                 echo "\">  <img src=\"";
                 echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/update.png"), "html", null, true);
@@ -154,28 +146,26 @@ class __TwigTemplate_f2b1464512ed27bde67e945b187b8b9425856c174edbfe4c22031ecc9cb
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['article'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 72
+            // line 62
             echo "         ";
         } else {
-            // line 73
+            // line 63
             echo "                   <h2><p> (  rien   a   afficher )</p></h2> 
          ";
         }
-        // line 74
+        // line 64
         echo " 
                   
-    </tr>        
-    
- 
+    </tr>            
 
 </table>
   </div> 
 </center> </div>
     
  <center><h2><a href=\"";
-        // line 84
+        // line 72
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_article_new");
-        echo "\">ajouter article</a></h2></center>
+        echo "\" style=\"text-decoration:none\">ajouter article</a></h2></center>
 </body>
 </html>
  ";
@@ -193,6 +183,6 @@ class __TwigTemplate_f2b1464512ed27bde67e945b187b8b9425856c174edbfe4c22031ecc9cb
 
     public function getDebugInfo()
     {
-        return array (  177 => 84,  165 => 74,  161 => 73,  158 => 72,  147 => 69,  141 => 68,  135 => 64,  129 => 62,  127 => 61,  124 => 60,  121 => 59,  115 => 57,  113 => 56,  107 => 52,  103 => 50,  99 => 48,  97 => 47,  92 => 44,  88 => 43,  81 => 39,  76 => 37,  72 => 36,  68 => 35,  60 => 33,  58 => 32,  30 => 7,  25 => 5,  19 => 1,);
+        return array (  167 => 72,  157 => 64,  153 => 63,  150 => 62,  139 => 59,  133 => 58,  130 => 57,  124 => 55,  122 => 54,  119 => 53,  116 => 52,  110 => 50,  108 => 49,  104 => 47,  100 => 46,  96 => 44,  94 => 43,  90 => 41,  86 => 40,  81 => 38,  76 => 36,  72 => 35,  68 => 34,  61 => 32,  42 => 15,  40 => 14,  30 => 7,  25 => 5,  19 => 1,);
     }
 }

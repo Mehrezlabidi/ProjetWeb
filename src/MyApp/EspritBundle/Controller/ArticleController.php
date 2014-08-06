@@ -93,9 +93,9 @@ class ArticleController extends Controller
         ->add('date', 'date')   
             
   
-        ->add('rubrique','entity',array('class'=>'MyApp\EspritBundle\Entity\Rubrique','property'=>'id'))
+     ->add('rubrique','entity',array('class'=>'MyApp\EspritBundle\Entity\Rubrique','property'=>'title'))
       ##  ->add('sousrubrique','entity',array('class'=>'MyApp\EspritBundle\Entity\Sousrubrique','property'=>'id'))
-       ->add('role','entity',array('class'=>'MyApp\EspritBundle\Entity\Role','property'=>'id'))
+       ->add('role','entity',array('class'=>'MyApp\EspritBundle\Entity\Role','property'=>'permission'))
  
         ->getForm();
 

@@ -21,13 +21,7 @@ class Actualite {
      */
     private $id;
 
-    public function getUtilisateur() {
-        return $this->utilisateur;
-    }
-
-    public function setUtilisateur($utilisateur) {
-        $this->utilisateur = $utilisateur;
-    }
+  
 
     /**
      * @ORM\ManyToOne(targetEntity="Utilisateur", inversedBy="actualites")
@@ -38,7 +32,7 @@ class Actualite {
     /**
      * @var string
      *
-     * @ORM\Column(name="titre", type="string", length=255)
+     * @ORM\Column(name="titre", type="string", length=255,unique=true)
      */
     private $titre;
 
@@ -159,9 +153,15 @@ class Actualite {
     public function getImage() {
         return $this->image;
     }
+    public function getUtilisateur() {
+        return $this->utilisateur;
+    }
 
+    public function setUtilisateur($utilisateur) {
+        $this->utilisateur = $utilisateur;
+    }
     public function __toString() {
-        return $this->id . '';
+        return $this->id.''.$this->nom;
     }
 
 }

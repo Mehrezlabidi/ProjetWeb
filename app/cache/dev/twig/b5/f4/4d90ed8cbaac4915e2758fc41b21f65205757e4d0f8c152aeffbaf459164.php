@@ -64,7 +64,7 @@ class __TwigTemplate_b5f44d90ed8cbaac4915e2758fc41b21f65205757e4d0f8c152aeffbaf4
             echo " ";
             if (($this->getAttribute($this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "menu"), "position") == 2)) {
                 // line 19
-                echo "                <li class=\"item1\"><a href=\"#\"> ";
+                echo "                <li class=\"item1\"><a href=\"#\" style=\"text-decoration:none\"> ";
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "title"), "html", null, true);
                 echo " <span>R</span></a>                     
 \t\t\t <ul>                 
@@ -79,7 +79,7 @@ class __TwigTemplate_b5f44d90ed8cbaac4915e2758fc41b21f65205757e4d0f8c152aeffbaf4
                     echo "                    ";
                     if (($this->getAttribute($this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "rubrique"), "id") == $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "id"))) {
                         echo "     
- <li class=\"subitem1\"><a href=\"#\">";
+ <li class=\"subitem1\"><a href=\"#\" style=\"text-decoration:none\">";
                         // line 24
                         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "title"), "html", null, true);
                         echo " <span>S</span></a></li> 
@@ -109,7 +109,7 @@ class __TwigTemplate_b5f44d90ed8cbaac4915e2758fc41b21f65205757e4d0f8c152aeffbaf4
       <a href=\"";
                         // line 31
                         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_article_voir", array("id" => $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "id"))), "html", null, true);
-                        echo "\">
+                        echo "\" style=\"text-decoration:none\">
                         ";
                         // line 32
                         if (($this->getAttribute($this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "role"), "id") == 1)) {
@@ -173,7 +173,7 @@ class __TwigTemplate_b5f44d90ed8cbaac4915e2758fc41b21f65205757e4d0f8c152aeffbaf4
                 // line 51
                 echo "
 
-        <li class=\"slide p1\"><a href=\"#url\">";
+        <li class=\"slide p1\"><a href=\"#url\" style=\"text-decoration:none\">";
                 // line 53
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "title"), "html", null, true);
                 echo " </a><div><b></b>
@@ -190,7 +190,7 @@ class __TwigTemplate_b5f44d90ed8cbaac4915e2758fc41b21f65205757e4d0f8c152aeffbaf4
                     if (($this->getAttribute($this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "rubrique"), "id") == $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "id"))) {
                         echo " 
 \t\t<dt>Sous Rubrique</dt>
-\t\t<dd><a href=\"url\">";
+\t\t<dd><a href=\"#url\" style=\"text-decoration:none\">";
                         // line 59
                         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "title"), "html", null, true);
                         echo "</a></dd>
@@ -223,7 +223,7 @@ class __TwigTemplate_b5f44d90ed8cbaac4915e2758fc41b21f65205757e4d0f8c152aeffbaf4
 \t\t<dd><a href=\"";
                         // line 69
                         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("my_app_esprit_article_voir", array("id" => $this->getAttribute((isset($context["article"]) ? $context["article"] : $this->getContext($context, "article")), "id"))), "html", null, true);
-                        echo "\">
+                        echo "\" style=\"text-decoration:none\">
                         
                         ";
                         // line 71
@@ -282,7 +282,7 @@ class __TwigTemplate_b5f44d90ed8cbaac4915e2758fc41b21f65205757e4d0f8c152aeffbaf4
         $context['_seq'] = twig_ensure_traversable((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")));
         foreach ($context['_seq'] as $context["_key"] => $context["menu"]) {
             echo "       
-                            <li class=\"bg_list_un\"><a href=\"#\">";
+                            <li class=\"bg_list_un\"><a href=\"#\" style=\"text-decoration:none\">";
             // line 92
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "title"), "html", null, true);
             echo " </a></li>\t\t\t\t\t 

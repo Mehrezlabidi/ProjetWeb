@@ -27,10 +27,7 @@ class Rubrique
     /**
      * @ORM\OneToMany(targetEntity="SousRubrique", mappedBy="Rubrique")
      */
-    protected $sousrubriques;
-    
-    
-    
+    protected $sousrubriques;    
     /**
      * @ORM\OneToMany(targetEntity="Article", mappedBy="Rubrique")
      */
@@ -60,7 +57,7 @@ class Rubrique
     /**
      * @var string
      *
-     * @ORM\Column(name="title", type="string", length=255)
+     * @ORM\Column(name="title", type="string", length=255,unique=true)
      */
     private $title;
 
@@ -167,7 +164,7 @@ class Rubrique
     
       public function __toString()
     {
-          return $this-> id.'';
+          return $this-> id.''.$this->title; 
     }
     
 }

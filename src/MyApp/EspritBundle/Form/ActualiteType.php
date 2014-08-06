@@ -19,8 +19,16 @@ class ActualiteType extends AbstractType
             ->add('dateinsertion')
             ->add('description')
             ->add('image')
-            ->add('utilisateur')
-        ;
+           
+                
+                
+          ->add('utilisateur', 'entity', array('class' => 'MyApp\EspritBundle\Entity\Utilisateur',     
+          'property' => 'nom',
+          'expanded' => false,
+          'multiple' => false,
+          'required' => true ) 
+                
+        );
     }
     
     /**

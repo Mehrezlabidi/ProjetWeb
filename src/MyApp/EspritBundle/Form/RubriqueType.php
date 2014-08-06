@@ -18,8 +18,17 @@ class RubriqueType extends AbstractType
             ->add('position')
             ->add('state', 'checkbox', array('required' => false))
             ->add('title')
-            ->add('menu')
-        ;
+           
+                
+                      
+        ->add('menu', 'entity', array('class' => 'MyApp\EspritBundle\Entity\Menu',     
+          'property' => 'title',
+          'expanded' => false,
+          'multiple' => false,
+          'required' => true ) 
+                
+                
+        );
     }
     
     /**

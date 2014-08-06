@@ -84,9 +84,9 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 \t\t<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\"  id=\"id-form\">
                      <tr>
 \t\t\t<th valign=\"top\">Nom de l'article:</th>
-                        <td><input type=\"text\" class=\"inp-form\"  id=\"form_nom\" name=\"form[nom]\" /></td>
 \t\t\t<td>";
-        // line 53
+        // line 52
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "nom"), 'widget');
         echo "</td>   
                         <td>
 \t\t\t<div class=\"error-left\"></div>
@@ -96,7 +96,7 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
                 <tr>
 \t\t\t<th valign=\"top\">Image:</th>
 \t\t\t<td>";
-        // line 61
+        // line 60
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "image"), 'widget');
         echo "</td>                      
 \t\t</tr>
@@ -104,7 +104,7 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 \t\t<tr>
 \t\t\t<th valign=\"top\">Texte :</th>
 \t\t\t<td>";
-        // line 66
+        // line 65
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "texte"), 'widget');
         echo "  </td>
                         
@@ -116,14 +116,14 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 \t\t<tr>
 \t\t\t<th valign=\"top\">Role:</th>
 \t\t\t<td>";
-        // line 75
+        // line 74
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "role"), 'widget');
         echo "</td>                      
 \t\t</tr>
                 <tr>
-\t\t\t<th valign=\"top\">Rub:</th>
+\t\t\t<th valign=\"top\">Rub Title:</th>
 \t\t\t<td>";
-        // line 79
+        // line 78
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "rubrique"), 'widget');
         echo "</td>                      
 \t\t</tr>
@@ -137,7 +137,7 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 \t\t\t<tr  valign=\"top\">
 \t\t\t\t<td>
 \t\t\t\t<form id=\"chooseDateForm\" action=\"";
-        // line 90
+        // line 89
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "date"), 'widget');
         echo " 
                                
@@ -147,7 +147,7 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
                                     <a href=\"\" id=\"date-pick\">&nbsp;
                                         
    <img src=\"";
-        // line 97
+        // line 96
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_calendar.jpg"), "html", null, true);
         echo "\"   alt=\"\" />                                      
                                       
@@ -164,10 +164,10 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
                 <tr>
 \t\t\t<th valign=\"top\"></th>
 \t\t\t<td>";
-        // line 111
+        // line 110
         echo " </td>
                         <td> ";
-        // line 112
+        // line 111
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "_token"), 'widget');
         echo " </td>
                         
@@ -195,7 +195,7 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 \t\t<!--  start related-act-top -->
 \t\t<div id=\"related-act-top\">
       <img src=\"";
-        // line 137
+        // line 136
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/header_related_act.gif"), "html", null, true);
         echo "\"  width=\"271\" height=\"43\" alt=\"\" />                 
 \t 
@@ -211,7 +211,7 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 \t\t\t\t<div class=\"left\">
                                     <a href=\"\">
     <img src=\"";
-        // line 150
+        // line 149
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_plus.gif"), "html", null, true);
         echo "\"  width=\"21\" height=\"21\" alt=\"\" />                                     
                                        
@@ -232,7 +232,7 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 \t\t\t\t<div class=\"left\"><a href=\"\">
                                  
    <img src=\"";
-        // line 168
+        // line 167
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_minus.gif"), "html", null, true);
         echo "\"  width=\"21\" height=\"21\" alt=\"\" />                                     
                                         
@@ -252,7 +252,7 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 \t\t\t\t
 \t\t\t\t<div class=\"left\"><a href=\"\">
      <img src=\"";
-        // line 185
+        // line 184
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_edit.gif"), "html", null, true);
         echo "\"  width=\"21\" height=\"21\" alt=\"\" />                                   
                                          
@@ -283,7 +283,7 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 <tr>
 <td>
       <img src=\"";
-        // line 213
+        // line 212
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/blank.gif"), "html", null, true);
         echo "\" width=\"695\" height=\"1\" alt=\"blank\" /> 
    
@@ -322,6 +322,6 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 
     public function getDebugInfo()
     {
-        return array (  287 => 213,  256 => 185,  236 => 168,  215 => 150,  199 => 137,  171 => 112,  168 => 111,  151 => 97,  141 => 90,  127 => 79,  120 => 75,  108 => 66,  100 => 61,  90 => 53,  53 => 19,  41 => 10,  33 => 5,  28 => 4,);
+        return array (  287 => 212,  256 => 184,  236 => 167,  215 => 149,  199 => 136,  171 => 111,  168 => 110,  151 => 96,  141 => 89,  127 => 78,  120 => 74,  108 => 65,  100 => 60,  89 => 52,  53 => 19,  41 => 10,  33 => 5,  28 => 4,);
     }
 }

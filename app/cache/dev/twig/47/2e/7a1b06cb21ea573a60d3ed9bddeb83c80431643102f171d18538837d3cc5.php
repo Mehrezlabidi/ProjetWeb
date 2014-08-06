@@ -117,7 +117,7 @@ class __TwigTemplate_472e7a1b06cb21ea573a60d3ed9bddeb83c80431643102f171d18538837
                          \t 
 \t\t</tr>
                  <tr>
-\t\t\t<th valign=\"top\">Menu No :</th>
+\t\t\t<th valign=\"top\">Menu :</th>
 \t\t\t<td>";
         // line 77
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "menu"), 'widget');

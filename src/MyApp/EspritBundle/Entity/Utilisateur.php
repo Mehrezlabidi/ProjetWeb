@@ -49,28 +49,28 @@ class Utilisateur {
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=255)
+     * @ORM\Column(name="nom", type="string", length=255,unique=true)
      */
     private $nom;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="login", type="string", length=255)
+     * @ORM\Column(name="login", type="string", length=255,unique=true)
      */
     private $login;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="password", type="string", length=255)
+     * @ORM\Column(name="password", type="string", length=255,unique=true)
      */
     private $password;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="mail", type="string", length=255)
+     * @ORM\Column(name="mail", type="string", length=255,unique=true)
      */
     private $mail;
 
@@ -186,7 +186,7 @@ class Utilisateur {
     
     
     public function __toString() {
-        return $this->id . '';
+        return $this->id .'';
     }
 
 }
