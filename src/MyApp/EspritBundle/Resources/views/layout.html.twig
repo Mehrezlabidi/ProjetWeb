@@ -1,10 +1,7 @@
-{# empty Twig template #}
-
-
-<!DOCTYPE html>
+ 
 <html>
 {% block head %}
-   <title>  Home </title>
+  <title>  Home </title>
     <meta charset="utf-8">
 <link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" /> 
 
@@ -15,7 +12,10 @@
 <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/styles.css') }}"/>  
 <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/login-box.css') }}"/>     
 <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/stylemenu.css') }}"/>  
-<link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/styleHorizontal.css') }}"/>  
+<link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/styleHorizontal.css') }}"/> 
+<!-- -->
+<link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/menuhorizontal.css') }}"/>  
+<link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/menuvertical.css') }}"/>
 {% endblock %}
     <body>
         <!--==============================header=================================-->
@@ -67,12 +67,8 @@
                             <td>
                                                                <!--    menu horiz           -->                       
                
-                                 <div class="stretchHolder">
-                                       <div class="stretchMenu">
-	                                     <ul class="stretchDrop">
-	                                                {% block menu_haut %} {% endblock %}
-                                              </ul>
-                                        </div>
+                                 <div class="stretchHolder">                                    
+	                                                {% block menu_haut %} {% endblock %}                                                                              
                                   </div>
 
                                                                   <!--  menu horiz          -->

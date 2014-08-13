@@ -18,6 +18,8 @@ class RubriqueController extends Controller
     {
         
         $rubrique = new Rubrique();
+       
+        
         $form = $this->createForm(new RubriqueType , $rubrique);
         $request = $this->getRequest();
         if( $request->isMethod('Post')  ){

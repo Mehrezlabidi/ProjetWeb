@@ -164,7 +164,7 @@ class Rubrique
     
       public function __toString()
     {
-          return $this-> id.''.$this->title; 
+          return $this->title.'' ; 
     }
     
 }
