@@ -1,0 +1,60 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="icon" sizes="16x16" href="{{ asset('favicon.ico') }}" />
+<title>Forms</title>
+ 
+<link rel="stylesheet" type="text/css" media="screen" href="{{ asset('bundles/myappesprit/css/style.css') }}"/> 
+<link rel="stylesheet" type="text/css" media="screen" href="{{ asset('http://fonts.googleapis.com/css?family=Engagement') }}"/> 
+ 
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.uniform.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+        $("input:checkbox, input:radio, input:file, select").uniform();
+      });
+    </script>
+</head>
+<body>
+      <div style="padding: 120px 50px 0 10px;">
+ 
+<h1>Modify Rubrique</h1>
+<form   action=""   method="post" {{ form_enctype(form) }}>
+	 <ul>
+                  <li>
+                 {{ form_widget(form) }}
+                  </li>
+                   
+       
+	 </ul>
+                       
+        <button type="submit" class="action">Submit</button>
+                          
+                         
+</form>
+ 
+      </div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

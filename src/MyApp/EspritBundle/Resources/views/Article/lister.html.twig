@@ -1,0 +1,130 @@
+{% extends 'MyAppEspritBundle::layout.html.twig' %}
+
+ {% block content %}  
+            
+{% include 'MyAppEspritBundle:Article:lister.html.twig' with {'article' : article}  %}
+{% include 'MyAppEspritBundle:Article:lister.html.twig' with {'rubrique' : rubrique}  %}
+ {% include 'MyAppEspritBundle:Article:lister.html.twig' with {'actualite' : actualite}  %}
+{% include 'MyAppEspritBundle:Article:lister.html.twig' with {'sousrubrique' : sousrubrique}  %}
+{% include 'MyAppEspritBundle:Article:lister.html.twig' with {'menu' : menu}  %}
+{% include 'MyAppEspritBundle:Article:lister.html.twig' with {'role' : role}  %}
+ 
+{% endblock %}
+
+  {#//////////////////////////////////////////////////////////////////////////////////////////////#}      
+
+ {% block menu_gauche  %}  
+          
+ {% for rubrique in rubrique  %} {% if rubrique.menu.id == 2 %}
+  <div id='cssmenu'>  
+<ul>
+     <li class='active has-sub'><a href='#'>{{  rubrique.title|capitalize }}</a>            
+	 <ul>    
+             
+             
+             
+                    {# on affiche seulement les sous rubriques associés#}         
+               {% for sousrubrique in sousrubrique %}                      
+                    {% if sousrubrique.rubrique.id == rubrique.id %}     
+                            <li class='has-sub'><a href='#'>{{sousrubrique.title|capitalize }}</a>
+                            
+                                   <ul> {% for article in article %} 
+                                              {% if article.sousrubrique|length > 0  %}
+                                                    {% if article.sousrubrique.id == sousrubrique.id %} 
+                                                         {#article associée a la sous rub#}                                                                    
+                                                              <li> <a href="{{ path('my_app_esprit_article_voir',{'id':article.id}) }}">{% if article.role.id == 1 %}<h3>{{article.nom |capitalize}}</h3>{% else %}<strike>{{article.nom|capitalize }}</strike>{% endif %}</a></li>                                                                  
+                                                          {#article associée a la sous rub#}
+                                                     {% endif %}
+                                               {% endif %}
+                                       {%endfor%} 
+				   </ul>
+                            </li>
+                    {% endif %}         
+               {%endfor%} 
+                            
+                            
+                            
+                            
+                       {# on affiche seulement les articles associés aux rub #}
+               {% for  article in  article %} 
+                  {% if article.rubrique|length > 0  %}   
+                      {% if article.rubrique.id == rubrique.id %} 
+                            
+                                 <li>
+                                       <a href="{{ path('my_app_esprit_article_voir',{'id':article.id}) }}">
+                                {% if article.role.id == 1 %}<h3>{{article.nom |capitalize}}</h3>  
+                                {% else %}<strike>{{article.nom|capitalize }}</strike>{% endif %}                              
+                                      </a>
+                                </li>     
+                      {% endif %}  
+                  {% endif %} 
+                
+               {%endfor%}  
+  
+	 </ul>                   
+    </li>                
+             {% endif %}  
+      {%endfor%}
+</ul>   
+    </div>                   
+{% endblock %}
+  {#//////////////////////////////////////////////////////////////////////////////////////////////#}      
+  
+ {% block menu_haut  %} 
+
+   <ul id="menu"> 
+ 
+           {% for rubrique in rubrique  %}
+                       {% if rubrique.menu.id == 1 %}
+
+
+       <li>  <a href="#url">{{  rubrique.title|capitalize }} </a> 
+         <ul>
+              {#on affiche seulement les sous rub associés#}
+                {% for sousrubrique in sousrubrique  %} 
+                               {% if sousrubrique.rubrique.id == rubrique.id %} 
+                	        
+		        <li>
+                            <a href="#url" >{{sousrubrique.title|capitalize  }}</a>
+                                  <ul> {% for article in article %} 
+                                              {% if article.sousrubrique|length > 0  %}
+                                                    {% if article.sousrubrique.id == sousrubrique.id %} 
+                                                         {#article associée a la sous rub#}                                                                    
+                                                              <li><a href="{{ path('my_app_esprit_article_voir',{'id':article.id}) }}">{{article.nom|capitalize  }}</a></li>
+                                                          {#article associée a la sous rub#}
+                                                     {% endif %}
+                                               {% endif %}
+                                       {%endfor%} 
+				   </ul>	
+                        
+                        </li>                  
+                             {% endif %} 
+                
+               {%endfor%} 
+             {# fin de boucle #}
+	     {#on affiche seulement les articles associés a une rub directe#}
+              {% for article in article %} 
+                         {% if article.rubrique|length > 0  %}
+                               {% if article.rubrique.id == rubrique.id %} 
+		        <li> <a href="{{ path('my_app_esprit_article_voir',{'id':article.id}) }}" >{{article.nom|capitalize  }}</a></li>                  
+                             {% endif %} 
+                        {% endif %} 
+               {%endfor%} 
+             {# fin de boucle #}
+          </ul>
+         
+         
+         </li>
+                     {% endif %}    
+            {%endfor%} 
+ 	 
+      </ul>                  
+{% endblock %}
+        
+  {#//////////////////////////////////////////////////////////////////////////////////////////////#}      
+
+         {% block menu_droite  %}
+                  {% for menu in menu  %}       
+                            <li class="bg_list_un"><a href="#" style="text-decoration:none">{{ menu.title|capitalize }} </a></li>					 
+                  {%endfor%}
+           {% endblock %}
