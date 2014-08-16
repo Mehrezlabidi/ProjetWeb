@@ -42,6 +42,7 @@ class Utilisateur extends \MyApp\EspritBundle\Entity\Utilisateur implements \Doc
     }
 
     
+<<<<<<< HEAD
     public function getRole()
     {
         $this->__load();
@@ -52,6 +53,18 @@ class Utilisateur extends \MyApp\EspritBundle\Entity\Utilisateur implements \Doc
     {
         $this->__load();
         return parent::setRole($role);
+=======
+    public function getRoles()
+    {
+        $this->__load();
+        return parent::getRoles();
+    }
+
+    public function setRoles($roles)
+    {
+        $this->__load();
+        return parent::setRoles($roles);
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
     }
 
     public function getId()
@@ -144,7 +157,11 @@ class Utilisateur extends \MyApp\EspritBundle\Entity\Utilisateur implements \Doc
 
     public function __sleep()
     {
+<<<<<<< HEAD
         return array('__isInitialized__', 'id', 'nom', 'login', 'password', 'mail', 'role', 'menus', 'actualites');
+=======
+        return array('__isInitialized__', 'id', 'nom', 'login', 'password', 'mail', 'roles', 'menus', 'actualites');
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
     }
 
     public function __clone()

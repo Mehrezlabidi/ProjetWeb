@@ -10,14 +10,20 @@
 {% include 'MyAppEspritBundle:Article:lister.html.twig' with {'role' : role}  %}
  
 {% endblock %}
+<<<<<<< HEAD
 
   {#//////////////////////////////////////////////////////////////////////////////////////////////#}      
+=======
+ 
+
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
 
  {% block menu_gauche  %}  
           
  {% for rubrique in rubrique  %} {% if rubrique.menu.id == 2 %}
   <div id='cssmenu'>  
 <ul>
+<<<<<<< HEAD
      <li class='active has-sub'><a href='#'>{{  rubrique.title|capitalize }}</a>            
 	 <ul>    
              
@@ -70,6 +76,63 @@
 {% endblock %}
   {#//////////////////////////////////////////////////////////////////////////////////////////////#}      
   
+=======
+                  
+         <li class='active has-sub'><a href='#'>{{  rubrique.title|capitalize }}</a>            
+	 <ul>    
+                    {# on affiche seulement les sous rubriques associés#}         
+               {% for sousrubrique in sousrubrique %}
+                       
+                    {% if sousrubrique.rubrique.id == rubrique.id %}     
+ 
+                  <li class='has-sub'><a href='#'>{{sousrubrique.title|capitalize }}</a>
+                    {% endif %}         
+               {%endfor%} 
+                       {# on affiche seulement les articles associés#}
+               {% for  article in  article %} 
+                            
+                      {% if article.rubrique.id == rubrique.id %} 
+                  </li>
+                 <li>
+      <a href="{{ path('my_app_esprit_article_voir',{'id':article.id}) }}">
+                        {% if article.role.id == 1 %}  
+                        <h3>    {{article.nom |capitalize}} </h3>
+                         {%  else    %}
+                       <strike>    {{article.nom|capitalize }}</strike>
+                        {% endif  %}
+       </a>
+              </li>
+       
+                      {% endif %}  
+               {%endfor%}  
+  </li>
+	 </ul>                   
+	 </li>                
+                             {% endif %}  
+            {%endfor%}
+</ul>   
+    </div>                   
+{% endblock %}
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
  {% block menu_haut  %} 
 
    <ul id="menu"> 
@@ -84,6 +147,7 @@
                 {% for sousrubrique in sousrubrique  %} 
                                {% if sousrubrique.rubrique.id == rubrique.id %} 
                 	        
+<<<<<<< HEAD
 		        <li>
                             <a href="#url" >{{sousrubrique.title|capitalize  }}</a>
                                   <ul> {% for article in article %} 
@@ -98,10 +162,14 @@
 				   </ul>	
                         
                         </li>                  
+=======
+		        <li> <a href="#url" >{{sousrubrique.title|capitalize  }}</a></li>                  
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
                              {% endif %} 
                 
                {%endfor%} 
              {# fin de boucle #}
+<<<<<<< HEAD
 	     {#on affiche seulement les articles associés a une rub directe#}
               {% for article in article %} 
                          {% if article.rubrique|length > 0  %}
@@ -109,6 +177,15 @@
 		        <li> <a href="{{ path('my_app_esprit_article_voir',{'id':article.id}) }}" >{{article.nom|capitalize  }}</a></li>                  
                              {% endif %} 
                         {% endif %} 
+=======
+	     {#on affiche seulement les articles associés#}
+              {% for article in article %} 
+                               {% if article.rubrique.id == rubrique.id %} 
+               	        
+		        <li> <a href="#url" >{{article.nom|capitalize  }}</a></li>                  
+                             {% endif %} 
+               
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
                {%endfor%} 
              {# fin de boucle #}
           </ul>
@@ -121,7 +198,26 @@
       </ul>                  
 {% endblock %}
         
+<<<<<<< HEAD
   {#//////////////////////////////////////////////////////////////////////////////////////////////#}      
+=======
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
 
          {% block menu_droite  %}
                   {% for menu in menu  %}       

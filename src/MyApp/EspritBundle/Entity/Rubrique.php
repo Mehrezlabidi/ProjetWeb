@@ -25,7 +25,11 @@ class Rubrique
     private $id;
     
     /**
+<<<<<<< HEAD
      * @ORM\OneToMany(targetEntity="SousRubrique", mappedBy="Rubrique", cascade={"remove", "persist"})
+=======
+     * @ORM\OneToMany(targetEntity="SousRubrique", mappedBy="Rubrique")
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
      */
     protected $sousrubriques;    
     /**

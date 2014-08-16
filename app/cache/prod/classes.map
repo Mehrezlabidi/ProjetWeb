@@ -73,6 +73,7 @@
   72 => 'Sensio\\Bundle\\FrameworkExtraBundle\\EventListener\\TemplateListener',
   73 => 'Sensio\\Bundle\\FrameworkExtraBundle\\EventListener\\CacheListener',
   74 => 'Sensio\\Bundle\\FrameworkExtraBundle\\Configuration\\ConfigurationAnnotation',
+<<<<<<< HEAD
   75 => 'Sonata\\BlockBundle\\Block\\BaseBlockService',
   76 => 'Sonata\\BlockBundle\\Block\\BlockLoaderChain',
   77 => 'Sonata\\BlockBundle\\Block\\BlockLoaderInterface',
@@ -197,4 +198,6 @@
   196 => 'Sonata\\CoreBundle\\Form\\Type\\EqualType',
   197 => 'Sonata\\CoreBundle\\Form\\Type\\ImmutableArrayType',
   198 => 'Sonata\\CoreBundle\\Form\\Type\\TranslatableChoiceType',
+=======
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
 );

@@ -10,8 +10,13 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table()
  * @ORM\Entity
  */
+<<<<<<< HEAD
 class SousRubrique {
 
+=======
+class SousRubrique
+{
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
     /**
      * @var integer
      *
@@ -25,10 +30,15 @@ class SousRubrique {
      * @ORM\ManyToOne(targetEntity="Rubrique", inversedBy="sousrubriques")
      * @ORM\JoinColumn(name="rubrique_id", referencedColumnName="id",nullable=false)
      */
+<<<<<<< HEAD
     protected $rubrique;
 
     
     protected $article;
+=======
+ 
+     protected $rubrique;
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
 
     /**
      * @var integer
@@ -51,12 +61,21 @@ class SousRubrique {
      */
     private $title;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
     /**
      * Get id
      *
      * @return integer 
      */
+<<<<<<< HEAD
     public function getId() {
+=======
+    public function getId()
+    {
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
         return $this->id;
     }
 
@@ -66,9 +85,16 @@ class SousRubrique {
      * @param integer $position
      * @return SousRubrique
      */
+<<<<<<< HEAD
     public function setPosition($position) {
         $this->position = $position;
 
+=======
+    public function setPosition($position)
+    {
+        $this->position = $position;
+    
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
         return $this;
     }
 
@@ -77,7 +103,12 @@ class SousRubrique {
      *
      * @return integer 
      */
+<<<<<<< HEAD
     public function getPosition() {
+=======
+    public function getPosition()
+    {
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
         return $this->position;
     }
 
@@ -87,9 +118,16 @@ class SousRubrique {
      * @param boolean $state
      * @return SousRubrique
      */
+<<<<<<< HEAD
     public function setState($state) {
         $this->state = $state;
 
+=======
+    public function setState($state)
+    {
+        $this->state = $state;
+    
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
         return $this;
     }
 
@@ -98,7 +136,12 @@ class SousRubrique {
      *
      * @return boolean 
      */
+<<<<<<< HEAD
     public function getState() {
+=======
+    public function getState()
+    {
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
         return $this->state;
     }
 
@@ -108,9 +151,16 @@ class SousRubrique {
      * @param string $title
      * @return SousRubrique
      */
+<<<<<<< HEAD
     public function setTitle($title) {
         $this->title = $title;
 
+=======
+    public function setTitle($title)
+    {
+        $this->title = $title;
+    
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
         return $this;
     }
 
@@ -119,17 +169,26 @@ class SousRubrique {
      *
      * @return string 
      */
+<<<<<<< HEAD
     public function getTitle() {
         return $this->title;
     }
 
     public function getRubrique() {
+=======
+    public function getTitle()
+    {
+        return $this->title;
+    }
+        public function getRubrique() {
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
         return $this->rubrique;
     }
 
     public function setRubrique($rubrique) {
         $this->rubrique = $rubrique;
     }
+<<<<<<< HEAD
 
     public function getArticle() {
         return $this->article;
@@ -143,4 +202,19 @@ class SousRubrique {
         return $this->title . '';
     }
 
+=======
+  public function getArticles() {
+        return $this->articles;
+    }
+
+    public function setArticles($articles) {
+        $this->articles = $articles;
+    }
+    
+      public function __toString()
+    {
+           return $this->title.'' ; 
+    }
+    
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
 }

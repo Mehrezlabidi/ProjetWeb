@@ -1701,6 +1701,7 @@ f6689b,127.0.0.1,GET,http://localhost/ProjetWeb/web/app_dev.php/article/js/jquer
 fad68b,127.0.0.1,GET,http://localhost/ProjetWeb/web/app_dev.php/index.php,1407944602,
 a9ead2,127.0.0.1,GET,http://localhost/ProjetWeb/web/app_dev.php/images/spacer.gif,1407944605,
 4e1f3a,127.0.0.1,GET,http://localhost/ProjetWeb/web/app_dev.php/images/spacer.gif,1407944605,
+<<<<<<< HEAD
 a8956e,127.0.0.1,GET,http://localhost/ProjetWeb/web/app_dev.php/administration,1407949996,
 e31445,127.0.0.1,GET,http://localhost/ProjetWeb/web/app_dev.php/js/jquery/ui.core.js,1407950002,
 2973e1,127.0.0.1,GET,http://localhost/ProjetWeb/web/app_dev.php/js/jquery/ui.core.js,1407950002,
@@ -5567,3 +5568,5 @@ af9b54,127.0.0.1,GET,http://localhost/ProjetWeb/web/app_dev.php/article/1/images
 f32491,127.0.0.1,GET,http://localhost/ProjetWeb/web/app_dev.php/index.php,1408141763,
 72b500,127.0.0.1,GET,http://localhost/ProjetWeb/web/app_dev.php/images/spacer.gif,1408141768,
 5a8db7,127.0.0.1,GET,http://localhost/ProjetWeb/web/app_dev.php/images/spacer.gif,1408141768,
+=======
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3

@@ -37,7 +37,11 @@
           <td><b>denied</b></td>
           {% endif  %}
            <td>{{ rubrique.title | truncate(20, true, '...')}}</td>
+<<<<<<< HEAD
            <td><b> {{ rubrique.menu.title|capitalize}}</b></td>
+=======
+            <td><b>No  </b>{{ rubrique.menu.id}}</td>
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
 
         <td><a href="{{ path('my_app_esprit_rubrique_delete',{'id':rubrique.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/delete.png') }}" alt="" />  </a></td>
         <td><a href="{{ path('my_app_esprit_rubrique_edit',{'id':rubrique.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/update.png') }}" alt="" />  </a></td>

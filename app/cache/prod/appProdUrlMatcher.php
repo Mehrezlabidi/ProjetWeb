@@ -25,6 +25,7 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
         $allow = array();
         $pathinfo = rawurldecode($pathinfo);
 
+<<<<<<< HEAD
         // my_app_rubrique_homepage
         if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'my_app_rubrique_homepage')), array (  '_controller' => 'MyApp\\RubriqueBundle\\Controller\\DefaultController::indexAction',));
@@ -35,6 +36,8 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
             return array (  '_controller' => 'MyApp\\EspritBundle\\Controller\\ArticleController::topAction',  '_route' => 'my_app_esprit_top',);
         }
 
+=======
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
         // my_app_esprit_homepage
         if (rtrim($pathinfo, '/') === '') {
             if (substr($pathinfo, -1) !== '/') {
@@ -44,6 +47,7 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
             return array (  '_controller' => 'MyApp\\EspritBundle\\Controller\\DefaultController::indexAction',  '_route' => 'my_app_esprit_homepage',);
         }
 
+<<<<<<< HEAD
         // my_app_esprit_administration
         if ($pathinfo === '/administration') {
             return array (  '_controller' => 'MyApp\\EspritBundle\\Controller\\DefaultController::administrationAction',  '_route' => 'my_app_esprit_administration',);
@@ -492,6 +496,8 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
 
         }
 
+=======
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

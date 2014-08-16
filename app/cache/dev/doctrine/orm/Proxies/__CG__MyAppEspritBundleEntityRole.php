@@ -42,6 +42,21 @@ class Role extends \MyApp\EspritBundle\Entity\Role implements \Doctrine\ORM\Prox
     }
 
     
+<<<<<<< HEAD
+=======
+    public function getUtilisateur()
+    {
+        $this->__load();
+        return parent::getUtilisateur();
+    }
+
+    public function setUtilisateur($utilisateur)
+    {
+        $this->__load();
+        return parent::setUtilisateur($utilisateur);
+    }
+
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
     public function getId()
     {
         if ($this->__isInitialized__ === false) {

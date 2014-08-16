@@ -67,17 +67,28 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
                 echo "</th> 
         <td>";
                 // line 33
+<<<<<<< HEAD
                 echo twig_escape_filter($this->env, twig_capitalize_string_filter($this->env, $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "title")), "html", null, true);
+=======
+                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "title"), "html", null, true);
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
                 echo "</td>
         <td><b>No  </b>";
                 // line 34
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "position"), "html", null, true);
                 echo "</td>
         
+<<<<<<< HEAD
         <td><b>";
                 // line 36
                 echo twig_escape_filter($this->env, twig_capitalize_string_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "utilisateur"), "nom")), "html", null, true);
                 echo "</b></td>
+=======
+           <td><b>No  </b>";
+                // line 36
+                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "utilisateur"), "id"), "html", null, true);
+                echo "</td>
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
  
 ";
                 // line 41
@@ -116,10 +127,17 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
 </table> </div> 
 </center>
     </div>
+<<<<<<< HEAD
 <center><h2><a href=\"";
         // line 56
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_new");
         echo "\" style=\"text-decoration:none\"><p>ajouter menu</p></a></h2></center>
+=======
+    <center><h2><a href=\"";
+        // line 56
+        echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_new");
+        echo "\" style=\"text-decoration:none\">ajouter menu</a></h2></center>
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
 
 </body>
 </html>

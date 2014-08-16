@@ -21,6 +21,7 @@ class Utilisateur {
      */
     private $id;
 
+<<<<<<< HEAD
 
     public function getRole() {
         return $this->role;
@@ -32,11 +33,25 @@ class Utilisateur {
 
      
 
+=======
+    public function getRoles() {
+        return $this->roles;
+    }
+
+    public function setRoles($roles) {
+        $this->roles = $roles;
+    }
+
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
     /**
      * @ORM\ManyToOne(targetEntity="Role", inversedBy="utilisateurs")
      * @ORM\JoinColumn(name="role_id", referencedColumnName="id",nullable=false)
      */
+<<<<<<< HEAD
     protected $role;
+=======
+    protected $roles;
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
 
   
     /**

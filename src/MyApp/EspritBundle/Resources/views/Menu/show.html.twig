@@ -30,10 +30,17 @@
 
         <tr>
         <td>{{ menu.id }}</th> 
+<<<<<<< HEAD
         <td>{{ menu.title|capitalize }}</td>
         <td><b>No  </b>{{ menu.position }}</td>
         
         <td><b>{{ menu.utilisateur.nom|capitalize}}</b></td>
+=======
+        <td>{{ menu.title }}</td>
+        <td><b>No  </b>{{ menu.position }}</td>
+        
+           <td><b>No  </b>{{ menu.utilisateur.id}}</td>
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
  
 {# On vérifie qu'une image est bien associée à l'article #}
 {#% if menu.utilisateur.id  is not null %}
@@ -53,7 +60,11 @@
 </table> </div> 
 </center>
     </div>
+<<<<<<< HEAD
 <center><h2><a href="{{ path('my_app_esprit_menu_new') }}" style="text-decoration:none"><p>ajouter menu</p></a></h2></center>
+=======
+    <center><h2><a href="{{ path('my_app_esprit_menu_new') }}" style="text-decoration:none">ajouter menu</a></h2></center>
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
 
 </body>
 </html>

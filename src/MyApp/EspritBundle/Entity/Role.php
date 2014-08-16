@@ -39,7 +39,18 @@ class Role
      * @ORM\Column(name="permission", type="boolean")
      */
     private $permission;
+<<<<<<< HEAD
      
+=======
+    public function getUtilisateur() {
+        return $this->utilisateur;
+    }
+
+    public function setUtilisateur($utilisateur) {
+        $this->utilisateur = $utilisateur;
+    }
+
+>>>>>>> bbf8d3aba2126247b3a80474a93cc08d37f30fc3
     
     /**
      * Get id
