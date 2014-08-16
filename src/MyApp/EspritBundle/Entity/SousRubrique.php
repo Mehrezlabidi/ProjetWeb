@@ -10,8 +10,8 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Table()
  * @ORM\Entity
  */
-class SousRubrique
-{
+class SousRubrique {
+
     /**
      * @var integer
      *
@@ -25,8 +25,10 @@ class SousRubrique
      * @ORM\ManyToOne(targetEntity="Rubrique", inversedBy="sousrubriques")
      * @ORM\JoinColumn(name="rubrique_id", referencedColumnName="id",nullable=false)
      */
- 
-     protected $rubrique;
+    protected $rubrique;
+
+    
+    protected $article;
 
     /**
      * @var integer
@@ -49,14 +51,12 @@ class SousRubrique
      */
     private $title;
 
-
     /**
      * Get id
      *
      * @return integer 
      */
-    public function getId()
-    {
+    public function getId() {
         return $this->id;
     }
 
@@ -66,10 +66,9 @@ class SousRubrique
      * @param integer $position
      * @return SousRubrique
      */
-    public function setPosition($position)
-    {
+    public function setPosition($position) {
         $this->position = $position;
-    
+
         return $this;
     }
 
@@ -78,8 +77,7 @@ class SousRubrique
      *
      * @return integer 
      */
-    public function getPosition()
-    {
+    public function getPosition() {
         return $this->position;
     }
 
@@ -89,10 +87,9 @@ class SousRubrique
      * @param boolean $state
      * @return SousRubrique
      */
-    public function setState($state)
-    {
+    public function setState($state) {
         $this->state = $state;
-    
+
         return $this;
     }
 
@@ -101,8 +98,7 @@ class SousRubrique
      *
      * @return boolean 
      */
-    public function getState()
-    {
+    public function getState() {
         return $this->state;
     }
 
@@ -112,10 +108,9 @@ class SousRubrique
      * @param string $title
      * @return SousRubrique
      */
-    public function setTitle($title)
-    {
+    public function setTitle($title) {
         $this->title = $title;
-    
+
         return $this;
     }
 
@@ -124,28 +119,28 @@ class SousRubrique
      *
      * @return string 
      */
-    public function getTitle()
-    {
+    public function getTitle() {
         return $this->title;
     }
-        public function getRubrique() {
+
+    public function getRubrique() {
         return $this->rubrique;
     }
 
     public function setRubrique($rubrique) {
         $this->rubrique = $rubrique;
     }
-  public function getArticles() {
-        return $this->articles;
+
+    public function getArticle() {
+        return $this->article;
     }
 
-    public function setArticles($articles) {
-        $this->articles = $articles;
+    public function setArticle($article) {
+        $this->article = $article;
     }
-    
-      public function __toString()
-    {
-           return $this->title.'' ; 
+
+    public function __toString() {
+        return $this->title . '';
     }
-    
+
 }

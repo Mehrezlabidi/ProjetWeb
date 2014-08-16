@@ -84,10 +84,10 @@ class __TwigTemplate_d1ee66589cccf79f1997cdbd28c94e1e0997b7bc0a9bb02a2eb1739d3af
                 echo "           <td>";
                 echo twig_escape_filter($this->env, twig_truncate_filter($this->env, $this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "title"), 20, true, "..."), "html", null, true);
                 echo "</td>
-            <td><b>No  </b>";
+           <td><b> ";
                 // line 40
-                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "menu"), "id"), "html", null, true);
-                echo "</td>
+                echo twig_escape_filter($this->env, twig_capitalize_string_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["rubrique"]) ? $context["rubrique"] : $this->getContext($context, "rubrique")), "menu"), "title")), "html", null, true);
+                echo "</b></td>
 
         <td><a href=\"";
                 // line 42

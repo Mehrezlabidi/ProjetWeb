@@ -18,20 +18,40 @@ class ArticleType extends AbstractType {
         ->add('image')
         ->add('nom')
         ->add('date')
-        ->add('role')
+                
+                
+                  
+        ->add('role', 'entity', 
+                array(
+                     'class' => 'MyApp\EspritBundle\Entity\Role',   
+          'property' => 'permission',
+          'expanded' =>false,
+          'multiple' => false,
+          'required' => true ) )    
                 
                 
                 
-                
-                
-        ->add('rubrique', 'entity', array('class' => 'MyApp\EspritBundle\Entity\Rubrique',     
+        ->add('sousrubrique', 'entity', 
+                array(
+                     'class' => 'MyApp\EspritBundle\Entity\Sousrubrique',   
           'property' => 'title',
           'expanded' => false,
           'multiple' => false,
-          'required' => true ) 
+          'required' => false ) )   
+                
+                
+                
+        ->add('rubrique', 'entity', 
+                array(
+                    'class' => 'MyApp\EspritBundle\Entity\Rubrique',     
+          'property' => 'title',
+          'expanded' => false,
+          'multiple' => false,
+          'required' => false ) 
+                
+                
+                
  
-        ##   ->add('sousrubrique')
-       
        );
     }
 

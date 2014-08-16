@@ -93,10 +93,10 @@ class __TwigTemplate_b7c1b9435201fe2df06267e6bc2f2ae7cbf85555deb1bb7bb60a528445f
                 echo twig_escape_filter($this->env, twig_truncate_filter($this->env, $this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "title"), 20, true, "..."), "html", null, true);
                 echo "</td>
          
-         <td><b>No  </b>";
+         <td><b>";
                 // line 48
-                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "rubrique"), "id"), "html", null, true);
-                echo "</td>
+                echo twig_escape_filter($this->env, twig_capitalize_string_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["sousrubrique"]) ? $context["sousrubrique"] : $this->getContext($context, "sousrubrique")), "rubrique"), "title")), "html", null, true);
+                echo "</b></td>
           
         <td><a href=\"";
                 // line 50

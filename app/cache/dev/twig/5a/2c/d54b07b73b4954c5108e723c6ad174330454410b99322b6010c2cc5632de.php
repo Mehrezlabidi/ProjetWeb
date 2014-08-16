@@ -68,10 +68,10 @@ class __TwigTemplate_5a2cd54b07b73b4954c5108e723c6ad174330454410b99322b6010c2cc5
 \t\t<!--  start step-holder -->
 \t\t<div id=\"step-holder\">
 \t\t\t<div class=\"step-no\">1</div>
-\t\t\t<div class=\"step-dark-left\"><a href=\"\">Add _sousrubrique details</a></div>
+\t\t\t<div class=\"step-dark-left\"><a href=\"\">Add _sousrub details</a></div>
 \t\t\t<div class=\"step-dark-right\">&nbsp;</div>
 \t\t\t<div class=\"step-no-off\">2</div>
-\t\t\t<div class=\"step-light-left\">Select related _sousrubrique</div>
+\t\t\t<div class=\"step-light-left\">Select related _sousrub</div>
 \t\t\t<div class=\"step-light-right\">&nbsp;</div>
 \t\t\t<div class=\"step-no-off\">3</div>
 \t\t\t<div class=\"step-light-left\">Edit / Delete</div>
@@ -107,12 +107,13 @@ class __TwigTemplate_5a2cd54b07b73b4954c5108e723c6ad174330454410b99322b6010c2cc5
 \t\t\t<div class=\"error-inner\">This field is required.</div>
 \t\t\t</td>
 \t\t</tr>
-                  <tr>
+                <tr>
 \t\t\t<th valign=\"top\">Etat</th>
-\t\t\t<td>";
+                        <td>";
         // line 71
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "state"), 'widget');
         echo "</td>
+                        <td><ul class=\"greyarrow\"><b>( Check to enable access )</b></ul></td>
                          \t 
 \t\t</tr>
                 
@@ -120,7 +121,7 @@ class __TwigTemplate_5a2cd54b07b73b4954c5108e723c6ad174330454410b99322b6010c2cc5
                 <tr>
 \t\t\t<th valign=\"top\">Rub No :</th>
 \t\t\t<td>";
-        // line 78
+        // line 79
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "rubrique"), 'widget');
         echo "</td>
                         
@@ -128,7 +129,7 @@ class __TwigTemplate_5a2cd54b07b73b4954c5108e723c6ad174330454410b99322b6010c2cc5
 \t\t\t 
 \t\t</tr>
                             ";
-        // line 83
+        // line 84
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "_token"), 'widget');
         echo " 
                    
@@ -151,7 +152,7 @@ class __TwigTemplate_5a2cd54b07b73b4954c5108e723c6ad174330454410b99322b6010c2cc5
 \t\t<!--  start related-act-top -->
 \t\t<div id=\"related-act-top\">
       <img src=\"";
-        // line 103
+        // line 104
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/header_related_act.gif"), "html", null, true);
         echo "\"  width=\"271\" height=\"43\" alt=\"\" />                 
 \t 
@@ -167,7 +168,7 @@ class __TwigTemplate_5a2cd54b07b73b4954c5108e723c6ad174330454410b99322b6010c2cc5
 \t\t\t\t<div class=\"left\">
                                     <a href=\"\">
     <img src=\"";
-        // line 116
+        // line 117
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_plus.gif"), "html", null, true);
         echo "\"  width=\"21\" height=\"21\" alt=\"\" />                                     
                                        
@@ -188,7 +189,7 @@ class __TwigTemplate_5a2cd54b07b73b4954c5108e723c6ad174330454410b99322b6010c2cc5
 \t\t\t\t<div class=\"left\"><a href=\"\">
                                  
    <img src=\"";
-        // line 134
+        // line 135
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_minus.gif"), "html", null, true);
         echo "\"  width=\"21\" height=\"21\" alt=\"\" />                                     
                                         
@@ -208,7 +209,7 @@ class __TwigTemplate_5a2cd54b07b73b4954c5108e723c6ad174330454410b99322b6010c2cc5
 \t\t\t\t
 \t\t\t\t<div class=\"left\"><a href=\"\">
      <img src=\"";
-        // line 151
+        // line 152
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_edit.gif"), "html", null, true);
         echo "\"  width=\"21\" height=\"21\" alt=\"\" />                                   
                                          
@@ -239,7 +240,7 @@ class __TwigTemplate_5a2cd54b07b73b4954c5108e723c6ad174330454410b99322b6010c2cc5
 <tr>
 <td>
       <img src=\"";
-        // line 179
+        // line 180
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/blank.gif"), "html", null, true);
         echo "\" width=\"695\" height=\"1\" alt=\"blank\" /> 
    
@@ -278,6 +279,6 @@ class __TwigTemplate_5a2cd54b07b73b4954c5108e723c6ad174330454410b99322b6010c2cc5
 
     public function getDebugInfo()
     {
-        return array (  243 => 179,  212 => 151,  192 => 134,  171 => 116,  155 => 103,  132 => 83,  124 => 78,  114 => 71,  101 => 61,  89 => 52,  53 => 19,  41 => 10,  33 => 5,  28 => 4,);
+        return array (  244 => 180,  213 => 152,  193 => 135,  172 => 117,  156 => 104,  133 => 84,  125 => 79,  114 => 71,  101 => 61,  89 => 52,  53 => 19,  41 => 10,  33 => 5,  28 => 4,);
     }
 }

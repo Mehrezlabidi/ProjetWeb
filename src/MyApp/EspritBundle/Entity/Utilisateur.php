@@ -21,19 +21,22 @@ class Utilisateur {
      */
     private $id;
 
-    public function getRoles() {
-        return $this->roles;
+
+    public function getRole() {
+        return $this->role;
     }
 
-    public function setRoles($roles) {
-        $this->roles = $roles;
+    public function setRole($role) {
+        $this->role = $role;
     }
+
+     
 
     /**
      * @ORM\ManyToOne(targetEntity="Role", inversedBy="utilisateurs")
      * @ORM\JoinColumn(name="role_id", referencedColumnName="id",nullable=false)
      */
-    protected $roles;
+    protected $role;
 
   
     /**

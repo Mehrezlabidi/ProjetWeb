@@ -8,10 +8,11 @@
 </head>
 
 <body>
-    <div style="padding: 120px 50px 0 10px;">
-<h2>  </h2>
-<center ><div style="height:150px;width:655px;border:0px solid #ccc;font:10px/15px Georgia, Garamond, Serif;overflow:auto;">
-    {% if article|length > 0  %}
+    {% if article|length >0  %}
+    <div style="padding: 120px 50px 0 10px;position:relative; top:-20px;left:-70px; ">
+ 
+<center ><div style="height:150px;width:750px;border:0px solid #ccc;font:10px/15px Georgia, Garamond, Serif;overflow:auto;">
+    
 <table class="bordered" >
 <thead>
 
@@ -22,7 +23,7 @@
         <th>Date</th>
        
          <th>Rubrique associé</th>
-      <!--   <th>Sous Rubrique associé</th>  -->
+         <th>Sous Rubrique associé</th>  
         <th>Role associé</th>
          <th>Image</th>
     </tr>
@@ -35,14 +36,27 @@
          <td>{{ article.texte | truncate(20, true, '...') }}</td>
          <td>{{ article.nom }}</td>
       <!--  <td>article.date</td>  -->
-         <td>   {{ article.date|date('d/m/Y')}}         </td>
+         <td>{{ article.date|date('d/m/Y')}}</td>
          
-          <td>No  {{article.rubrique.id}}</td>
-       <!--    <td>No  {#{#article.sousrubrique.id}#}</td>  -->
-                  
+           {% if article.rubrique|length > 0  %}
+           <td><p>{{article.rubrique.title|capitalize}}</p></td>    
+           {% else %}<td>Aucun</td>{% endif  %}
+           
+         
+         
+         
+         
+         
+           {% if article.sousrubrique|length > 0  %}
+           <td><p>{{article.sousrubrique.title|capitalize}}</p></td>    
+           {% else %}<td>Aucun</td>{% endif  %}
+          
+             
+          
+          
           {% if article.role.id == 1 %}
           <td><b>access</b></td>
-          {%  else    %}
+          {% else %}
           <td><b>denied</b></td>
             {% endif  %}                 
         
@@ -60,7 +74,8 @@
 
         {% endfor %}
          {% else %}
-                   <h2><p> (  rien   a   afficher )</p></h2> 
+            <div style="height:150px;width:750px;"></div>
+            <h2 align="center"><p> (  rien   a   afficher )</p></h2> 
          {% endif %} 
                   
     </tr>            

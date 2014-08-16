@@ -45,7 +45,7 @@
          
          <td>{{ sousrubrique.title | truncate(20, true, '...')}}</td>
          
-         <td><b>No  </b>{{ sousrubrique.rubrique.id}}</td>
+         <td><b>{{ sousrubrique.rubrique.title|capitalize}}</b></td>
           
         <td><a href="{{ path('my_app_esprit_sousrubrique_delete',{'id':sousrubrique.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/delete.png') }}" alt="" />  </a></td>
         <td><a href="{{ path('my_app_esprit_sousrubrique_edit',{'id':sousrubrique.id}) }}">  <img src="{{ asset('bundles/myappesprit/images/update.png') }}" alt="" />  </a></td>

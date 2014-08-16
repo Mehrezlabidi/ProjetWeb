@@ -31,6 +31,9 @@ class ActualiteController extends Controller
                $em = $this->getDoctrine()->getManager();
                $em->persist($actualite);
                $em->flush();
+               
+               
+               
                return $this->redirect($this->generateUrl('my_app_esprit_actualite_show'));
                }
         }

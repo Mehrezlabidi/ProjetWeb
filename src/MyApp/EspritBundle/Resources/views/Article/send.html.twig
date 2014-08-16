@@ -69,15 +69,22 @@
 			<div class="error-inner">This field is required.</div>
 			</td>
 		</tr>
+                
 		<tr>
 			<th valign="top">Role:</th>
-			<td>{{form_widget(form.role)}}</td>                      
+                        <td>{{ form_widget(form.role) }}  </td><td>
+                         <ul class="greyarrow"><li><h5><b>(  Change  to  enable  permission !  ) </b></h5></li></ul></td>  
 		</tr>
+                
                 <tr>
 			<th valign="top">Rub Title:</th>
 			<td>{{form_widget(form.rubrique)}}</td>                      
 		</tr>
-               
+                <tr>
+			<th valign="top">SubRub Title:</th>
+			<td>{{form_widget(form.sousrubrique)}}</td>    
+                        <td><ul class="greyarrow"><b>( To a subheading One item is allowed  )</b></ul></td>
+		</tr>
                 
                 <tr>
 			<th valign="top">Select a date:</th>

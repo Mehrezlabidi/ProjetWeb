@@ -67,17 +67,17 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
                 echo "</th> 
         <td>";
                 // line 33
-                echo twig_escape_filter($this->env, $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "title"), "html", null, true);
+                echo twig_escape_filter($this->env, twig_capitalize_string_filter($this->env, $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "title")), "html", null, true);
                 echo "</td>
         <td><b>No  </b>";
                 // line 34
                 echo twig_escape_filter($this->env, $this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "position"), "html", null, true);
                 echo "</td>
         
-           <td><b>No  </b>";
+        <td><b>";
                 // line 36
-                echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "utilisateur"), "id"), "html", null, true);
-                echo "</td>
+                echo twig_escape_filter($this->env, twig_capitalize_string_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["menu"]) ? $context["menu"] : $this->getContext($context, "menu")), "utilisateur"), "nom")), "html", null, true);
+                echo "</b></td>
  
 ";
                 // line 41
@@ -116,10 +116,10 @@ class __TwigTemplate_cb24fe3ed2de91aa287ebcddb07942ca5d35a94996b1bf6de020f49930d
 </table> </div> 
 </center>
     </div>
-    <center><h2><a href=\"";
+<center><h2><a href=\"";
         // line 56
         echo $this->env->getExtension('routing')->getPath("my_app_esprit_menu_new");
-        echo "\" style=\"text-decoration:none\">ajouter menu</a></h2></center>
+        echo "\" style=\"text-decoration:none\"><p>ajouter menu</p></a></h2></center>
 
 </body>
 </html>

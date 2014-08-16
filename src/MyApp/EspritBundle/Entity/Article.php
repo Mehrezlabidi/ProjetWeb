@@ -23,9 +23,18 @@ class Article {
 
     /**
      * @ORM\ManyToOne(targetEntity="Rubrique", inversedBy="articles")
-     * @ORM\JoinColumn(name="rubrique_id", referencedColumnName="id",nullable=false)
+     * @ORM\JoinColumn(nullable=true)
      */
     protected $rubrique;
+
+  
+    
+   /**
+     * @ORM\OneToOne(targetEntity="Sousrubrique")
+     * @ORM\JoinColumn(name="sousrubrique_id", referencedColumnName="id")
+     */
+    
+     protected $sousrubrique;
 
     /**
      * @ORM\ManyToOne(targetEntity="Role", inversedBy="articles")
@@ -173,6 +182,7 @@ class Article {
     public function setSousrubrique($sousrubrique) {
         $this->sousrubrique = $sousrubrique;
     }
+
     public function getRole() {
         return $this->role;
     }
@@ -181,12 +191,8 @@ class Article {
         $this->role = $role;
     }
 
-        public function __toString()
-    {
-          return $this-> title.''.$this->permission ;
-       
+    public function __toString() {
+        return $this->title . '' . $this->permission;
     }
 
-    
-    
-    }
+}

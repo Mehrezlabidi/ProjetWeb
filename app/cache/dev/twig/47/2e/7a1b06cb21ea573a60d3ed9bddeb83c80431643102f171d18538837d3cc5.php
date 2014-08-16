@@ -110,23 +110,24 @@ class __TwigTemplate_472e7a1b06cb21ea573a60d3ed9bddeb83c80431643102f171d18538837
                 
                 <tr>
 \t\t\t<th valign=\"top\">Etat</th>
-\t\t\t<td>";
+                        <td>";
         // line 72
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "state"), 'widget');
         echo "</td>
+                        <td><ul class=\"greyarrow\"><b>( Check to enable access )</b></ul></td>
                          \t 
 \t\t</tr>
                  <tr>
 \t\t\t<th valign=\"top\">Menu :</th>
 \t\t\t<td>";
-        // line 77
+        // line 78
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "menu"), 'widget');
         echo "</td>
                          \t 
 \t\t</tr>
                 
                            ";
-        // line 81
+        // line 82
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "_token"), 'widget');
         echo " \t
 \t\t<th>&nbsp;</th>
@@ -148,7 +149,7 @@ class __TwigTemplate_472e7a1b06cb21ea573a60d3ed9bddeb83c80431643102f171d18538837
 \t\t<!--  start related-act-top -->
 \t\t<div id=\"related-act-top\">
       <img src=\"";
-        // line 100
+        // line 101
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/header_related_act.gif"), "html", null, true);
         echo "\"  width=\"271\" height=\"43\" alt=\"\" />                 
 \t 
@@ -164,7 +165,7 @@ class __TwigTemplate_472e7a1b06cb21ea573a60d3ed9bddeb83c80431643102f171d18538837
 \t\t\t\t<div class=\"left\">
                                     <a href=\"\">
     <img src=\"";
-        // line 113
+        // line 114
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_plus.gif"), "html", null, true);
         echo "\"  width=\"21\" height=\"21\" alt=\"\" />                                     
                                        
@@ -185,7 +186,7 @@ class __TwigTemplate_472e7a1b06cb21ea573a60d3ed9bddeb83c80431643102f171d18538837
 \t\t\t\t<div class=\"left\"><a href=\"\">
                                  
    <img src=\"";
-        // line 131
+        // line 132
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_minus.gif"), "html", null, true);
         echo "\"  width=\"21\" height=\"21\" alt=\"\" />                                     
                                         
@@ -205,7 +206,7 @@ class __TwigTemplate_472e7a1b06cb21ea573a60d3ed9bddeb83c80431643102f171d18538837
 \t\t\t\t
 \t\t\t\t<div class=\"left\"><a href=\"\">
      <img src=\"";
-        // line 148
+        // line 149
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_edit.gif"), "html", null, true);
         echo "\"  width=\"21\" height=\"21\" alt=\"\" />                                   
                                          
@@ -236,7 +237,7 @@ class __TwigTemplate_472e7a1b06cb21ea573a60d3ed9bddeb83c80431643102f171d18538837
 <tr>
 <td>
       <img src=\"";
-        // line 176
+        // line 177
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/blank.gif"), "html", null, true);
         echo "\" width=\"695\" height=\"1\" alt=\"blank\" /> 
    
@@ -275,6 +276,6 @@ class __TwigTemplate_472e7a1b06cb21ea573a60d3ed9bddeb83c80431643102f171d18538837
 
     public function getDebugInfo()
     {
-        return array (  240 => 176,  209 => 148,  189 => 131,  168 => 113,  152 => 100,  130 => 81,  123 => 77,  115 => 72,  101 => 61,  89 => 52,  53 => 19,  41 => 10,  33 => 5,  28 => 4,);
+        return array (  241 => 177,  210 => 149,  190 => 132,  169 => 114,  153 => 101,  131 => 82,  124 => 78,  115 => 72,  101 => 61,  89 => 52,  53 => 19,  41 => 10,  33 => 5,  28 => 4,);
     }
 }

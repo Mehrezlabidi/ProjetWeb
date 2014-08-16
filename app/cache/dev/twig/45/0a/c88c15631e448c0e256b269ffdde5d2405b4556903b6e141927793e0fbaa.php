@@ -113,21 +113,31 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 \t\t\t<div class=\"error-inner\">This field is required.</div>
 \t\t\t</td>
 \t\t</tr>
+                
 \t\t<tr>
 \t\t\t<th valign=\"top\">Role:</th>
-\t\t\t<td>";
-        // line 74
+                        <td>";
+        // line 75
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "role"), 'widget');
-        echo "</td>                      
+        echo "  </td><td>
+                         <ul class=\"greyarrow\"><li><h5><b>(  Change  to  enable  permission !  ) </b></h5></li></ul></td>  
 \t\t</tr>
+                
                 <tr>
 \t\t\t<th valign=\"top\">Rub Title:</th>
 \t\t\t<td>";
-        // line 78
+        // line 81
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "rubrique"), 'widget');
         echo "</td>                      
 \t\t</tr>
-               
+                <tr>
+\t\t\t<th valign=\"top\">SubRub Title:</th>
+\t\t\t<td>";
+        // line 85
+        echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "sousrubrique"), 'widget');
+        echo "</td>    
+                        <td><ul class=\"greyarrow\"><b>( To a subheading One item is allowed  )</b></ul></td>
+\t\t</tr>
                 
                 <tr>
 \t\t\t<th valign=\"top\">Select a date:</th>
@@ -137,7 +147,7 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 \t\t\t<tr  valign=\"top\">
 \t\t\t\t<td>
 \t\t\t\t<form id=\"chooseDateForm\" action=\"";
-        // line 89
+        // line 96
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "date"), 'widget');
         echo " 
                                
@@ -147,7 +157,7 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
                                     <a href=\"\" id=\"date-pick\">&nbsp;
                                         
    <img src=\"";
-        // line 96
+        // line 103
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_calendar.jpg"), "html", null, true);
         echo "\"   alt=\"\" />                                      
                                       
@@ -164,10 +174,10 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
                 <tr>
 \t\t\t<th valign=\"top\"></th>
 \t\t\t<td>";
-        // line 110
+        // line 117
         echo " </td>
                         <td> ";
-        // line 111
+        // line 118
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "_token"), 'widget');
         echo " </td>
                         
@@ -195,7 +205,7 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 \t\t<!--  start related-act-top -->
 \t\t<div id=\"related-act-top\">
       <img src=\"";
-        // line 136
+        // line 143
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/header_related_act.gif"), "html", null, true);
         echo "\"  width=\"271\" height=\"43\" alt=\"\" />                 
 \t 
@@ -211,7 +221,7 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 \t\t\t\t<div class=\"left\">
                                     <a href=\"\">
     <img src=\"";
-        // line 149
+        // line 156
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_plus.gif"), "html", null, true);
         echo "\"  width=\"21\" height=\"21\" alt=\"\" />                                     
                                        
@@ -232,7 +242,7 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 \t\t\t\t<div class=\"left\"><a href=\"\">
                                  
    <img src=\"";
-        // line 167
+        // line 174
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_minus.gif"), "html", null, true);
         echo "\"  width=\"21\" height=\"21\" alt=\"\" />                                     
                                         
@@ -252,7 +262,7 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 \t\t\t\t
 \t\t\t\t<div class=\"left\"><a href=\"\">
      <img src=\"";
-        // line 184
+        // line 191
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/forms/icon_edit.gif"), "html", null, true);
         echo "\"  width=\"21\" height=\"21\" alt=\"\" />                                   
                                          
@@ -283,7 +293,7 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 <tr>
 <td>
       <img src=\"";
-        // line 212
+        // line 219
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/myappesprit/images/shared/blank.gif"), "html", null, true);
         echo "\" width=\"695\" height=\"1\" alt=\"blank\" /> 
    
@@ -322,6 +332,6 @@ class __TwigTemplate_450ac88c15631e448c0e256b269ffdde5d2405b4556903b6e141927793e
 
     public function getDebugInfo()
     {
-        return array (  287 => 212,  256 => 184,  236 => 167,  215 => 149,  199 => 136,  171 => 111,  168 => 110,  151 => 96,  141 => 89,  127 => 78,  120 => 74,  108 => 65,  100 => 60,  89 => 52,  53 => 19,  41 => 10,  33 => 5,  28 => 4,);
+        return array (  297 => 219,  266 => 191,  246 => 174,  225 => 156,  209 => 143,  181 => 118,  178 => 117,  161 => 103,  151 => 96,  137 => 85,  130 => 81,  121 => 75,  108 => 65,  100 => 60,  89 => 52,  53 => 19,  41 => 10,  33 => 5,  28 => 4,);
     }
 }

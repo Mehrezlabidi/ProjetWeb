@@ -16,7 +16,7 @@ class RoleType extends AbstractType
     {
         $builder
             ->add('permission', 'checkbox', array('required' => false)) 
-            ->add('utilisateur')
+           # ->add('utilisateur')
         ;
     }
     

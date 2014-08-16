@@ -22,7 +22,7 @@ class Menu
     private $id;
     
     /**
-     * @ORM\OneToMany(targetEntity="Rubrique", mappedBy="menu")
+     * @ORM\OneToMany(targetEntity="Rubrique", mappedBy="menu", cascade={"remove", "persist"})
      */
     protected $rubriques;
   
