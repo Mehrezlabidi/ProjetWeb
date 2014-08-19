@@ -103,14 +103,15 @@ class ArticleController extends Controller
  
     if ($form->isValid()) {
         $em->flush();
-      
+       return $this->redirect($this->generateUrl('my_app_esprit_article_show'));
     }
-    
-    $build['form'] = $form->createView();
+                            
+       return $this->render('MyAppEspritBundle:Article:edit.html.twig',array('form'=>$form->createView())); 
+    }
+     
+ 
+ 
 
-    return $this->render('MyAppEspritBundle:Article:edit.html.twig', $build);
-  }
-    
     
     
     

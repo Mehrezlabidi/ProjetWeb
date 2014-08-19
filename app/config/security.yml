@@ -33,3 +33,10 @@ security:
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/, role: ROLE_ADMIN }
         - { path: ^/administration, role: ROLE_USER }
+          ## les crud sont protegés
+        - { path: ^/menu, role: ROLE_USER }
+        - { path: ^/sousrubrique, role: ROLE_USER }
+        - { path: ^/rubrique, role: ROLE_USER }
+        - { path: ^/actualite, role: ROLE_USER }
+        - { path: ^/article, role: ROLE_USER }
+        - { path: ^/role, role: ROLE_USER }

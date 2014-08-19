@@ -96,23 +96,23 @@ class MenuController extends Controller
 
     $form->handleRequest($request);
  
+  
     if ($form->isValid()) {
         $em->flush();
-      
+       return $this->redirect($this->generateUrl('my_app_esprit_menu_show'));
     }
-    
-    $build['form'] = $form->createView();
-
-    return $this->render('MyAppEspritBundle:Menu:edit.html.twig', $build);
-  }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+                            
+       return $this->render('MyAppEspritBundle:Menu:edit.html.twig',array('form'=>$form->createView())); 
+    }
+     
+ 
 }
+
+    
+    
+    
+    
+    
+    
+    
+ 

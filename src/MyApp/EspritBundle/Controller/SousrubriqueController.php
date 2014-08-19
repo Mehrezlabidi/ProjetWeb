@@ -96,32 +96,14 @@ class SousrubriqueController extends Controller
 
     $form->handleRequest($request);
  
+   
     if ($form->isValid()) {
         $em->flush();
-      
+       return $this->redirect($this->generateUrl('my_app_esprit_sousrubrique_show'));
     }
-    
-    $build['form'] = $form->createView();
-
-    return $this->render('MyAppEspritBundle:Sousrubrique:edit.html.twig', $build);
-  }
-      
-      
-        public function topAction($max = 50)
-{
-    $em = $this->container->get('doctrine')->getEntityManager();
-
-    $qb = $em->createQueryBuilder();
-    $qb->select('a')
-      ->from('MyAppEspritBundle:Sousrubrique', 'a')
-      ->orderBy('a.position')
-      ->setMaxResults($max);
-
-    $query = $qb->getQuery();
-    $sousrubrique = $query->getResult();
-
-    return $this->container->get('templating')
-            ->renderResponse('MyAppEspritBundle:Sousrubrique:lister.html.twig', array('sousrubrique' => $sousrubrique, ));
-}
-   
+                            
+       return $this->render('MyAppEspritBundle:Sousrubrique:edit.html.twig',array('form'=>$form->createView())); 
+    }
+     
+ 
 }

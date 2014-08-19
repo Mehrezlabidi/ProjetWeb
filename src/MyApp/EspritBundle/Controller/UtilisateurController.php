@@ -61,7 +61,7 @@ class UtilisateurController extends Controller
         $utilisateur = $em->getRepository('MyAppEspritBundle:Utilisateur')->find($id);
 
         if (!$utilisateur) {
-            throw $this->createNotFoundException('No MUtilisateur found for id '.$id);
+            throw $this->createNotFoundException('No Utilisateur found for id '.$id);
         }
 
         $em->remove($utilisateur);
@@ -100,23 +100,23 @@ class UtilisateurController extends Controller
 
     $form->handleRequest($request);
  
+
     if ($form->isValid()) {
         $em->flush();
-      
+       return $this->redirect($this->generateUrl('my_app_esprit_utilisateur_show'));
     }
-    
-    $build['form'] = $form->createView();
-
-    return $this->render('MyAppEspritBundle:Utilisateur:edit.html.twig', $build);
-  }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+                            
+       return $this->render('MyAppEspritBundle:Utilisateur:edit.html.twig',array('form'=>$form->createView())); 
+    }
+     
+ 
 }
+
+    
+    
+    
+    
+    
+    
+    
+ 

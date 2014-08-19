@@ -88,23 +88,18 @@ class RoleController extends Controller
 
     $form->handleRequest($request);
  
+   
     if ($form->isValid()) {
         $em->flush();
-      
+       return $this->redirect($this->generateUrl('my_app_esprit_role_show'));
     }
-    
-    $build['form'] = $form->createView();
-
-    return $this->render('MyAppEspritBundle:Role:edit.html.twig', $build);
-  }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+                            
+       return $this->render('MyAppEspritBundle:Role:edit.html.twig',array('form'=>$form->createView())); 
+    }
+     
+ 
 }
+
+    
+    
+ 

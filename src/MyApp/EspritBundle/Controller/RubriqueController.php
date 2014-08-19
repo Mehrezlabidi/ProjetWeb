@@ -100,16 +100,10 @@ class RubriqueController extends Controller
  
     if ($form->isValid()) {
         $em->flush();
-      
+       return $this->redirect($this->generateUrl('my_app_esprit_rubrique_show'));
     }
-    
-    $build['form'] = $form->createView();
-
-    return $this->render('MyAppEspritBundle:Rubrique:edit.html.twig', $build);
-  }    
-  
-  
-
-  
-  
+                            
+       return $this->render('MyAppEspritBundle:Rubrique:edit.html.twig',array('form'=>$form->createView())); 
+    }
+     
 }

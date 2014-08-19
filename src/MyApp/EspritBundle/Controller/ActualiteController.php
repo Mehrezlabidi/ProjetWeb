@@ -104,21 +104,11 @@ class ActualiteController extends Controller
  
     if ($form->isValid()) {
         $em->flush();
-      
+       return $this->redirect($this->generateUrl('my_app_esprit_actualite_show'));
     }
-    
-    $build['form'] = $form->createView();
-
-    return $this->render('MyAppEspritBundle:Actualite:edit.html.twig', $build);
-  }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+                            
+       return $this->render('MyAppEspritBundle:Actualite:edit.html.twig',array('form'=>$form->createView())); 
+    }
+     
+ 
 }
