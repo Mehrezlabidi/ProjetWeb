@@ -96,7 +96,7 @@ class ActualiteController extends Controller
         ->add('description', 'text')
         ->add('image', 'text')   
             
-        ->add('utilisateur','entity',array('class'=>'MyApp\EspritBundle\Entity\Utilisateur','property'=>'id'))
+        ->add('utilisateur','entity',array('class'=>'MyApp\EspritBundle\Entity\Utilisateur','property'=>'nom'))
         
         ->getForm();
 

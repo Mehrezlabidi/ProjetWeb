@@ -92,7 +92,7 @@ class RubriqueController extends Controller
         
         ->add('position', 'integer')
         ->add('title', 'text')
-        ->add('menu','entity',array('class'=>'MyApp\EspritBundle\Entity\Menu','property'=>'id'))
+        ->add('menu','entity',array('class'=>'MyApp\EspritBundle\Entity\Menu','property'=>'title'))
         
         ->getForm();
 

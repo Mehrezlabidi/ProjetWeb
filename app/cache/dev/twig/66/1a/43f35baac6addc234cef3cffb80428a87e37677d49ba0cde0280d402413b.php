@@ -65,10 +65,12 @@ class __TwigTemplate_661a43f35baac6addc234cef3cffb80428a87e37677d49ba0cde0280d40
                    
        
 \t </ul>
-                       
-        <button type=\"submit\" class=\"action\">Submit</button>
-                          
-                         
+    <ul>             
+        <center>  <li > <button type=\"submit\" class=\"action\">Submit</button> 
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button type=\"reset\" class=\"action\">Reset</button>   </li></center> 
+     <ul>                   
 </form>
  
       </div>

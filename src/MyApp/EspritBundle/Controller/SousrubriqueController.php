@@ -90,7 +90,7 @@ class SousrubriqueController extends Controller
         
         ->add('position', 'integer')
         ->add('title', 'text')
-        ->add('rubrique','entity',array('class'=>'MyApp\EspritBundle\Entity\Rubrique','property'=>'id'))
+        ->add('rubrique','entity',array('class'=>'MyApp\EspritBundle\Entity\Rubrique','property'=>'title'))
         
         ->getForm();
 

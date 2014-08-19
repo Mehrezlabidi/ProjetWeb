@@ -90,7 +90,7 @@ class MenuController extends Controller
         
         ->add('position', 'integer')
         ->add('title', 'text')
-        ->add('utilisateur','entity',array('class'=>'MyApp\EspritBundle\Entity\Utilisateur','property'=>'id'))
+        ->add('utilisateur','entity',array('class'=>'MyApp\EspritBundle\Entity\Utilisateur','property'=>'nom'))
         
         ->getForm();
 
